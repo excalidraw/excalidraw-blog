@@ -8,7 +8,6 @@ class Layout extends React.Component {
     const { location, title, children } = this.props;
     const rootPath = `${__PATH_PREFIX__}/`;
     let header;
-
     if (location.pathname === rootPath) {
       header = (
         <h1
@@ -62,9 +61,12 @@ class Layout extends React.Component {
       >
         <header>{header}</header>
         <main>{children}</main>
-        <footer>
-          © {new Date().getFullYear()},
-          {` `}
+        <footer style={{
+          textAlign: "center"
+        }}>
+          © {new Date().getFullYear()}{" – "}
+          <a href="https://twitter.com/excalidraw">Twitter</a>{" – "}
+          <a href="https://github.com/excalidraw">GitHub</a>{" – "}
           <a href="https://excalidraw.com">Excalidraw</a>
         </footer>
       </div>
