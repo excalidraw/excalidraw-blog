@@ -18,10 +18,9 @@ const Layout = ({ location, title, children }) => {
       <header>
         <div style={{ fontFamily: "var(--ui-font)", textAlign: "right" }}>
           {location.pathname !== rootPath && (
-            <Link to="/" style={{ float: "left" }}>
-              {" "}
-              All posts
-            </Link>
+            <span style={{ float: "left" }}>
+              <Link to="/">All posts</Link>
+            </span>
           )}
           <Excalidraw />
         </div>
