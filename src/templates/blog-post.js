@@ -31,45 +31,50 @@ class BlogPostTemplate extends React.Component {
             ...scale(-1 / 5),
             display: `block`,
             marginBottom: rhythm(1),
+            fontFamily: "var(--ui-font)",
           }}
         >
           {post.frontmatter.date}
         </p>
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
-        <p>
+        <p style={{ fontFamily: "var(--ui-font)", marginBottom: 0 }}>
           <a href={discussUrl}>Discuss on Twitter</a>
           {" • "}
           <a href={editUrl}>Edit on GitHub</a>
         </p>
-        <hr
-          style={{
-            marginBottom: rhythm(1),
-          }}
-        />
-        <ul
-          style={{
-            display: `flex`,
-            flexWrap: `wrap`,
-            justifyContent: `space-between`,
-            listStyle: `none`,
-            padding: 0,
-          }}
-        >
-          <li>
-            {previous && (
-              <Link to={previous.fields.slug} rel="prev">
-                ← {previous.frontmatter.title}
-              </Link>
-            )}
-          </li>
-          <li>
-            {next && (
-              <Link to={next.fields.slug} rel="next">
-                {next.frontmatter.title} →
-              </Link>
-            )}
-          </li>
-        </ul>
+        {previous || next ? (
+          <>
+            <hr
+              style={{
+                marginBlock: rhythm(1),
+              }}
+            />
+            <ul
+              style={{
+                display: `flex`,
+                flexWrap: `wrap`,
+                justifyContent: `space-between`,
+                listStyle: `none`,
+                padding: 0,
+              }}
+            >
+              <li>
+                {previous && (
+                  <Link to={previous.fields.slug} rel="prev">
+                    ← {previous.frontmatter.title}
+                  </Link>
+                )}
+              </li>
+              <li>
+                {next && (
+                  <Link to={next.fields.slug} rel="next">
+                    {next.frontmatter.title} →
+                  </Link>
+                )}
+              </li>
+            </ul>
+          </>
+        ) : null}
       </Layout>
     );
   }

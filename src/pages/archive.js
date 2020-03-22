@@ -11,18 +11,8 @@ class BlogIndex extends React.Component {
     const posts = data.allMarkdownRemark.edges;
 
     return (
-      <Layout
-        location={this.props.location}
-        title={data.site.siteMetadata.title}
-      >
-        <SEO title="News" />
-        <p
-          style={{
-            fontStyle: "italic",
-          }}
-        >
-          {data.site.siteMetadata.description}
-        </p>
+      <Layout location={this.props.location} title="Archive">
+        <SEO title="All posts" />
         {posts.map(({ node }) => {
           const title = node.frontmatter.title || node.fields.slug;
           return (
@@ -36,13 +26,12 @@ class BlogIndex extends React.Component {
                   {title}
                 </Link>
               </h3>
-              <small>{node.frontmatter.date}</small>
-              <p
-                style={{ color: "#868e96", fontSize: "0.9em" }}
-                dangerouslySetInnerHTML={{
-                  __html: node.excerpt,
-                }}
-              />
+              <p>
+                <small style={{ fontFamily: "var(--ui-font)" }}>
+                  {node.frontmatter.date}
+                </small>
+                <span dangerouslySetInnerHTML={{ __html: node.excerpt }} />
+              </p>
             </div>
           );
         })}

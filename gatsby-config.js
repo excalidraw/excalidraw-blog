@@ -78,7 +78,7 @@ module.exports = {
       options: {
         name: "Excalidraw Blog",
         short_name: "Excalidraw",
-        start_url: "/",
+        start_url: "/archive",
         background_color: "#ffffff",
         theme_color: "#663399",
         display: "minimal-ui",
