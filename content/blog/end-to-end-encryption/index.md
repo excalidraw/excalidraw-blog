@@ -64,7 +64,7 @@ const encrypted = await window.crypto.subtle.encrypt(
 We upload the encrypted content to the server. Note that we don't send the key to the server!
 
 ```javascript
-const response = await (await fetch("upload.php", {
+const response = await (await fetch("/upload", {
   method: "POST",
   body: encrypted
 })).json();
@@ -84,7 +84,7 @@ const url = objectURL + '#key=' + objectKey;
 In the opposite direction, we download the file back from the server.
 
 ```javascript
-const response = await fetch(`download.php?id={id}`);
+const response = await fetch(`/download?id={id}`);
 const encrypted = await response.arrayBuffer();
 ```
 
@@ -104,7 +104,7 @@ const key = window.crypto.subtle.importKey(
 );
 ```
 
-We decrypt the message, decode it to string and parse it back as json.
+We decrypt the message, decode it to string and parse it back as JSON.
 
 ```javascript
 const decrypted = await window.crypto.subtle.decrypt(
