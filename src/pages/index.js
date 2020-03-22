@@ -14,6 +14,14 @@ class BlogIndex extends React.Component {
     return (
       <Layout location={this.props.location} title={siteTitle}>
         <SEO title="All posts" />
+        <p
+          style={{
+            fontStyle: "italic",
+          }}
+        >
+          Excalidraw is a whiteboard tool that lets you easily sketch diagrams
+          that have a hand-drawn feel to them.
+        </p>
         {posts.map(({ node }) => {
           const title = node.frontmatter.title || node.fields.slug;
           return (
