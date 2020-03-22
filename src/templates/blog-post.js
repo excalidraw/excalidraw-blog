@@ -15,6 +15,7 @@ class BlogPostTemplate extends React.Component {
     const discussUrl = `https://mobile.twitter.com/search?q=${encodeURIComponent(
       `https://blog.excalidraw.com${post.fields.slug}`
     )}`;
+    console.log(post.frontmatter);
     return (
       <Layout location={this.props.location} title={siteTitle}>
         <SEO title={post.frontmatter.title} description={post.excerpt} />
@@ -35,6 +36,14 @@ class BlogPostTemplate extends React.Component {
           }}
         >
           {post.frontmatter.date}
+          {post.frontmatter.note ? (
+            <>
+              {" • "}
+              <span
+                dangerouslySetInnerHTML={{ __html: post.frontmatter.note }}
+              />
+            </>
+          ) : null}
         </p>
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
         <p style={{ fontFamily: "var(--ui-font)", marginBottom: 0 }}>
@@ -96,6 +105,7 @@ export const pageQuery = graphql`
       frontmatter {
         title
         date(formatString: "MMMM DD, YYYY")
+        note
       }
       fields {
         slug

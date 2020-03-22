@@ -1,6 +1,7 @@
 ---
 title: Reflections on Excalidraw
 date: 2020-01-15
+note: 'This post appeared first on <a href="https://blog.vjeux.com/2020/uncategorized/reflections-on-excalidraw.html">Vjeux’s blog</a>.'
 ---
 
 On January 1st I started building a little tool that lets you create diagrams that look like they are hand-written. That whole project exploded and in two weeks it got 12k unique active users, 1.5k stars on GitHub and 26 contributors on GitHub (who produced real code, we don't have any docs). If you want to play with it, go to [excalidraw.com](https://excalidraw.com/).
@@ -106,5 +107,3 @@ I wish anyone could read this and reproduce it but that's not completely true. I
 This was a fun project to work on while procrastinating on writing performance reviews. I'm not exactly sure what the future holds for Excalidraw but I'm happy that it is now at a point where I can finally use it to illustrate the blog post I wanted to write that started this whole project (hello rabbit hole!).
 
 Now, go draw some things with [excalidraw.com](https://excalidraw.com) and if you see something you'd like improved, please contribute on GitHub! [github.com/excalidraw/excalidraw](https://github.com/excalidraw/excalidraw)
-
-_This post appeared first on [Vjeux’s blog](https://blog.vjeux.com/2020/uncategorized/reflections-on-excalidraw.html)._
