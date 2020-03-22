@@ -27,7 +27,6 @@ function BlogPostTemplate({ data, pageContext: { previous, next }, location }) {
       <p
         style={{
           ...scale(-1 / 5),
-          display: `block`,
           marginBottom: rhythm(1),
           fontFamily: "var(--ui-font)",
         }}
