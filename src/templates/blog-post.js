@@ -17,10 +17,7 @@ class BlogPostTemplate extends React.Component {
     )}`;
     return (
       <Layout location={this.props.location} title={siteTitle}>
-        <SEO
-          title={post.frontmatter.title}
-          description={post.frontmatter.description || post.excerpt}
-        />
+        <SEO title={post.frontmatter.title} description={post.excerpt} />
         <h1
           style={{
             marginTop: rhythm(1),
@@ -85,17 +82,15 @@ export const pageQuery = graphql`
     site {
       siteMetadata {
         title
-        author
       }
     }
     markdownRemark(fields: { slug: { eq: $slug } }) {
       id
-      excerpt(pruneLength: 160)
+      excerpt
       html
       frontmatter {
         title
         date(formatString: "MMMM DD, YYYY")
-        description
       }
       fields {
         slug
