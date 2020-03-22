@@ -10,19 +10,17 @@ const Excalidraw = () => {
       style={{
         height: rhythm(1),
         verticalAlign: "middle",
-        background: "#fff",
-        paddingRight: rhythm(0.1),
+        paddingRight: rhythm(0.05),
       }}
     />
   );
   return (
     <a
+      className="excalidraw-button"
       style={{
-        boxShadow: "none",
-        padding: "12px 16px",
-        fontWeight: 600,
-        border: "1px solid #868e96",
-        borderRadius: "8px",
+        padding: `${rhythm(0.4)} ${rhythm(0.5)} ${rhythm(0.55)} ${rhythm(
+          0.35
+        )}`,
       }}
       href="https://excalidraw.com"
       target="_blank"

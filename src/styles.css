@@ -1,3 +1,17 @@
+.excalidraw-button {
+  box-shadow: none;
+  font-weight: 600;
+  border: 1px solid #868e96;
+  border-radius: 8px;
+  transition: all 0.2s;
+}
+.excalidraw-button img {
+  transition: all 0.2s;
+}
+.excalidraw-button:hover {
+  background: #ccc;
+}
+
 /*
  Solarized Color Schemes originally by Ethan Schoonover
  http://ethanschoonover.com/solarized
