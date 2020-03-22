@@ -7,9 +7,10 @@ import { rhythm } from "../utils/typography";
 
 function BlogIndex({ data, location }) {
   const posts = data.allMarkdownRemark.edges;
+  const title = data.site.siteMetadata.title;
 
   return (
-    <Layout location={location} title="Archive">
+    <Layout location={location} title={title}>
       <SEO title="All posts" />
       {posts.map(({ node }) => {
         const title = node.frontmatter.title || node.fields.slug;
