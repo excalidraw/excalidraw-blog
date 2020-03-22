@@ -83,7 +83,7 @@ function Layout({ location, title, children }) {
         <a href="https://twitter.com/excalidraw">Twitter</a>
         {" • "}
         <a href="https://github.com/excalidraw/excalidraw-blog">
-          Fork this site
+          View source
         </a>
         {" • "}
         <Link to="/">All posts</Link>
