@@ -8,7 +8,7 @@ description: "&nbsp;"
 
 By default, [Excalidraw](https://excalidraw.com/) doesn’t send anything you draw to the server. But sometimes it is useful to be able to send a link to the scene you are working on to someone else.
 
-You could save the file, send it to the other person, have them open it. But that's pretty cumbersome. In this post we'll see how to get a link working without the server having access to the data.
+You could save the drawing to a file, send it to the other person, and have them open it. But that's pretty cumbersome. In this post we'll show how it’s possible to share just a link without the server having access to the data.
 
 ## Traditional Website Architecture
 
