@@ -17,6 +17,7 @@ class Layout extends React.Component {
           height: rhythm(1),
           verticalAlign: "middle",
           background: "white",
+          padding: `0 ${rhythm(0.1)}`,
         }}
       />
     );
@@ -33,11 +34,23 @@ class Layout extends React.Component {
         <header>
           <p style={{ fontFamily: "var(--ui-font)" }}>
             {location.pathname === rootPath ? (
-              <a href="https://excalidraw.com">{logo}Open Excalidraw</a>
+              <a
+                href="https://excalidraw.com"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {logo}Open Excalidraw
+              </a>
             ) : (
               <>
                 <span style={{ float: "right" }}>
-                  <a href="https://excalidraw.com">Open Excalidraw{logo}</a>
+                  <a
+                    href="https://excalidraw.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    Open Excalidraw{logo}
+                  </a>
                 </span>
                 <Link to="/">All posts</Link>
               </>
