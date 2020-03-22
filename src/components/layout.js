@@ -82,9 +82,7 @@ function Layout({ location, title, children }) {
         {" • "}
         <a href="https://twitter.com/excalidraw">Twitter</a>
         {" • "}
-        <a href="https://github.com/excalidraw/excalidraw-blog">
-          View source
-        </a>
+        <a href="https://github.com/excalidraw/excalidraw-blog">View source</a>
         {" • "}
         <Link to="/">All posts</Link>
       </footer>
