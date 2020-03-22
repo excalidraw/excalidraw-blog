@@ -27,10 +27,9 @@ class BlogIndex extends React.Component {
                 </Link>
               </h3>
               <p>
-                <small style={{ fontFamily: "var(--ui-font)" }}>
-                  {node.frontmatter.date}
-                </small>
-                {node.excerpt}
+                <strong>{node.frontmatter.date}</strong>
+                {" — "}
+                <span style={{ opacity: 0.75 }}>{node.excerpt}</span>
               </p>
             </div>
           );
