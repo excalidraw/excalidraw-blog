@@ -1,7 +1,6 @@
 ---
 title: How Do We Cope With Translations
 date: "2020-03-22T19:40:32.169Z"
-description: "&nbsp;"
 ---
 
 From the early days people asked us the [Excalidraw](https://excalidraw.com) to be translatable to other languages and thanks to our contributors that requst landed pretty fast.
