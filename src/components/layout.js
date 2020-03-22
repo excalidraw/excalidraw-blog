@@ -42,7 +42,7 @@ class Layout extends React.Component {
                 <Link to="/archive">Archive</Link>
               </>
             )}
-            <div style={{ clear: "both" }} />
+            <span style={{ clear: "both" }} />
           </p>
           {location.pathname === rootPath ? (
             <h1
