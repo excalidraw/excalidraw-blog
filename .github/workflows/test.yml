@@ -3,7 +3,7 @@ name: Test formatting
 on: [pull_request]
 
 jobs:
-  lint:
+  test:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v1
