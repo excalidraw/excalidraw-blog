@@ -15,7 +15,7 @@ class BlogIndex extends React.Component {
         location={this.props.location}
         title={data.site.siteMetadata.title}
       >
-        <SEO title="All posts" />
+        <SEO title="News" />
         <p
           style={{
             fontStyle: "italic",
@@ -38,8 +38,9 @@ class BlogIndex extends React.Component {
               </h3>
               <small>{node.frontmatter.date}</small>
               <p
+                style={{ color: "#868e96", fontSize: "0.9em" }}
                 dangerouslySetInnerHTML={{
-                  __html: node.frontmatter.description || node.excerpt,
+                  __html: node.excerpt,
                 }}
               />
             </div>
@@ -70,7 +71,6 @@ export const pageQuery = graphql`
           frontmatter {
             date(formatString: "MMMM DD, YYYY")
             title
-            description
           }
         }
       }

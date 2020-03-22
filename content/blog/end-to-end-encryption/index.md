@@ -1,12 +1,13 @@
 ---
 title: End-to-End Encryption in the Browser
 date: "2020-03-21T22:40:32.169Z"
-description: "&nbsp;"
 ---
 
 [Excalidraw](https://excalidraw.com/) is a whiteboard tool that lets you easily sketch diagrams that have a hand-drawn feel to them. It is very handy to dump your thoughts many of which are sensitive: designs for new features not yet released, interview questions, org charts...
 
-By default, [Excalidraw](https://excalidraw.com/) doesn’t send anything you draw to the server. But sometimes it is useful to be able to send a link to the scene you are working on to someone else.
+<!-- end -->
+
+By default, **Excalidraw** doesn’t send anything you draw to the server. But sometimes it is useful to be able to send a link to the scene you are working on to someone else.
 
 You could save the drawing to a file, send it to the other person, and have them open it. But that's pretty cumbersome. In this post we'll show how it’s possible to share just a link without the server having access to the data.
 
@@ -124,6 +125,6 @@ const content = JSON.parse(decoded);
 
 As the maintainer of [Excalidraw](https://excalidraw.com/), I now sleep much better at night. If the hosting service gets compromised, it doesn't really matter as none of the content can be decrypted without the key.
 
-It also gives me the peace of mind to use [Excalidraw](https://excalidraw.com/) for work related projects knowing that nothing will leak.
+It also gives me the peace of mind to use **Excalidraw** for work related projects knowing that nothing will leak.
 
 If you're building a website that needs to store data on the server, you may want to add end-to-end encryption, it's pretty easy!
