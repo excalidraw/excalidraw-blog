@@ -4,7 +4,7 @@ date: '2020-03-21T22:40:32.169Z'
 description: "&nbsp;"
 ---
 
-[Excalidraw](https://excalidraw.com/) is a whiteboard tool that lets you easily sketch diagrams that have a hand-drawn feed to them. It is very handy to dump your thoughts many of which are sensitive: designs for new features not yet released, interview questions, org charts...
+[Excalidraw](https://excalidraw.com/) is a whiteboard tool that lets you easily sketch diagrams that have a hand-drawn feel to them. It is very handy to dump your thoughts many of which are sensitive: designs for new features not yet released, interview questions, org charts...
 
 By default, [Excalidraw](https://excalidraw.com/) doesn’t send anything you draw to the server. But sometimes it is useful to be able to send a link to the scene you are working on to someone else.
 
