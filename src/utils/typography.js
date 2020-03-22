@@ -4,7 +4,7 @@ import TwinPeaks from "typography-theme-twin-peaks";
 const typography = new Typography(TwinPeaks);
 
 // Hot reload typography in development.
-if (process.env.NODE_ENV !== `production`) {
+if (process.env.NODE_ENV !== "production") {
   typography.injectStyles();
 }
 

@@ -11,7 +11,10 @@ class BlogIndex extends React.Component {
     const posts = data.allMarkdownRemark.edges;
 
     return (
-      <Layout location={this.props.location} title={data.site.siteMetadata.title}>
+      <Layout
+        location={this.props.location}
+        title={data.site.siteMetadata.title}
+      >
         <SEO title="All posts" />
         <p
           style={{
