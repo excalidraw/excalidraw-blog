@@ -1,14 +1,6 @@
 import Typography from "typography";
 import TwinPeaks from "typography-theme-twin-peaks";
 
-TwinPeaks.overrideThemeStyles = () => {
-  return {
-    "a.gatsby-resp-image-link": {
-      boxShadow: `none`,
-    },
-  };
-};
-
 const typography = new Typography(TwinPeaks);
 
 // Hot reload typography in development.
