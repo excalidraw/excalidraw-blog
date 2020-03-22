@@ -1,6 +1,6 @@
 name: Test formatting
 
-on: [pull_request]
+on: push
 
 jobs:
   test:
