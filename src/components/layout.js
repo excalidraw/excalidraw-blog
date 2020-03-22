@@ -61,11 +61,7 @@ class Layout extends React.Component {
       >
         <header>{header}</header>
         <main>{children}</main>
-        <footer
-          style={{
-            textAlign: "center",
-          }}
-        >
+        <footer style={{ textAlign: "center" }}>
           © {new Date().getFullYear()}
           {" – "}
           <a href="https://twitter.com/excalidraw">Twitter</a>
