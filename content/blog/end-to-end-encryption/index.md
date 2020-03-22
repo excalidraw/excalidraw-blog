@@ -12,7 +12,7 @@ You could save the drawing to a file, send it to the other person, and have them
 
 ## Traditional Website Architecture
 
-In the traditional website architecture, if you want to save a scene, you're going to send the content to the server so that it can store it. Then to load it you'll the server to send it back to you.
+In a traditional website architecture, you’d save a scene by sending it to the server, which gives you a shareable URL. The recipient then downloads the scene data from the server.
 
 In that world, you trust the server to contain your information but you don't have to trust the pipes in between the client and the server, because you use HTTPS to encrypt the data.
 
