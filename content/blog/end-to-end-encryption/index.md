@@ -1,6 +1,6 @@
 ---
 title: End-to-End Encryption in the Browser
-date: '2020-03-21T22:40:32.169Z'
+date: "2020-03-21T22:40:32.169Z"
 description: "&nbsp;"
 ---
 
@@ -34,7 +34,6 @@ Thankfully, in the context of a website, we can exploit the hash part of the URL
 
 [![url](url.png)](https://excalidraw.com/#json=5660568841093120,vki3y9xuEulFVHDqt-PBMw)
 
-
 ## Show me the code
 
 Fortunately, the Web Cryptography APIs are now widely available to all the browsers that let us implement this. That said, the APIs to deal with encryption, keys and binary data are not the most straightforward, this next section walks you through how to wire it all together.
@@ -47,7 +46,7 @@ We generate a random key that will be used to encrypt the data.
 const key = await window.crypto.subtle.generateKey(
   { name: "AES-GCM", length: 128 },
   true, // extractable
-  ["encrypt", "decrypt"],
+  ["encrypt", "decrypt"]
 );
 ```
 
@@ -57,17 +56,19 @@ We encrypt the content with that random key. In this case, we only encrypt the c
 const encrypted = await window.crypto.subtle.encrypt(
   { name: "AES-GCM", iv: new Uint8Array(12) /* don't reuse key! */ },
   key,
-  new TextEncoder().encode(JSON.stringify(content)),
+  new TextEncoder().encode(JSON.stringify(content))
 );
 ```
 
 We upload the encrypted content to the server. Note that we don't send the key to the server!
 
 ```javascript
-const response = await (await fetch("/upload", {
-  method: "POST",
-  body: encrypted
-})).json();
+const response = await (
+  await fetch("/upload", {
+    method: "POST",
+    body: encrypted,
+  })
+).json();
 ```
 
 We generate the shareable URL. We use the `jwk` encoding in order to extract a base64 version of the key instead of having a binary encoded one.
@@ -75,7 +76,7 @@ We generate the shareable URL. We use the `jwk` encoding in order to extract a b
 ```javascript
 const objectURL = response.url;
 const objectKey = (await window.crypto.subtle.exportKey("jwk", key)).k;
-const url = objectURL + '#key=' + objectKey;
+const url = objectURL + "#key=" + objectKey;
 // Example: https://excalidraw.com/?scene=1234#key=BQ1moYESmTEXgtA1KozyVw
 ```
 
@@ -91,16 +92,19 @@ const encrypted = await response.arrayBuffer();
 The key that we encoded in the url is the `k` field of the `jwk` object that represents the key. In order to get back a full key object we need to reproduce all the other fields that are static. It's pretty verbose but it works!
 
 ```javascript
-const objectKey = window.location.hash.slice('#key='.length);
+const objectKey = window.location.hash.slice("#key=".length);
 const key = window.crypto.subtle.importKey(
   "jwk",
   {
     k: objectKey,
-    alg: "A128GCM", ext: true, key_ops: ["encrypt", "decrypt"], kty: "oct",
+    alg: "A128GCM",
+    ext: true,
+    key_ops: ["encrypt", "decrypt"],
+    kty: "oct",
   },
-  { name: "AES-GCM", length: 128},
+  { name: "AES-GCM", length: 128 },
   false, // extractable
-  ["decrypt"],
+  ["decrypt"]
 );
 ```
 
@@ -110,7 +114,7 @@ We decrypt the message, decode it to string and parse it back as JSON.
 const decrypted = await window.crypto.subtle.decrypt(
   { name: "AES-GCM", iv: new Uint8Array(12) },
   key,
-  buffer,
+  buffer
 );
 const decoded = new window.TextDecoder().decode(new Uint8Array(decrypted));
 const content = JSON.parse(decoded);
