@@ -18,7 +18,7 @@ const Excalidraw = () => {
   return (
     <a
       style={{
-        textDecoration: "none",
+        boxShadow: "none",
         padding: "12px 16px",
         fontWeight: 600,
         border: "1px solid #868e96",
