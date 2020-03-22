@@ -30,6 +30,7 @@
   },
   "description": "All the news about Excalidraw",
   "devDependencies": {
+    "gatsby-plugin-now": "^1.2.5",
     "husky": "4.2.3",
     "lint-staged": "10.0.8",
     "prettier": "2.0.1"

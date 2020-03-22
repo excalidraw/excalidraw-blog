@@ -5839,6 +5839,11 @@ gatsby-plugin-manifest@2.3.1:
     semver "^5.7.1"
     sharp "^0.25.1"
 
+gatsby-plugin-now@^1.2.5:
+  version "1.2.5"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-now/-/gatsby-plugin-now-1.2.5.tgz#c11a11afb76a100fa97d2c09b30c628d68031667"
+  integrity sha512-rTzd7EpTxcq3KVM3ga0KtmZT/EwjJdB0fUBR8Sod3/IrqeIjgbebSdi3K7Vbz7cgOx7tS5HQcmNKX/DwajSQXw==
+
 gatsby-plugin-offline@3.1.0:
   version "3.1.0"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-offline/-/gatsby-plugin-offline-3.1.0.tgz#cbe00051a5c6b219a9a2dd102c792c7baf488559"
