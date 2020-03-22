@@ -51,7 +51,7 @@ const key = await window.crypto.subtle.generateKey(
 );
 ```
 
-We encrypt the content with that random key. In this case, we only encrypt the content once with the random key so we don't need an `iv` and can leave it filled with 0.
+We encrypt the content with that random key. In this case, we only encrypt the content once with the random key so we don't need an `iv` and can leave it filled with 0 ([I hope...](https://www.youtube.com/watch?v=LP1t_pzxKyE)).
 
 ```javascript
 const encrypted = await window.crypto.subtle.encrypt(
