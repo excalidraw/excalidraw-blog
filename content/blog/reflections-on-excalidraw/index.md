@@ -22,3 +22,11 @@ The S curve is usually used to describe bigger projects but it turns out Excalid
 ![S Curve](s-curve.png)
 
 The most important part for me was to capitalize on the growth phase so that the project doesn't die when it hits the stabilization phase.
+
+## Proven Value Proposition
+
+Excalidraw didn't come out of nowhere, I've been using a tool called [Zwibbler](https://zwibbler.com/demo/) for probably 10 years in order to build hand-drawn like diagrams to illustrate my blog posts. I've always had this feeling that this tool was underrated. I seemingly was the only one to use it even though it felt like it could be used much more broadly.
+
+![Example of image drawn with Zwibbler](zwibbler.png)
+
+So when excalidraw came out, there was a clear value proposition and I knew it was going to be somewhat successful. Those days I don't have that much free time so I tend to spend my time on things that I believe have a high likelihood of being successful, especially side projects.
