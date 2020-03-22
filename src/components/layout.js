@@ -55,13 +55,18 @@ class Layout extends React.Component {
         style={{
           marginLeft: `auto`,
           marginRight: `auto`,
-          maxWidth: rhythm(24),
+          maxWidth: rhythm(26),
           padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
         }}
       >
         <header>{header}</header>
         <main>{children}</main>
-        <footer style={{ textAlign: "center" }}>
+        <footer
+          style={{
+            textAlign: "center",
+            padding: `${rhythm(2)} 0`,
+          }}
+        >
           © {new Date().getFullYear()}
           {" – "}
           <a href="https://twitter.com/excalidraw">Twitter</a>
