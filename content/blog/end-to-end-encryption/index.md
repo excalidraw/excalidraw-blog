@@ -14,7 +14,7 @@ You could save the drawing to a file, send it to the other person, and have them
 
 In the traditional website architecture, if you want to save a scene, you're going to send the content to the server so that it can store it. Then to load it you'll the server to send it back to you.
 
-In that world, you trust the server to contain your information but you don't trust the pipes in-between the client and server using https to encrypt the data.
+In that world, you trust the server to contain your information but you don't have to trust the pipes in between the client and the server, because you use HTTPS to encrypt the data.
 
 [![Untrusted Network](untrusted-network.png)](https://excalidraw.com/#json=5649116445016064,yOfExolZoMhtGnysT3-LWA)
 
