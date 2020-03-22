@@ -74,9 +74,10 @@ function Layout({ location, title, children }) {
           fontFamily: "var(--ui-font)",
         }}
       >
-        © {new Date().getFullYear()} Excalidraw blog{" "}
-        <a href="https://github.com/excalidraw/excalidraw-blog/graphs/contributors">
-          contributors
+        © {new Date().getFullYear()} Excalidraw Blog contributors
+        {" • "}
+        <a href="https://github.com/excalidraw/excalidraw-blog/blob/master/LICENSE">
+          MIT Licensed
         </a>
         {" • "}
         <a href="https://twitter.com/excalidraw">Twitter</a>
