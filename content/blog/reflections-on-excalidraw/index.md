@@ -1,6 +1,6 @@
 ---
 title: Reflections on Excalidraw
-date: "2020-01-15T15:00:00.000Z"
+date: 2020-01-15
 ---
 
 On January 1st I started building a little tool that lets you create diagrams that look like they are hand-written. That whole project exploded and in two weeks it got 12k unique active users, 1.5k stars on GitHub and 26 contributors on GitHub (who produced real code, we don't have any docs). If you want to play with it, go to [excalidraw.com](https://excalidraw.com/).
