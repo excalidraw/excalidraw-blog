@@ -35,7 +35,7 @@ So when excalidraw came out, there was a clear value proposition and I knew it w
 
 The first thing was to get people excited! I'm fortunate to have a sizable audience on Twitter so I used it by posting a bunch of videos of the progress of building the first version of the tool.
 
-<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Since <a href="https://t.co/ItXQrfkQFN">https://t.co/ItXQrfkQFN</a> removed the squiggly boxes and arrow, I&#39;m having fun rebuilding one with codesandbox, rough and React hooks. Making a lot of progress in a few hours! <a href="https://t.co/GLk0f8MX6K">https://t.co/GLk0f8MX6K</a> <a href="https://t.co/D9bKUbnxIJ">pic.twitter.com/D9bKUbnxIJ</a></p>&mdash; vjeux ✪ (@Vjeux) <a href="https://twitter.com/Vjeux/status/1212503324982792193?ref_src=twsrc%5Etfw">January 1, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+https://twitter.com/Vjeux/status/1212503324982792193
 
 ## Convert Attention to Action
 
@@ -106,3 +106,5 @@ I wish anyone could read this and reproduce it but that's not completely true. I
 This was a fun project to work on while procrastinating on writing performance reviews. I'm not exactly sure what the future holds for Excalidraw but I'm happy that it is now at a point where I can finally use it to illustrate the blog post I wanted to write that started this whole project (hello rabbit hole!).
 
 Now, go draw some things with [excalidraw.com](https://excalidraw.com) and if you see something you'd like improved, please contribute on GitHub! [github.com/excalidraw/excalidraw](https://github.com/excalidraw/excalidraw)
+
+_This post appeared first on [Vjeux’s blog](https://blog.vjeux.com/2020/uncategorized/reflections-on-excalidraw.html)._
