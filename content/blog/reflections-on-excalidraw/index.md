@@ -18,3 +18,5 @@ Before we get started with the actual content, here's an interesting concept tha
 The S curve is usually used to describe bigger projects but it turns out Excalidraw just went through a S curve as seen in this chart that plots the number of stars over the past two weeks.
 
 ![S Curve](s-curve.png)
+
+The most important part for me was to capitalize on the growth phase so that the project doesn't die when it hits the stabilization phase.
