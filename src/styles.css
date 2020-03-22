@@ -5,9 +5,6 @@
   border-radius: 8px;
   transition: all 0.2s;
 }
-.excalidraw-button img {
-  transition: all 0.2s;
-}
 .excalidraw-button:hover {
   background: #ccc;
 }

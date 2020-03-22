@@ -11,6 +11,7 @@ const Excalidraw = () => {
         height: rhythm(1),
         verticalAlign: "middle",
         paddingRight: rhythm(0.05),
+        margin: 0,
       }}
     />
   );
