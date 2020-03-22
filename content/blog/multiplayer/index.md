@@ -1,7 +1,6 @@
 ---
 title: Building Excalidraw's P2P collaboration feature
-date: '2020-03-21T22:40:32.169Z'
-description: "&nbsp;"
+date: "2020-03-22T18:00:00.000Z"
 ---
 
 [Excalidraw](https://excalidraw.com/) is a whiteboard tool that lets you easily sketch diagrams that have a hand-drawn feel to them. As tech companies started to institute mandatory work from home policies due to the [COVID-19 pandemic](https://en.wikipedia.org/wiki/2019%E2%80%9320_coronavirus_pandemic), we realized that Excalidraw could be the perfect substitute for the whiteboard that is usually required for systems design interviews.
