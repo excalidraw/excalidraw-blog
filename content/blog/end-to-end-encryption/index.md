@@ -6,7 +6,7 @@ description: "&nbsp;"
 
 [Excalidraw](https://excalidraw.com/) is a whiteboard tool that lets you easily sketch diagrams that have a hand-drawn feed to them. It is very handy to dump your thoughts many of which are sensitive: designs for new features not yet released, interview questions, org charts...
 
-By default, [Excalidraw](https://excalidraw.com/) is not sending any of the content you are drawing to the server. But sometimes it is useful to be able to send a link to the scene you are working on to someone else.
+By default, [Excalidraw](https://excalidraw.com/) doesn’t send anything you draw to the server. But sometimes it is useful to be able to send a link to the scene you are working on to someone else.
 
 You could save the file, send it to the other person, have them open it. But that's pretty cumbersome. In this post we'll see how to get a link working without the server having access to the data.
 
