@@ -61,13 +61,18 @@ class Layout extends React.Component {
       >
         <header>{header}</header>
         <main>{children}</main>
-        <footer style={{
-          textAlign: "center",
-          padding: `${rhythm(2)} 0`
-        }}>
-          © {new Date().getFullYear()}{" – "}
-          <a href="https://twitter.com/excalidraw">Twitter</a>{" – "}
-          <a href="https://github.com/excalidraw">GitHub</a>{" – "}
+        <footer
+          style={{
+            textAlign: "center",
+            padding: `${rhythm(2)} 0`,
+          }}
+        >
+          © {new Date().getFullYear()}
+          {" – "}
+          <a href="https://twitter.com/excalidraw">Twitter</a>
+          {" – "}
+          <a href="https://github.com/excalidraw">GitHub</a>
+          {" – "}
           <a href="https://excalidraw.com">Excalidraw</a>
         </footer>
       </div>

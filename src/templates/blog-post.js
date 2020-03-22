@@ -10,7 +10,11 @@ class BlogPostTemplate extends React.Component {
     const post = this.props.data.markdownRemark;
     const siteTitle = this.props.data.site.siteMetadata.title;
     const { previous, next } = this.props.pageContext;
-
+    const slug = post.fields.slug.slice(1, post.fields.slug.length - 1);
+    const editUrl = `https://github.com/excalidraw/excalidraw-blog/edit/master/content/blog/${slug}/index.md`;
+    const discussUrl = `https://mobile.twitter.com/search?q=${encodeURIComponent(
+      `https://blog.excalidraw.com${post.fields.slug}`
+    )}`;
     return (
       <Layout location={this.props.location} title={siteTitle}>
         <SEO
@@ -35,12 +39,16 @@ class BlogPostTemplate extends React.Component {
           {post.frontmatter.date}
         </p>
         <div dangerouslySetInnerHTML={{ __html: post.html }} />
+        <p>
+          <a href={discussUrl}>Discuss on Twitter</a>
+          {" • "}
+          <a href={editUrl}>Edit on GitHub</a>
+        </p>
         <hr
           style={{
             marginBottom: rhythm(1),
           }}
         />
-
         <ul
           style={{
             display: `flex`,
@@ -88,6 +96,9 @@ export const pageQuery = graphql`
         title
         date(formatString: "MMMM DD, YYYY")
         description
+      }
+      fields {
+        slug
       }
     }
   }
