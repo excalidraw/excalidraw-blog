@@ -2,7 +2,7 @@ const path = require(`path`);
 const { createFilePath } = require(`gatsby-source-filesystem`);
 
 exports.createPages = async ({ graphql, actions }) => {
-  const { createPage, createRedirect } = actions;
+  const { createPage } = actions;
 
   const blogPost = path.resolve(`./src/templates/blog-post.js`);
   const result = await graphql(
@@ -47,12 +47,6 @@ exports.createPages = async ({ graphql, actions }) => {
         next,
       },
     });
-  });
-
-  createRedirect({
-    fromPath: "/",
-    toPath: posts[0].node.fields.slug,
-    redirectInBrowser: true,
   });
 };
 

@@ -8,7 +8,7 @@ import { rhythm, scale } from "../utils/typography";
 class Layout extends React.Component {
   render() {
     const { location, title, children } = this.props;
-    const rootPath = `${__PATH_PREFIX__}/archive`;
+    const rootPath = `${__PATH_PREFIX__}/`;
     const logo = (
       <img
         src={logoPath}
@@ -39,7 +39,7 @@ class Layout extends React.Component {
                 <span style={{ float: "right" }}>
                   <a href="https://excalidraw.com">Open Excalidraw{logo}</a>
                 </span>
-                <Link to="/archive">Archive</Link>
+                <Link to="/">All posts</Link>
               </>
             )}
             <span style={{ clear: "both" }} />
@@ -74,7 +74,7 @@ class Layout extends React.Component {
             Fork this site
           </a>
           {" • "}
-          <Link to="/archive">Archive</Link>
+          <Link to="/">All posts</Link>
         </footer>
       </div>
     );
