@@ -1,83 +1,93 @@
 import React from "react";
 import { Link } from "gatsby";
 
+import logoPath from "../../content/assets/logo.png";
+
 import { rhythm, scale } from "../utils/typography";
 
-class Layout extends React.Component {
-  render() {
-    const { location, title, children } = this.props;
-    const rootPath = `${__PATH_PREFIX__}/`;
-    let header;
-    if (location.pathname === rootPath) {
-      header = (
-        <h1
-          style={{
-            ...scale(1.2),
-            marginBottom: rhythm(1.5),
-            marginTop: 0,
-          }}
-        >
-          <Link
+function Layout({ location, title, children }) {
+  const rootPath = `${__PATH_PREFIX__}/`;
+  const logo = (
+    <img
+      src={logoPath}
+      alt=""
+      style={{
+        height: rhythm(1),
+        verticalAlign: "middle",
+        background: "white",
+        padding: `0 ${rhythm(0.1)}`,
+      }}
+    />
+  );
+
+  return (
+    <div
+      style={{
+        marginLeft: `auto`,
+        marginRight: `auto`,
+        maxWidth: rhythm(26),
+        padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
+      }}
+    >
+      <header>
+        <p style={{ fontFamily: "var(--ui-font)" }}>
+          {location.pathname === rootPath ? (
+            <a
+              href="https://excalidraw.com"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {logo}Open Excalidraw
+            </a>
+          ) : (
+            <>
+              <span style={{ float: "right" }}>
+                <a
+                  href="https://excalidraw.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Open Excalidraw{logo}
+                </a>
+              </span>
+              <Link to="/">All posts</Link>
+            </>
+          )}
+          <span style={{ clear: "both" }} />
+        </p>
+        {location.pathname === rootPath ? (
+          <h1
             style={{
-              boxShadow: `none`,
-              textDecoration: `none`,
-              color: `inherit`,
+              ...scale(1.2),
+              marginTop: 0,
             }}
-            to={`/`}
           >
             {title}
-          </Link>
-        </h1>
-      );
-    } else {
-      header = (
-        <h3
-          style={{
-            fontFamily: `Montserrat, sans-serif`,
-            marginTop: 0,
-          }}
-        >
-          <Link
-            style={{
-              boxShadow: `none`,
-              textDecoration: `none`,
-              color: `inherit`,
-            }}
-            to={`/`}
-          >
-            {title}
-          </Link>
-        </h3>
-      );
-    }
-    return (
-      <div
+          </h1>
+        ) : null}
+      </header>
+      <main>{children}</main>
+      <footer
         style={{
-          marginLeft: `auto`,
-          marginRight: `auto`,
-          maxWidth: rhythm(26),
-          padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
+          textAlign: "center",
+          padding: `${rhythm(2)} 0`,
+          fontFamily: "var(--ui-font)",
         }}
       >
-        <header>{header}</header>
-        <main>{children}</main>
-        <footer
-          style={{
-            textAlign: "center",
-            padding: `${rhythm(2)} 0`,
-          }}
-        >
-          © {new Date().getFullYear()}
-          {" – "}
-          <a href="https://twitter.com/excalidraw">Twitter</a>
-          {" – "}
-          <a href="https://github.com/excalidraw">GitHub</a>
-          {" – "}
-          <a href="https://excalidraw.com">Excalidraw</a>
-        </footer>
-      </div>
-    );
-  }
+        © {new Date().getFullYear()} Excalidraw Blog contributors
+        {" • "}
+        <a href="https://github.com/excalidraw/excalidraw-blog/blob/master/LICENSE">
+          MIT Licensed
+        </a>
+        {" • "}
+        <a href="https://twitter.com/excalidraw">Twitter</a>
+        {" • "}
+        <a href="https://github.com/excalidraw/excalidraw-blog">View source</a>
+        {" • "}
+        <Link to="/">All posts</Link>
+      </footer>
+    </div>
+  );
 }
 
 export default Layout;
