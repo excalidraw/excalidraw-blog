@@ -1,25 +1,11 @@
 import React from "react";
 import { Link } from "gatsby";
 
-import logoPath from "../../content/assets/logo.png";
-
 import { rhythm, scale } from "../utils/typography";
+import Excalidraw from "./excalidraw";
 
-function Layout({ location, title, children }) {
+const Layout = ({ location, title, children }) => {
   const rootPath = `${__PATH_PREFIX__}/`;
-  const logo = (
-    <img
-      src={logoPath}
-      alt=""
-      style={{
-        height: rhythm(1),
-        verticalAlign: "middle",
-        background: "white",
-        padding: `0 ${rhythm(0.1)}`,
-      }}
-    />
-  );
-
   return (
     <div
       style={{
@@ -31,28 +17,15 @@ function Layout({ location, title, children }) {
     >
       <header>
         <p style={{ fontFamily: "var(--ui-font)" }}>
-          {location.pathname === rootPath ? (
-            <a
-              href="https://excalidraw.com"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              {logo}Open Excalidraw
-            </a>
-          ) : (
-            <>
-              <span style={{ float: "right" }}>
-                <a
-                  href="https://excalidraw.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Open Excalidraw{logo}
-                </a>
-              </span>
-              <Link to="/">All posts</Link>
-            </>
-          )}
+          <div style={{ textAlign: "right" }}>
+            {location.pathname !== rootPath && (
+              <Link to="/" style={{ float: "left" }}>
+                {" "}
+                All posts
+              </Link>
+            )}
+            <Excalidraw />
+          </div>
           <span style={{ clear: "both" }} />
         </p>
         {location.pathname === rootPath ? (
@@ -88,6 +61,6 @@ function Layout({ location, title, children }) {
       </footer>
     </div>
   );
-}
+};
 
 export default Layout;
