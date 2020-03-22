@@ -41,7 +41,7 @@
   },
   "license": "MIT",
   "lint-staged": {
-    "*.{js,jsx,json,md}": [
+    "*.{js,jsx,json,md,yml}": [
       "prettier --write"
     ]
   },
@@ -51,7 +51,7 @@
     "build": "gatsby build",
     "develop": "gatsby develop",
     "fix": "yarn prettier --write",
-    "prettier": "prettier \"**/*.{js,jsx,json,md}\"",
+    "prettier": "prettier \"**/*.{js,jsx,json,md,yml}\"",
     "serve": "gatsby serve",
     "start": "yarn develop",
     "test": "yarn prettier --list-different"
