@@ -15,7 +15,6 @@ class BlogPostTemplate extends React.Component {
     const discussUrl = `https://mobile.twitter.com/search?q=${encodeURIComponent(
       `https://blog.excalidraw.com${post.fields.slug}`
     )}`;
-    console.log(post.frontmatter);
     return (
       <Layout location={this.props.location} title={siteTitle}>
         <SEO title={post.frontmatter.title} description={post.excerpt} />

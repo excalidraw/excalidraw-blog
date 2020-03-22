@@ -30,7 +30,7 @@ class BlogIndex extends React.Component {
                 <small style={{ fontFamily: "var(--ui-font)" }}>
                   {node.frontmatter.date}
                 </small>
-                <span dangerouslySetInnerHTML={{ __html: node.excerpt }} />
+                {node.excerpt}
               </p>
             </div>
           );
