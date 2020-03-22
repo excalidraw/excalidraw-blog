@@ -1,5 +1,5 @@
 ---
-title: Enabling translations
+title: Enabling Translations
 date: 2020-03-22
 ---
 
