@@ -16,18 +16,16 @@ const Layout = ({ location, title, children }) => {
       }}
     >
       <header>
-        <p style={{ fontFamily: "var(--ui-font)" }}>
-          <div style={{ textAlign: "right" }}>
-            {location.pathname !== rootPath && (
-              <Link to="/" style={{ float: "left" }}>
-                {" "}
-                All posts
-              </Link>
-            )}
-            <Excalidraw />
-          </div>
-          <span style={{ clear: "both" }} />
-        </p>
+        <div style={{ fontFamily: "var(--ui-font)", textAlign: "right" }}>
+          {location.pathname !== rootPath && (
+            <Link to="/" style={{ float: "left" }}>
+              {" "}
+              All posts
+            </Link>
+          )}
+          <Excalidraw />
+        </div>
+        <span style={{ clear: "both" }} />
         {location.pathname === rootPath ? (
           <h1
             style={{
