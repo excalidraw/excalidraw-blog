@@ -52,7 +52,7 @@ Once we started sharing state between peers, we immediately ran into issues. The
 
 In single-player Excalidraw, we would just append the element to the end of the array. In multiplayer Excalidraw, there was a race condition. If _peer A_ is adding a new element while _peer B_ is changing the color of an existing element, _peer C_ will either lose _peer A_'s new element or _peer B_'s edits. Even worse, if _peer A_ receives _peer B_'s updates while they are editing, the editor would delete the element from right under their mouse! This was clearly a bad user experience and we had to fix it before sharing this with anyone.
 
-[![Adding an element](multiplayer-adding.png)](https://excalidraw.com/#json=5068269564198912,PmL8fegqNyHb0fKxoG6YAA)
+https://excalidraw.com/#json=5068269564198912,PmL8fegqNyHb0fKxoG6YAA
 
 To fix this, we adopted an architecture of _merging states_ when we receive them. When _peer A_ receives an update from _peer B_, it looks at all the `ExcalidrawElement.id`s it has locally, and all of the incoming `ExcalidrawElement.id`s, and creates a new `ExcalidrawElement` array containing the union of both the local and incoming set.
 
@@ -62,7 +62,7 @@ There's a big problem with the model above. If we're always keeping the union of
 
 To solve this problem, we used a method called [tombstoning](<https://en.wikipedia.org/wiki/Tombstone_(programming)>). We added a new field to the `ExcalidrawElement` interface called `isDeleted`. Peers would set this field to `true` to delete an element, and would filter the deleted elements out of the array at runtime.
 
-[![Deleting an element](multiplayer-deleting.png)](https://excalidraw.com/#json=5148123005452288,FnrZbAe4qkHQCSd2BSkUIQ)
+https://excalidraw.com/#json=5148123005452288,FnrZbAe4qkHQCSd2BSkUIQ
 
 The problem with tombstoning is that the size of your list grows forever, as nothing is every removed from the array. We don't consider this a problem as a shared whiteboard session will only contain a few dozen shapes, but we do remove any element with `isDeleted` set to true when saving to persistent storage, so long-lived drawings where this may become a problem are cleaned up.
 
@@ -72,7 +72,7 @@ There is still a problem with the model. Concurrent edits will still be lost, as
 
 To fix this, we introduced a new field to `ExcalidrawElement`: a **version number**. Whenever a peer edits an element -- changing its color, deleting it, resizing it, etc -- it increments the version number of that element before sending the state to its peers. Then, when we merge multiple peers state together, we throw out old versions of each element and just keep the latest ones.
 
-[![Versioning elements](multiplayer-versioning.png)](https://excalidraw.com/#json=5147452789227520,QaCOJixahz7VLHs3eG1s7g)
+https://excalidraw.com/#json=5147452789227520,QaCOJixahz7VLHs3eG1s7g
 
 This algorithm is simple but effective, and solved most of our collaboration problems.
 
