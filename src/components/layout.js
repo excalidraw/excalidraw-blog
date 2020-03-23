@@ -9,22 +9,10 @@ import sun from "../assets/sun.png";
 import moon from "../assets/moon.png";
 import { rhythm, scale } from "../utils/typography";
 import "./layoutStyles.css";
+import Excalidraw from "./excalidraw";
 
-function Layout({ location, title, children }) {
+const Layout = ({ location, title, children }) => {
   const rootPath = `${__PATH_PREFIX__}/`;
-  const logo = (
-    <img
-      src={logoPath}
-      alt=""
-      style={{
-        height: rhythm(1),
-        verticalAlign: "middle",
-        background: "white",
-        padding: `0 ${rhythm(0.1)}`,
-      }}
-    />
-  );
-
   return (
     <div
       style={{
@@ -34,7 +22,13 @@ function Layout({ location, title, children }) {
         padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
       }}
     >
-      <div style={{ display: "flex", justifyContent: "flex-end" }}>
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "flex-end",
+          marginBottom: "1.2em",
+        }}
+      >
         <ThemeToggler>
           {({ theme, toggleTheme }) => {
             return (
@@ -69,31 +63,15 @@ function Layout({ location, title, children }) {
         </ThemeToggler>
       </div>
       <header>
-        <p style={{ fontFamily: "var(--ui-font)" }}>
-          {location.pathname === rootPath ? (
-            <a
-              href="https://excalidraw.com"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              {logo}Open Excalidraw
-            </a>
-          ) : (
-            <>
-              <span style={{ float: "right" }}>
-                <a
-                  href="https://excalidraw.com"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Open Excalidraw{logo}
-                </a>
-              </span>
+        <div style={{ fontFamily: "var(--ui-font)", textAlign: "right" }}>
+          {location.pathname !== rootPath && (
+            <span style={{ float: "left" }}>
               <Link to="/">All posts</Link>
-            </>
+            </span>
           )}
-          <span style={{ clear: "both" }} />
-        </p>
+          <Excalidraw />
+        </div>
+        <span style={{ clear: "both" }} />
         {location.pathname === rootPath ? (
           <h1
             style={{
@@ -105,8 +83,6 @@ function Layout({ location, title, children }) {
           </h1>
         ) : null}
       </header>
-      <main>{children}</main>
-
       <main>{children}</main>
       <footer
         style={{
@@ -132,6 +108,6 @@ function Layout({ location, title, children }) {
       </footer>
     </div>
   );
-}
+};
 
 export default Layout;
