@@ -55,7 +55,7 @@ We encrypt the content with that random key. In this case, we only encrypt the c
 
 ```javascript
 const encrypted = await window.crypto.subtle.encrypt(
-  { name: "AES-GCM", iv: new Uint8Array(12) /* don't reuse key! */ },
+  { name: "AES-GCM", iv: window.crypto.getRandomValues(new Uint8Array(12)) },
   key,
   new TextEncoder().encode(JSON.stringify(content))
 );
