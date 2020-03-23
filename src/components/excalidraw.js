@@ -19,9 +19,7 @@ const Excalidraw = () => {
     <a
       className="excalidraw-button"
       style={{
-        padding: `${rhythm(0.4)} ${rhythm(0.5)} ${rhythm(0.55)} ${rhythm(
-          0.35
-        )}`,
+        padding: `${rhythm(0.4)} ${rhythm(0.5)} ${rhythm(0.4)} ${rhythm(0.35)}`,
       }}
       href="https://excalidraw.com"
       target="_blank"
