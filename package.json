@@ -3,7 +3,7 @@
   "dependencies": {
     "gatsby": "2.20.2",
     "gatsby-image": "2.3.0",
-    "gatsby-plugin-dark-mode": "^1.1.1",
+    "gatsby-plugin-dark-mode": "1.1.1",
     "gatsby-plugin-feed": "2.4.0",
     "gatsby-plugin-google-analytics": "2.2.0",
     "gatsby-plugin-manifest": "2.3.1",
