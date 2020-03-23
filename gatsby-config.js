@@ -28,9 +28,10 @@ module.exports = {
     {
       resolve: "gatsby-transformer-remark",
       options: {
+        excerpt_separator: "<!-- end -->",
         plugins: [
           {
-            resolve: `gatsby-remark-prismjs`,
+            resolve: "gatsby-remark-prismjs",
             options: {
               classPrefix: "language-",
               inlineCodeMarker: null,
@@ -60,6 +61,7 @@ module.exports = {
           "gatsby-remark-prismjs",
           "gatsby-remark-copy-linked-files",
           "gatsby-remark-smartypants",
+          "gatsby-remark-embedder",
         ],
       },
     },
@@ -93,5 +95,6 @@ module.exports = {
         pathToConfigModule: "src/utils/typography",
       },
     },
+    "gatsby-plugin-twitter",
   ],
 };
