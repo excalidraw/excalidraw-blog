@@ -88,7 +88,7 @@ const Layout = ({ location, title, children }) => {
         }}
       >
         <span>
-          © {new Date().getFullYear()} Excalidraw Blog contributors
+          © {new Date().getFullYear()} Excalidraw
           {" • "}
           <a href="https://github.com/excalidraw/excalidraw-blog/blob/master/LICENSE">
             MIT Licensed
