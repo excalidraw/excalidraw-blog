@@ -1,8 +1,10 @@
 const puppeteer = require("puppeteer");
 
 module.exports = async (url) => {
-  console.log(process.env);
-  const browser = await puppeteer.launch();
+  // disable sandbox on build env
+  const browser = await puppeteer.launch({
+    args: process.env.NOW_BUILDER ? ["--no-sandbox"] : [],
+  });
   const page = await browser.newPage();
   await page.goto(url);
   await page.click("[aria-label=Export]");
