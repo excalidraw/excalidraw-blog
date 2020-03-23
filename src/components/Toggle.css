@@ -5,7 +5,7 @@
 
 .react-toggle {
   touch-action: pan-x;
-
+  z-index: 1;
   display: inline-block;
   position: relative;
   cursor: pointer;
