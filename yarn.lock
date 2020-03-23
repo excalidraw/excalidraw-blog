@@ -5811,7 +5811,7 @@ gatsby-page-utils@^0.1.0:
     lodash "^4.17.15"
     micromatch "^3.1.10"
 
-gatsby-plugin-dark-mode@^1.1.1:
+gatsby-plugin-dark-mode@1.1.1:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/gatsby-plugin-dark-mode/-/gatsby-plugin-dark-mode-1.1.1.tgz#134040b50c0c01287ef5ab5fbbffc4669efd4c6c"
   integrity sha512-cjQbcSpNLMJ6J8w6Fd8pTraa8aBxiDrrMR6SrpYQTDvrrUxj6xdk5OeugB0RKBtSb956J7gQBtSrsUCc3dy43w==
