@@ -17,7 +17,7 @@ In a traditional website architecture, you’d save a scene by sending it to the
 
 In that world, you trust the server to contain your information but you don't have to trust the pipes in between the client and the server, because you use HTTPS to encrypt the data.
 
-[![Untrusted Network](untrusted-network.png)](https://excalidraw.com/#json=5649116445016064,yOfExolZoMhtGnysT3-LWA)
+https://excalidraw.com/#json=5649116445016064,yOfExolZoMhtGnysT3-LWA
 
 This works well unless the server gets compromised. The attacker will have access to every single drawing ever made! This is something we'd like to avoid.
 
@@ -27,13 +27,13 @@ WhatsApp popularized end-to-end encryption, a technique that allows various clie
 
 The idea is to encrypt the content before sending it to the server. The server would just store the encrypted blob and send it back to the client.
 
-[![Untrusted Server](untrusted-server.png)](https://excalidraw.com/#json=5645858175451136,8w-G0ZXiOfRYAn7VWpANxw)
+https://excalidraw.com/#json=5645858175451136,8w-G0ZXiOfRYAn7VWpANxw
 
 The biggest challenge with this architecture is how to distribute the key to encrypt the message in such a way that the server cannot see it.
 
 Thankfully, in the context of a website, we can exploit the hash part of the URL. Anything that's added after the `#` doesn't get sent to the server, but is readable from the client-side JavaScript code.
 
-[![url](url.png)](https://excalidraw.com/#json=5660568841093120,vki3y9xuEulFVHDqt-PBMw)
+https://excalidraw.com/#json=5660568841093120,vki3y9xuEulFVHDqt-PBMw
 
 ## Show me the code
 
