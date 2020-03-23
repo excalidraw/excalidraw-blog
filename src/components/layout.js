@@ -36,19 +36,33 @@ function Layout({ location, title, children }) {
     >
       <ThemeToggler>
         {({ theme, toggleTheme }) => {
-          const themeEmoji =
-            theme === "dark" ? <span>🌞</span> : <span>🌒</span>;
           return (
-            <label>
-              <input
-                type="checkbox"
-                onChange={(e) =>
-                  toggleTheme(e.target.checked ? "dark" : "light")
-                }
-                checked={theme === "dark"}
-              />{" "}
-              {themeEmoji} mode
-            </label>
+            <Toggle
+              icons={{
+                checked: (
+                  <img
+                    src={moon}
+                    width="16"
+                    height="16"
+                    role="presentation"
+                    style={{ pointerEvents: "none" }}
+                  />
+                ),
+                unchecked: (
+                  <img
+                    src={sun}
+                    width="16"
+                    height="16"
+                    role="presentation"
+                    style={{ pointerEvents: "none" }}
+                  />
+                ),
+              }}
+              checked={theme === "light"}
+              onChange={() => {
+                toggleTheme(theme === "light" ? "dark" : "light");
+              }}
+            />
           );
         }}
       </ThemeToggler>
@@ -90,11 +104,12 @@ function Layout({ location, title, children }) {
         ) : null}
       </header>
       <main>{children}</main>
+
+      <main>{children}</main>
       <footer
         style={{
           textAlign: "center",
           padding: `${rhythm(2)} 0`,
-          fontFamily: "var(--ui-font)",
         }}
       >
         © {new Date().getFullYear()} Excalidraw Blog contributors
