@@ -34,38 +34,40 @@ function Layout({ location, title, children }) {
         padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
       }}
     >
-      <ThemeToggler>
-        {({ theme, toggleTheme }) => {
-          return (
-            <Toggle
-              icons={{
-                checked: (
-                  <img
-                    src={moon}
-                    width="16"
-                    height="16"
-                    role="presentation"
-                    style={{ pointerEvents: "none" }}
-                  />
-                ),
-                unchecked: (
-                  <img
-                    src={sun}
-                    width="16"
-                    height="16"
-                    role="presentation"
-                    style={{ pointerEvents: "none" }}
-                  />
-                ),
-              }}
-              checked={theme === "light"}
-              onChange={() => {
-                toggleTheme(theme === "light" ? "dark" : "light");
-              }}
-            />
-          );
-        }}
-      </ThemeToggler>
+      <div style={{ display: "flex", justifyContent: "flex-end" }}>
+        <ThemeToggler>
+          {({ theme, toggleTheme }) => {
+            return (
+              <Toggle
+                icons={{
+                  checked: (
+                    <img
+                      src={moon}
+                      width="16"
+                      height="16"
+                      role="presentation"
+                      style={{ pointerEvents: "none" }}
+                    />
+                  ),
+                  unchecked: (
+                    <img
+                      src={sun}
+                      width="16"
+                      height="16"
+                      role="presentation"
+                      style={{ pointerEvents: "none" }}
+                    />
+                  ),
+                }}
+                checked={theme === "light"}
+                onChange={() => {
+                  toggleTheme(theme === "light" ? "dark" : "light");
+                }}
+              />
+            );
+          }}
+        </ThemeToggler>
+      </div>
       <header>
         <p style={{ fontFamily: "var(--ui-font)" }}>
           {location.pathname === rootPath ? (
