@@ -14,8 +14,8 @@ body {
 
 body.dark {
   -webkit-font-smoothing: antialiased;
-
-  --bg: #343a40;
+  /* OC Grey 9 */
+  --bg: #212529;
   --textNormal: #dbe4ff;
   --textTitle: #fff;
   --textLink: #f03e3e;
