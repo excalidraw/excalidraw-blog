@@ -61,7 +61,12 @@ module.exports = {
           "gatsby-remark-prismjs",
           "gatsby-remark-copy-linked-files",
           "gatsby-remark-smartypants",
-          "gatsby-remark-embedder",
+          {
+            resolve: "gatsby-remark-embedder",
+            options: {
+              customTransformers: [require("./src/excalidraw-embed")],
+            },
+          },
         ],
       },
     },
