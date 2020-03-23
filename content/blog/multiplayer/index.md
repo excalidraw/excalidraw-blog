@@ -9,8 +9,8 @@ The problem was that Excalidraw was built to be a fundamentally single-player ex
 
 ## The requirements
 
-* We wanted to be able to use this in our day jobs. In order to do that, it had to support [end-to-end encryption](/end-to-end-encryption/).
-* We did not want to store anything server-side. Therefore, we opted for a pseudo-P2P model, where a central server relays end-to-end encrypted messages to all the peers in the room, but does no centralized coordination.
+- We wanted to be able to use this in our day jobs. In order to do that, it had to support [end-to-end encryption](/end-to-end-encryption/).
+- We did not want to store anything server-side. Therefore, we opted for a pseudo-P2P model, where a central server relays end-to-end encrypted messages to all the peers in the room, but does no centralized coordination.
 
 ## Excalidraw's single-player architecture
 
@@ -18,13 +18,13 @@ Originally, Excalidraw kept an array of all the different drawn shapes -- called
 
 ```typescript
 interface ExcalidrawElement {
-    id: string;
-    type: "square" | "circle" | "arrow";
-    width: number;
-    height: number;
-    // ... other fields describing the shape ...
-    canvas: HTMLCanvasElement;
-    isSelected: boolean;
+  id: string;
+  type: "square" | "circle" | "arrow";
+  width: number;
+  height: number;
+  // ... other fields describing the shape ...
+  canvas: HTMLCanvasElement;
+  isSelected: boolean;
 }
 ```
 
@@ -40,17 +40,17 @@ Conceptually, we want to share the array of `ExcalidrawElement`s amongst multipl
 
 Once we started sharing state between peers, we immediately ran into issues. The first was when elements were added.
 
-In single-player Excalidraw, we would just append the element to the end of the array. In multiplayer Excalidraw, there was a race condition. If *peer A* is adding a new element while *peer B* is changing the color of an existing element, *peer C* will either lose *peer A*'s new element or *peer B*'s edits. Even worse, if *peer A* receives *peer B*'s updates while they are editing, the editor would delete the element from right under their mouse! This was clearly a bad user experience and we had to fix it before sharing this with anyone.
+In single-player Excalidraw, we would just append the element to the end of the array. In multiplayer Excalidraw, there was a race condition. If _peer A_ is adding a new element while _peer B_ is changing the color of an existing element, _peer C_ will either lose _peer A_'s new element or _peer B_'s edits. Even worse, if _peer A_ receives _peer B_'s updates while they are editing, the editor would delete the element from right under their mouse! This was clearly a bad user experience and we had to fix it before sharing this with anyone.
 
 [![Adding an element](multiplayer-adding.png)](https://excalidraw.com/#json=5068269564198912,PmL8fegqNyHb0fKxoG6YAA)
 
-To fix this, we adopted an architecture of *merging states* when we receive them. When *peer A* receives an update from *peer B*, it looks at all the `ExcalidrawElement.id`s it has locally, and all of the incoming `ExcalidrawElement.id`s, and creates a new `ExcalidrawElement` array containing the superset of both the local and incoming set.
+To fix this, we adopted an architecture of _merging states_ when we receive them. When _peer A_ receives an update from _peer B_, it looks at all the `ExcalidrawElement.id`s it has locally, and all of the incoming `ExcalidrawElement.id`s, and creates a new `ExcalidrawElement` array containing the union of both the local and incoming set.
 
 ## Dealing with conflicts: deleting elements
 
-There's a big problem with the model above. If we're always keeping the superset of all of the elements, there will be no way to delete any shapes from the canvas, as other peers would immediately resync the deleted shape and it would be merged back into the array.
+There's a big problem with the model above. If we're always keeping the union of all of the elements, there will be no way to delete any shapes from the canvas, as other peers would immediately resync the deleted shape and it would be merged back into the array.
 
-To solve this problem, we used a method called [tombstoning](https://en.wikipedia.org/wiki/Tombstone_(programming)). We added a new field to the `ExcalidrawElement` interface called `isDeleted`. Peers would set this field to `true` to delete an element, and would filter the deleted elements out of the array at runtime.
+To solve this problem, we used a method called [tombstoning](<https://en.wikipedia.org/wiki/Tombstone_(programming)>). We added a new field to the `ExcalidrawElement` interface called `isDeleted`. Peers would set this field to `true` to delete an element, and would filter the deleted elements out of the array at runtime.
 
 [![Deleting an element](multiplayer-deleting.png)](https://excalidraw.com/#json=5148123005452288,FnrZbAe4qkHQCSd2BSkUIQ)
 
@@ -63,7 +63,6 @@ There is still a problem with the model. Concurrent edits will still be lost, as
 To fix this, we introduced a new field to `ExcalidrawElement`: a **version number**. Whenever a peer edits an element -- changing its color, deleting it, resizing it, etc -- it increments the version number of that element before sending the state to its peers. Then, when we merge multiple peers state together, we throw out old versions of each element and just keep the latest ones.
 
 [![Versioning elements](multiplayer-versioning.png)](https://excalidraw.com/#json=5147452789227520,QaCOJixahz7VLHs3eG1s7g)
-
 
 This algorithm is simple but effective, and solved most of our collaboration problems.
 
