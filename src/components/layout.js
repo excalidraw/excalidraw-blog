@@ -1,8 +1,5 @@
 import React from "react";
 import { Link } from "gatsby";
-
-import logoPath from "../../content/assets/logo.png";
-
 import { ThemeToggler } from "gatsby-plugin-dark-mode";
 import Toggle from "./Toggle";
 import sun from "../assets/sun.png";
@@ -39,7 +36,7 @@ const Layout = ({ location, title, children }) => {
                       src={moon}
                       width="16"
                       height="16"
-                      role="presentation"
+                      alt="presentation"
                       style={{ pointerEvents: "none" }}
                     />
                   ),
@@ -48,7 +45,7 @@ const Layout = ({ location, title, children }) => {
                       src={sun}
                       width="16"
                       height="16"
-                      role="presentation"
+                      alt="presentation"
                       style={{ pointerEvents: "none" }}
                     />
                   ),

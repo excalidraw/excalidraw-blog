@@ -1,7 +1,7 @@
 import React from "react";
 
 import logoPath from "../../content/assets/logo.png";
-import { rhythm, scale } from "../utils/typography";
+import { rhythm } from "../utils/typography";
 
 const Excalidraw = () => {
   const logo = (
@@ -13,6 +13,7 @@ const Excalidraw = () => {
         paddingRight: rhythm(0.05),
         margin: 0,
       }}
+      alt="excalidraw"
     />
   );
   return (
