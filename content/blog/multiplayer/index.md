@@ -36,6 +36,16 @@ We actually had two parallel multiplayer implementations. One was built on top o
 
 Conceptually, we want to share the array of `ExcalidrawElement`s amongst multiple players. The first step was to refactor `ExcalidrawElement` to remove any state specific to a single player. This meant pulling out `canvas` and `isSelected` properties and storing them in a different data structure, as an `HTMLCanvasElement` can't be shared over the network, and every player will have a different selection state. Once we had these properties moved out, we started sharing the `ExcalidrawElement` array between peers.
 
+## Socket.IO
+
+When we started investigating multiplayer, we knew that WebSockets would be an important part of the this project because they enable rapid message based communication between clients without polling the server - in order to provide a smooth user experience we would need to sync very frequently. Socket.IO was a great candidate for this project because it's a popular open source library with a lot of support, it has many features relevant to our use case right out of the box, and it has some level of support even for browsers that don't have support for the [WebSocket API](https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API).
+
+Some features of Socket.IO that are particularly beneficial to multiplayer:
+
+- **Auto-reconnection:** if you get disconnected for any reason, you don't need to reload the page to see updates.
+- **Binary Support:** our encrypted messages can be passed between the client and the server back to other clients as `ArrayBuffer`, so we don't need to convert them to other data structures at any point in the transit.
+- **Room Support:** we want to limit updates only to the clients that care about them, and having a separate room per collaborative session was a straightforward way to implement that.
+
 ## Dealing with conflicts: adding new elements
 
 Once we started sharing state between peers, we immediately ran into issues. The first was when elements were added.
