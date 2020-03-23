@@ -21,9 +21,9 @@ const Layout = ({ location, title, children }) => {
     >
       <div
         style={{
-          display: "flex",
-          justifyContent: "flex-end",
-          marginBottom: "1.2em",
+          position: "fixed",
+          right: "8px",
+          top: "8px",
         }}
       >
         <ThemeToggler>
