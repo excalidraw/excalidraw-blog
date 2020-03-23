@@ -112,17 +112,21 @@ function Layout({ location, title, children }) {
           padding: `${rhythm(2)} 0`,
         }}
       >
-        © {new Date().getFullYear()} Excalidraw Blog contributors
-        {" • "}
-        <a href="https://github.com/excalidraw/excalidraw-blog/blob/master/LICENSE">
-          MIT Licensed
-        </a>
-        {" • "}
-        <a href="https://twitter.com/excalidraw">Twitter</a>
-        {" • "}
-        <a href="https://github.com/excalidraw/excalidraw-blog">View source</a>
-        {" • "}
-        <Link to="/">All posts</Link>
+        <span>
+          © {new Date().getFullYear()} Excalidraw Blog contributors
+          {" • "}
+          <a href="https://github.com/excalidraw/excalidraw-blog/blob/master/LICENSE">
+            MIT Licensed
+          </a>
+          {" • "}
+          <a href="https://twitter.com/excalidraw">Twitter</a>
+          {" • "}
+          <a href="https://github.com/excalidraw/excalidraw-blog">
+            View source
+          </a>
+          {" • "}
+          <Link to="/">All posts</Link>
+        </span>
       </footer>
     </div>
   );

@@ -13,9 +13,28 @@ body {
 body.dark {
   -webkit-font-smoothing: antialiased;
 
-  --bg: darkslategray;
-  --textNormal: rgba(255, 255, 255, 0.88);
+  --bg: #343a40;
+  --textNormal: #dbe4ff;
   --textTitle: white;
-  --textLink: yellow;
+  --textLink: #f03e3e;
   --hr: hsla(0, 0%, 100%, 0.2);
+}
+
+body.dark h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--textTitle);
+}
+
+body.dark span,
+ul,
+p {
+  color: var(--textNormal);
+}
+
+body.dark a {
+  color: var(--textLink);
 }
