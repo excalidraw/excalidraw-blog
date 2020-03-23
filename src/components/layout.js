@@ -50,7 +50,7 @@ const Layout = ({ location, title, children }) => {
                     />
                   ),
                 }}
-                checked={theme === "light"}
+                checked={theme === "dark"}
                 onChange={() => {
                   toggleTheme(theme === "light" ? "dark" : "light");
                 }}
