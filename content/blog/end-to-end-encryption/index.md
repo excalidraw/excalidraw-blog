@@ -94,7 +94,7 @@ The key that we encoded in the url is the `k` field of the `jwk` object that rep
 
 ```javascript
 const objectKey = window.location.hash.slice("#key=".length);
-const key = window.crypto.subtle.importKey(
+const key = await window.crypto.subtle.importKey(
   "jwk",
   {
     k: objectKey,
@@ -115,7 +115,7 @@ We decrypt the message, decode it to string and parse it back as JSON.
 const decrypted = await window.crypto.subtle.decrypt(
   { name: "AES-GCM", iv: new Uint8Array(12) },
   key,
-  buffer
+  encrypted
 );
 const decoded = new window.TextDecoder().decode(new Uint8Array(decrypted));
 const content = JSON.parse(decoded);
