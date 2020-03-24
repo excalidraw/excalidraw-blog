@@ -1,0 +1,4 @@
+- title: Excalidraw state management
+  date: 2020-03-20
+  excerpt: The project uses React and Typescript and is open-source. I was interested what state management library top-notch frontend engineers use for their side projects nowdays. Is it Redux? Redux Toolkit? MobX? Context API?
+  url: https://dev.to/karataev/excalidraw-state-management-1842
