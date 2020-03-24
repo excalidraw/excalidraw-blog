@@ -7,6 +7,8 @@ yarn
 yarn start
 ```
 
+Visit [`localhost:8000`](http://localhost:8000) to test it.
+
 ## Writing a Blog Post
 
 - Create a new folder inside the `content/blog/`
