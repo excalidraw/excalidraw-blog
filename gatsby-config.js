@@ -72,6 +72,7 @@ module.exports = {
     },
     "gatsby-plugin-dark-mode",
     "gatsby-transformer-sharp",
+    "gatsby-plugin-sitemap",
     "gatsby-plugin-sharp",
     {
       resolve: "gatsby-plugin-google-analytics",
@@ -101,5 +102,6 @@ module.exports = {
       },
     },
     "gatsby-plugin-twitter",
+    "gatsby-plugin-zeit-now",
   ],
 };
