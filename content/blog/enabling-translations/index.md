@@ -3,7 +3,7 @@ title: Enabling Translations
 date: 2020-03-22
 ---
 
-From the early days people asked us the [Excalidraw](https://excalidraw.com) to be translatable to other languages and thanks to our contributors that requst landed pretty fast.
+From the early days people asked for [Excalidraw](https://excalidraw.com) to be translatable to other languages. Once we implemented Crowdin for translation, the translations came in pretty quickly:
 
 <!-- end -->
 
