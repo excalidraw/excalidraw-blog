@@ -5888,6 +5888,11 @@ gatsby-plugin-typography@2.4.0:
   dependencies:
     "@babel/runtime" "^7.8.7"
 
+gatsby-plugin-zeit-now@0.2.0:
+  version "0.2.0"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-zeit-now/-/gatsby-plugin-zeit-now-0.2.0.tgz#1ec1052fd94788df12f2fc469ff0587046627454"
+  integrity sha512-opnQxqvnQkKsJDcwoq7Hounzk45E1ojNSfP0Au6QsNKvahmjTzpbTJpO5uXRbmGpe1TQw8ZizXzZD4l8ZdFcqw==
+
 gatsby-react-router-scroll@^2.2.0:
   version "2.2.0"
   resolved "https://registry.yarnpkg.com/gatsby-react-router-scroll/-/gatsby-react-router-scroll-2.2.0.tgz#1d5ca513ca2daae8c01dbb2023ca8d59b8c5f660"
