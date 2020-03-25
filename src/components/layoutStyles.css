@@ -1,0 +1,41 @@
+/* global.css */
+
+body {
+  --bg: #fff;
+  /* OC Gray 9 */
+  --textNormal: #212529;
+  --textTitle: #212529;
+  /* OC Blue 6 */
+  --textLink: #228be6;
+  --hr: hsla(0, 0%, 0%, 0.2);
+
+  background-color: var(--bg);
+}
+
+body.dark {
+  -webkit-font-smoothing: antialiased;
+  /* OC Grey 9 */
+  --bg: #212529;
+  --textNormal: #dbe4ff;
+  --textTitle: #fff;
+  --hr: hsla(0, 0%, 100%, 0.2);
+}
+
+body.dark h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--textTitle);
+}
+
+body.dark span,
+ul,
+p {
+  color: var(--textNormal);
+}
+
+body.dark a {
+  color: var(--textLink);
+}
