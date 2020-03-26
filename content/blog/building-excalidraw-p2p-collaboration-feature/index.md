@@ -1,5 +1,5 @@
 ---
-title: Building Excalidraw's P2P collaboration feature
+title: Building Excalidraw's P2P Collaboration Feature
 date: 2020-03-26
 ---
 
