@@ -11,7 +11,7 @@ From the early days people asked for [Excalidraw](https://excalidraw.com) to be 
 
 For those not familiar, [Crowdin](https://crowdin.com) is a community based translation platform and we wouldn't be able to cope with the demand without it. It's pretty magical.
 
-The amount of work we end up doing on our end is fairly minimal and after we implemented our own [custom implementation](https://github.com/excalidraw/excalidraw/pull/638/files) of i18n support, we left with adding every new string into [`en.json`](https://github.com/excalidraw/excalidraw/blob/master/src/locales/en.json).
+The amount of work we end up doing on our end is fairly minimal and after we implemented our own [custom implementation](https://github.com/excalidraw/excalidraw/pull/638/files) of i18n support, we're only left with adding new strings into [`en.json`](https://github.com/excalidraw/excalidraw/blob/master/src/locales/en.json).
 
 The [rest](https://github.com/excalidraw/excalidraw/tree/master/src/locales) is handled by Crowdin and that's why we love it. A few notable features:
 
