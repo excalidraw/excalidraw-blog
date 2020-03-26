@@ -26,4 +26,6 @@ The [rest](https://github.com/excalidraw/excalidraw/tree/master/src/locales) is 
 
 So now anyone can join and contribute to our translations!
 
+---
+
 Go ahead and [join the project now](https://crowdin.com/project/excalidraw) if you want to help. If the languages you are looking for are not on the list, please [submit an issue](https://github.com/excalidraw/excalidraw/issues/new) for the request and we'll add it for you.
