@@ -5,6 +5,8 @@ date: 2020-03-28
 
 [Excalidraw](https://www.excalidraw.com/) started as a virtual tool to draw diagrams but a lot of people started using it to replace physical whiteboards. In this post we'll walk through many aspects of physical whiteboards that do not make sense to translate as is in the virtual world.
 
+<!-- end -->
+
 ## Predefined Shapes
 
 Hand-free drawing with a mouse or trackpad is hard! For example, here is me trying to write the word "whiteboard". It took me 25 seconds and the result looks okay at best.
