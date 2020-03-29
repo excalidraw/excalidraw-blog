@@ -66,7 +66,7 @@ To solve this problem, we used a method called [tombstoning](<https://en.wikiped
 
 https://excalidraw.com/#json=5148123005452288,FnrZbAe4qkHQCSd2BSkUIQ
 
-The problem with tombstoning is that the size of your list grows forever, as nothing is every removed from the array. We don't consider this a problem as a shared whiteboard session will only contain a few dozen shapes, but we do remove any element with `isDeleted` set to true when saving to persistent storage, so long-lived drawings where this may become a problem are cleaned up.
+The problem with tombstoning is that the size of your list grows forever, as nothing is ever removed from the array. We don't consider this a problem as a shared whiteboard session will only contain a few dozen shapes, but we do remove any element with `isDeleted` set to true when saving to persistent storage, so long-lived drawings where this may become a problem are cleaned up.
 
 ## Dealing with conflicts: merging concurrent edits
 
