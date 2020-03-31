@@ -81,17 +81,15 @@ const Layout = ({ location, title, children }) => {
         <span>
           © {new Date().getFullYear()} Excalidraw
           {" • "}
-          <a href="https://github.com/excalidraw/excalidraw-blog/blob/master/LICENSE">
-            MIT Licensed
-          </a>
+          <Link to="/">Blog</Link>
+          {" • "}
+          <a href="https://howto.excalidraw.com">How to</a>
           {" • "}
           <a href="https://twitter.com/excalidraw">Twitter</a>
           {" • "}
           <a href="https://github.com/excalidraw/excalidraw-blog">
             View source
           </a>
-          {" • "}
-          <Link to="/">All posts</Link>
         </span>
       </footer>
     </div>

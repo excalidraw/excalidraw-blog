@@ -19,7 +19,6 @@ function BlogPostTemplate({ data, pageContext: { previous, next }, location }) {
       <h1>{post.frontmatter.title}</h1>
       <p
         style={{
-          ...scale(-1 / 5),
           marginBottom: rhythm(1),
           fontFamily: "var(--ui-font)",
         }}
