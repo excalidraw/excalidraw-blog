@@ -11,7 +11,7 @@ function BlogIndex({ data, location }) {
 
   return (
     <Layout location={location} title={title}>
-      <SEO title="All posts" />
+      <SEO />
       {posts.map(({ node }) => {
         const title = node.frontmatter.title || node.fields.slug;
         return (
@@ -21,7 +21,7 @@ function BlogIndex({ data, location }) {
                 marginBottom: rhythm(1 / 4),
               }}
             >
-              <Link style={{ boxShadow: `none` }} to={node.fields.slug}>
+              <Link style={{ boxShadow: "none" }} to={node.fields.slug}>
                 {title}
               </Link>
             </h3>
