@@ -69,16 +69,7 @@ const Layout = ({ location, title, children }) => {
           <Excalidraw />
         </div>
         <span style={{ clear: "both" }} />
-        {location.pathname === rootPath ? (
-          <h1
-            style={{
-              ...scale(1.2),
-              marginTop: 0,
-            }}
-          >
-            {title}
-          </h1>
-        ) : null}
+        {location.pathname === rootPath ? <h1>{title}</h1> : null}
       </header>
       <main>{children}</main>
       <footer

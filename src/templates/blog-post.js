@@ -16,14 +16,7 @@ function BlogPostTemplate({ data, pageContext: { previous, next }, location }) {
   return (
     <Layout location={location} title={siteTitle}>
       <SEO title={post.frontmatter.title} description={post.excerpt} />
-      <h1
-        style={{
-          marginTop: rhythm(1),
-          marginBottom: 0,
-        }}
-      >
-        {post.frontmatter.title}
-      </h1>
+      <h1>{post.frontmatter.title}</h1>
       <p
         style={{
           ...scale(-1 / 5),
