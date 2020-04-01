@@ -9,7 +9,9 @@ function BlogPostTemplate({ data, pageContext: { previous, next }, location }) {
   const post = data.markdownRemark;
   const siteTitle = data.site.siteMetadata.title;
   const slug = post.fields.slug.slice(1, post.fields.slug.length - 1);
-  const editUrl = `https://github.com/excalidraw/excalidraw-blog/edit/master/content/blog/${slug}/index.md`;
+  const editUrl = `https://github.com/excalidraw/excalidraw-blog/edit/master/${post.fileAbsolutePath.substr(
+    post.fileAbsolutePath.indexOf("content/blog")
+  )}`;
   const discussUrl = `https://mobile.twitter.com/search?q=${encodeURIComponent(
     `https://blog.excalidraw.com${post.fields.slug}`
   )}`;
@@ -18,7 +20,6 @@ function BlogPostTemplate({ data, pageContext: { previous, next }, location }) {
       <SEO title={post.frontmatter.title} description={post.excerpt} />
       <h1
         style={{
-          marginTop: rhythm(1),
           marginBottom: 0,
         }}
       >
@@ -26,7 +27,6 @@ function BlogPostTemplate({ data, pageContext: { previous, next }, location }) {
       </h1>
       <p
         style={{
-          ...scale(-1 / 5),
           marginBottom: rhythm(1),
           fontFamily: "var(--ui-font)",
         }}
@@ -95,6 +95,7 @@ export const pageQuery = graphql`
       id
       excerpt
       html
+      fileAbsolutePath
       frontmatter {
         title
         date(formatString: "MMMM DD, YYYY")

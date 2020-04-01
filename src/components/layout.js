@@ -69,16 +69,7 @@ const Layout = ({ location, title, children }) => {
           <Excalidraw />
         </div>
         <span style={{ clear: "both" }} />
-        {location.pathname === rootPath ? (
-          <h1
-            style={{
-              ...scale(1.2),
-              marginTop: 0,
-            }}
-          >
-            {title}
-          </h1>
-        ) : null}
+        {location.pathname === rootPath ? <h1>{title}</h1> : null}
       </header>
       <main>{children}</main>
       <footer
@@ -90,17 +81,17 @@ const Layout = ({ location, title, children }) => {
         <span>
           © {new Date().getFullYear()} Excalidraw
           {" • "}
-          <a href="https://github.com/excalidraw/excalidraw-blog/blob/master/LICENSE">
-            MIT Licensed
-          </a>
+          <Link to="/">Blog</Link>
+          {" • "}
+          <a href="https://howto.excalidraw.com">How to</a>
           {" • "}
           <a href="https://twitter.com/excalidraw">Twitter</a>
           {" • "}
-          <a href="https://github.com/excalidraw/excalidraw-blog">
-            View source
-          </a>
+          <a href="https://github.com/excalidraw/excalidraw-blog">Source</a>
           {" • "}
-          <Link to="/">All posts</Link>
+          <a href="https://github.com/excalidraw/excalidraw-blog/blob/master/LICENSE">
+            MIT Licensed
+          </a>
         </span>
       </footer>
     </div>
