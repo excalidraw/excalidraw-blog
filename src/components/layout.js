@@ -87,8 +87,10 @@ const Layout = ({ location, title, children }) => {
           {" • "}
           <a href="https://twitter.com/excalidraw">Twitter</a>
           {" • "}
-          <a href="https://github.com/excalidraw/excalidraw-blog">
-            View source
+          <a href="https://github.com/excalidraw/excalidraw-blog">Source</a>
+          {" • "}
+          <a href="https://github.com/excalidraw/excalidraw-blog/blob/master/LICENSE">
+            MIT Licensed
           </a>
         </span>
       </footer>
