@@ -12,16 +12,22 @@ module.exports = async (url) => {
   const frame = await page.mainFrame();
   const result = await frame.evaluate(
     () =>
-      new Promise((resolve) => {
-        const button = document.querySelector('[aria-label="Export to SVG"]');
-        const link = document.createElement("a");
-        delete window.chooseFileSystemEntries;
-        document.createElement = () => link;
-        link.click = () =>
-          fetch(link.href)
-            .then((res) => res.text())
-            .then(resolve);
-        button.click();
+      new Promise((resolve, error) => {
+        try {
+          const button = document.querySelector('[aria-label="Export to SVG"]');
+          const link = document.createElement("a");
+          delete window.chooseFileSystemEntries;
+          document.createElement = () => link;
+          link.click = () => {
+            fetch(link.href)
+              .then((res) => res.text())
+              .then(resolve)
+              .catch(error);
+          };
+          button.click();
+        } catch (e) {
+          error(e);
+        }
       })
   );
   await browser.close();
