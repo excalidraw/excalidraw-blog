@@ -12,7 +12,7 @@ module.exports = async (url) => {
   const frame = await page.mainFrame();
   const result = await frame.evaluate(
     () =>
-      new Promise((resolve, rejec) => {
+      new Promise((resolve, reject) => {
         try {
           delete window.chooseFileSystemEntries;
           const reader = new FileReader();
@@ -28,6 +28,5 @@ module.exports = async (url) => {
       })
   );
   await browser.close();
-  console.log("got result", result.slice(0, 100));
   return result;
 };
