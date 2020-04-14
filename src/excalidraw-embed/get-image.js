@@ -28,5 +28,6 @@ module.exports = async (url) => {
       })
   );
   await browser.close();
+  console.log("got result", result.slice(0, 100));
   return result;
 };
