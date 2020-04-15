@@ -47,7 +47,7 @@ export const languages = [
 
 The `t` function is pretty simple, where it splits the path by `.` and looks up both the current and fallback languages.
 
-```js
+```ts
 // t("labels.paste")
 //   + current  {"labels": {"paste": "Coller"}}
 //   + fallback {"labels": {"paste": "Paste"}}
