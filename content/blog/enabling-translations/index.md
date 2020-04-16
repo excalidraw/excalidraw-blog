@@ -71,7 +71,7 @@ Finally the last piece of the puzzle is to be able to change the language. We op
 
 At that point, if you wanted to contribute, you need to edit one of those JSON files on GitHub and send a pull request. While this process works, it was tedious to manage. We started adopting [Crowdin](https://crowdin.com) which dramatically improved the whole process.
 
-The initial setup was easy, you create a new project on Crowdin, upload your `en.json` file and connect a GitHub account. Then, any time a translation is added, a pull request is created/updated with the json files being modified.
+The initial setup was easy, you create a new project on Crowdin, upload your `en.json` file and connect a GitHub account. Then, any time a translation is added, a pull request is created/updated with the JSON files being modified.
 
 [![Pull Request](pull-request.png)](https://github.com/excalidraw/excalidraw/pull/1416/commits)
 
