@@ -32,7 +32,7 @@ The translated strings are stored as JSON in a file per language like this.
 }
 ```
 
-We started using a fully fledged internalization library but unfortunately it was a massive dependency and caused multiple React re-renders on startup and added one long round-trip. So instead [we rolled our own](https://github.com/excalidraw/excalidraw/blob/0ffbde77ac3c10b04b05328a793e753ed33ed736/src/i18n.ts) in less than 100 lines of code.
+We started using a fully fledged internalization library but unfortunately it was a massive dependency and caused multiple React re-renders on startup and added one long round-trip. So instead [we rolled our own](https://github.com/excalidraw/excalidraw/blob/master/src/i18n.ts) in less than 100 lines of code.
 
 Since we don't have that many strings, we decided to bundle all the languages by default to avoid an expensive roundtrip during startup if you're not using English. For this we use `require`.
 
