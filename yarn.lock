@@ -6070,10 +6070,10 @@ gatsby-page-utils@^0.1.4:
     lodash "^4.17.15"
     micromatch "^3.1.10"
 
-gatsby-plugin-dark-mode@1.1.1:
-  version "1.1.1"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-dark-mode/-/gatsby-plugin-dark-mode-1.1.1.tgz#134040b50c0c01287ef5ab5fbbffc4669efd4c6c"
-  integrity sha512-cjQbcSpNLMJ6J8w6Fd8pTraa8aBxiDrrMR6SrpYQTDvrrUxj6xdk5OeugB0RKBtSb956J7gQBtSrsUCc3dy43w==
+gatsby-plugin-dark-mode@1.1.2:
+  version "1.1.2"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-dark-mode/-/gatsby-plugin-dark-mode-1.1.2.tgz#9bab271da9f913cd64687a2b2d85b1d62a3605d8"
+  integrity sha512-kq/7/KSIgyYxolSqLxXfmcC/iBU98XpRGcIOaa3bjjl8Tb0WDYwfa45zABx1XNjB0YecWdgniss+kqmeAu04GA==
   dependencies:
     prop-types "^15.5.7"
 
