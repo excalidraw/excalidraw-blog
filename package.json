@@ -37,7 +37,7 @@
   "description": "All the news about Excalidraw",
   "devDependencies": {
     "husky": "4.2.5",
-    "lint-staged": "10.0.10",
+    "lint-staged": "10.2.7",
     "prettier": "2.0.4"
   },
   "husky": {
