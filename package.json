@@ -27,7 +27,7 @@
     "puppeteer": "3.0.4",
     "react": "16.13.1",
     "react-dom": "16.13.1",
-    "react-helmet": "5.2.1",
+    "react-helmet": "6.1.0",
     "react-typography": "0.16.19",
     "typeface-merriweather": "0.0.72",
     "typeface-montserrat": "0.0.75",
