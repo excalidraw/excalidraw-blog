@@ -2,8 +2,7 @@ module.exports = {
   siteMetadata: {
     title: "Excalidraw Blog",
     author: "Christopher Chedeau",
-    description:
-      "Excalidraw is a whiteboard tool that lets you easily sketch diagrams that have a hand-drawn feel to them.",
+    description: "Virtual whiteboard for sketching hand-drawn like diagrams",
     siteUrl: "https://blog.excalidraw.com",
     social: {
       twitter: "excalidraw",
