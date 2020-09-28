@@ -21,7 +21,7 @@
     "gatsby-remark-responsive-iframe": "2.4.12",
     "gatsby-remark-smartypants": "2.3.2",
     "gatsby-source-filesystem": "2.3.10",
-    "gatsby-transformer-remark": "2.8.14",
+    "gatsby-transformer-remark": "2.8.36",
     "gatsby-transformer-sharp": "2.5.14",
     "prismjs": "1.21.0",
     "puppeteer": "3.0.4",
