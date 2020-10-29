@@ -1,12 +1,12 @@
-import React from "react";
 import { Link } from "gatsby";
 import { ThemeToggler } from "gatsby-plugin-dark-mode";
-import Toggle from "./Toggle";
-import sun from "../assets/sun.png";
+import React from "react";
 import moon from "../assets/moon.png";
-import { rhythm, scale } from "../utils/typography";
-import "./layoutStyles.css";
+import sun from "../assets/sun.png";
+import { rhythm } from "../utils/typography";
 import Excalidraw from "./excalidraw";
+import "./layoutStyles.css";
+import Toggle from "./Toggle";
 
 const Layout = ({ location, title, children }) => {
   const rootPath = `${__PATH_PREFIX__}/`;

@@ -3,9 +3,8 @@
  * Copied From Dan Abramov's bloghttps://raw.githubusercontent.com/gaearon/overreacted.io/f08afa0bbdf7612e855e7ac6aabf47f7f7ab8a04/src/components/Toggle.css
  **/
 
-import "./Toggle.css";
-
 import React, { PureComponent } from "react";
+import "./Toggle.css";
 
 // Copyright 2015-present Drifty Co.
 // http://drifty.com/

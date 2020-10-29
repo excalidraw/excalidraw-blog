@@ -1,14 +1,12 @@
+import { graphql, Link } from "gatsby";
 import React from "react";
-import { Link, graphql } from "gatsby";
-
 import Layout from "../components/layout";
 import SEO from "../components/seo";
-import { rhythm, scale } from "../utils/typography";
+import { rhythm } from "../utils/typography";
 
 function BlogPostTemplate({ data, pageContext: { previous, next }, location }) {
   const post = data.markdownRemark;
   const siteTitle = data.site.siteMetadata.title;
-  const slug = post.fields.slug.slice(1, post.fields.slug.length - 1);
   const editUrl = `https://github.com/excalidraw/excalidraw-blog/edit/master/${post.fileAbsolutePath.substr(
     post.fileAbsolutePath.indexOf("content/blog")
   )}`;
@@ -41,6 +39,18 @@ function BlogPostTemplate({ data, pageContext: { previous, next }, location }) {
       </p>
       <div dangerouslySetInnerHTML={{ __html: post.html }} />
       <p style={{ fontFamily: "var(--ui-font)", marginBottom: 0 }}>
+        {post.frontmatter.author ? (
+          <>
+            by{" "}
+            {post.frontmatter.link ? (
+              <a href={post.frontmatter.link}>{post.frontmatter.author}</a>
+            ) : (
+              <>{post.frontmatter.author}</>
+            )}
+            {" • "}
+          </>
+        ) : null}
+
         <a href={discussUrl}>Discuss on Twitter</a>
         {" • "}
         <a href={editUrl}>Edit on GitHub</a>
@@ -100,6 +110,8 @@ export const pageQuery = graphql`
         title
         date(formatString: "MMMM DD, YYYY")
         note
+        author
+        link
       }
       fields {
         slug

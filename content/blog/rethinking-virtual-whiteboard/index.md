@@ -1,6 +1,8 @@
 ---
 title: Rethinking Virtual Whiteboard
 date: 2020-03-28
+author: vjeux
+link: https://twitter.com/vjeux
 ---
 
 [Excalidraw](https://www.excalidraw.com/) started as a virtual tool to draw diagrams but a lot of people started using it to replace physical whiteboards. In this post we'll walk through many aspects of physical whiteboards that do not make sense to translate as is in the virtual world.
