@@ -13,7 +13,7 @@ One of the qualities of Excalidraw is its simplicity. Even though we have the op
 
 I remember it was my very first [pull request](https://github.com/excalidraw/excalidraw/pull/378) to Excalidraw to add the [Open Colors](https://yeun.github.io/open-color/) color scheme. I've known about this color scheme for a while now, but never found a great project to actually use it on. Excalidraw was a perfect fit.
 
-They say a picture is worth a thousand words! I don't know what makes this color scheme so great, but what I know is that anything in Excalidraw is making it even better. (Click on the image below to open it in Excalidraw.)
+They say a picture is worth a thousand words. I don't know what makes this color scheme so great, but something about Excalidraw is making it look even better. (Click on the image below to open it in Excalidraw.)
 
 https://excalidraw.com/#json=5120999011909632,Y57VloPaA1LSKT4-1NTgNA
 
