@@ -5,7 +5,7 @@ author: Lipis
 link: https://twitter.com/lipis
 ---
 
-The biggest attribute of Excalidraw it's the simplicity. So even though we have the option to insert any color (using the [HEX](https://www.google.com/search?q=%23c0ffee&hl=en) value) we have just the _right amount_ (15) of the default colors, in three different shades.
+One of the qualities of Excalidraw is its simplicity. Even though we have the option to use any color of the [spectrum](https://www.google.com/search?q=%23c0ffee&hl=en), we have decided to limit our palette to a curated set of 15 colors in three different shades.
 
 <!-- end -->
 
