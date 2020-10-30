@@ -21,7 +21,7 @@ Eventually we loved these colors so much, that we installed their [npm package](
 
 Here is how we are actually using them in [colors.ts](https://github.com/excalidraw/excalidraw/blob/master/src/colors.ts) in our codebase.
 
-Open Colors are coming with MIT License, which means you can use it anywhere you like without restrictions.
+Open Colors come with MIT License, which means you can use it anywhere you like without restrictions.
 
 ---
 
