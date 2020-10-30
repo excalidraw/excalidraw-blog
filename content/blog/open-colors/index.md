@@ -17,7 +17,7 @@ They say a picture is worth a thousand words! I don't know what makes this color
 
 https://excalidraw.com/#json=5120999011909632,Y57VloPaA1LSKT4-1NTgNA
 
-Eventually we loved these colors so much, that we installed their [npm package](https://www.npmjs.com/package/open-color) and we are now using it everywhere. If you spot a color that is not an open color, sumbit a PR :)
+Eventually we decided to install their [npm package](https://www.npmjs.com/package/open-color) so we don't have to hand-code every value. We use it both in [CSS](https://github.com/excalidraw/excalidraw/blob/master/src/css/_variables.scss), and [TypeScript](https://github.com/excalidraw/excalidraw/blob/master/src/colors.ts).
 
 Here is how we are actually using them in [colors.ts](https://github.com/excalidraw/excalidraw/blob/master/src/colors.ts) in our codebase.
 
