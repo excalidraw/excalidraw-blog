@@ -23,4 +23,4 @@ Open Colors come with MIT License, which means you can use it anywhere you like 
 
 ---
 
-**P.S.** We owe a huge thanks to the [Open Colors](https://yeun.github.io/open-color/) creator, as we trully believe that part of Exaclidraw's success is these colors as well :)
+**P.S.** Thanks to [@heeyeun](https://twitter.com/_heeyeun) and the contributors for creating and maintaining this awesome project.
