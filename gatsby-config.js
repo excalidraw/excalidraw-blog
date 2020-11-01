@@ -62,9 +62,9 @@ module.exports = {
           "gatsby-remark-smartypants",
           {
             resolve: "gatsby-remark-embedder",
-            // options: {
-            //   customTransformers: [require("gatsby-embedder-excalidraw")],
-            // },
+            options: {
+              customTransformers: [require("gatsby-embedder-excalidraw")],
+            },
           },
         ],
       },
