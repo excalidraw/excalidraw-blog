@@ -9,11 +9,11 @@ One of the qualities of Excalidraw is its simplicity. Even though we have the op
 
 <!-- end -->
 
-The [Open Colors](https://yeun.github.io/open-color/) scheme has a total of 13 colors with 10 different brightness (0-9). For the canvas background we chose the lightest of the values (0), for the strokes the darkest one (9) and for the background fill of the elements slightly lighter than the stroke, we went with the 6th (or the 7th, dependas on how you count them).
+The [Open Colors](https://yeun.github.io/open-color/) color scheme has a total of 13 colors with 10 different brightness (0-9). For the canvas background we chose the lightest of the values (0), for the strokes the darkest one (9) and for the background fill of the elements slightly lighter than the stroke, we went with the 6th (or the 7th, dependas on how you count them).
 
 ![Color pickers](color-pickers.png)
 
-I remember it was my very first [pull request](https://github.com/excalidraw/excalidraw/pull/378) to Excalidraw to add the [Open Colors](https://yeun.github.io/open-color/) color scheme. I've known about this color scheme for a while now, but never found a great project to actually use it on. Excalidraw was a perfect fit.
+I remember it was my very first [pull request](https://github.com/excalidraw/excalidraw/pull/378) to Excalidraw to add the **Open Colors** color scheme. I've known about this color scheme for a while now, but never found a great project to actually use it on. Excalidraw was a perfect fit.
 
 They say a picture is worth a thousand words. I don't know what makes this color scheme so great, but something about Excalidraw is making it look even better. (Click on the image below to open it in Excalidraw.)
 
