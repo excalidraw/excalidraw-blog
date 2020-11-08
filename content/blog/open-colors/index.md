@@ -1,6 +1,6 @@
 ---
 title: Open Colors
-date: 2020-11-03
+date: 2020-11-09
 author: Lipis
 link: https://twitter.com/lipis
 ---
@@ -9,7 +9,7 @@ One of the qualities of Excalidraw is its simplicity. Even though we have the op
 
 <!-- end -->
 
-The [Open Colors](https://yeun.github.io/open-color/) color scheme has a total of 13 colors with 10 different brightness (0-9). For the canvas background we chose the lightest of the values (0), for the strokes the darkest one (9) and for the background fill of the elements slightly lighter than the stroke, we went with the 6th (or the 7th, dependas on how you count them).
+The [Open Colors](https://yeun.github.io/open-color/) color scheme has a total of 13 colors with 10 different brightnesses (0-9). For the canvas background we chose the lightest of the values (0), for the strokes the darkest one (9) and for the background fill of the elements slightly lighter than the stroke, we went with the 6th (or the 7th, dependas on how you count them).
 
 ![Color pickers](color-pickers.png)
 
