@@ -29,7 +29,7 @@ function BlogPostTemplate({ data, pageContext: { previous, next }, location }) {
           fontFamily: "var(--ui-font)",
         }}
       >
-        {post.frontmatter.date}
+        <strong>{post.frontmatter.date}</strong>
         {post.frontmatter.note ? (
           <>
             {" • "}
