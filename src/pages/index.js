@@ -25,11 +25,16 @@ function BlogIndex({ data, location }) {
                 {title}
               </Link>
             </h3>
-            <p>
+            <p style={{ marginBottom: "4px" }}>
               <strong>{node.frontmatter.date}</strong>
-              {" — "}
-              <span style={{ opacity: 0.75 }}>{node.excerpt}</span>
+              {node.frontmatter.author && node.frontmatter.link && (
+                <span style={{ opacity: 0.75, fontStyle: "italic" }}>
+                  {", by "}
+                  <a href={node.frontmatter.link}>{node.frontmatter.author}</a>
+                </span>
+              )}
             </p>
+            <p style={{ opacity: 0.75 }}>{node.excerpt}</p>
           </div>
         );
       })}
@@ -57,6 +62,8 @@ export const pageQuery = graphql`
           frontmatter {
             date(formatString: "MMMM DD, YYYY")
             title
+            author
+            link
           }
         }
       }

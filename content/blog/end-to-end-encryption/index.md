@@ -1,6 +1,8 @@
 ---
 title: End-to-End Encryption in the Browser
 date: 2020-03-21
+author: vjeux
+link: https://twitter.com/vjeux
 ---
 
 [Excalidraw](https://excalidraw.com/) is a whiteboard tool that lets you easily sketch diagrams that have a hand-drawn feel to them. It is very handy to dump your thoughts many of which are sensitive: designs for new features not yet released, interview questions, org charts...
