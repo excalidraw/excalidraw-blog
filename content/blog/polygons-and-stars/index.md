@@ -11,7 +11,7 @@ What makes Excalidraw so great is the simplicity and of course we don't want to 
 
 The first implementation was made by [Pete Hunt](https://github.com/excalidraw/excalidraw/pull/1787) a few months back. So by now you might already know how you can easily start adding shapes to the library that you use often for later use in different diagrams (press `9` or shoose it from the top menu). Afterwards you can export it and share with others or open an existing library that you found somewhere else.
 
-Another way to import is to upload your library somewhere (like [gist](http://gist.github.com/)) and by getting the link to the raw file you can use the following link to add the shapes directly into your library like this:
+Another way to import is to upload your library somewhere (like [gist](http://gist.github.com/)) and then getting the link to the raw file you can use the following URL to add the shapes directly into your library like this:
 
 ```
 https://excalidraw.com/?addLibrary=<link-to-excalidrawlib>
@@ -23,11 +23,11 @@ As an example you can add [polygons](https://excalidraw.com/?addLibrary=https://
 
 Here is how the look and what is going to be imported and as awlays you can click the images and open the scenes in Excalidraw.
 
-https://excalidraw.com/#json=5666429063921664,h0yDjfkDndzI10H-OnNEcA
+#### https://excalidraw.com/#json=5666429063921664,h0yDjfkDndzI10H-OnNEcA
 
 ---
 
-https://excalidraw.com/#json=5394737318068224,XZC0jx3WBYiFI6mcGofmIQ
+#### https://excalidraw.com/#json=5394737318068224,XZC0jx3WBYiFI6mcGofmIQ
 
 ---
 
