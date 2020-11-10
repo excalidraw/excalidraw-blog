@@ -1,6 +1,8 @@
 ---
 title: Enabling Translations
 date: 2020-04-16
+author: Lipis
+link: https://twitter.com/lipis
 ---
 
 From the early days people asked for [Excalidraw](https://excalidraw.com) to be translated to other languages. Translation infrastructure and community maintenance have historically been a pain to maintain. Thankfully, with projects like [Crowdin](https://crowdin.com/project/excalidraw) and [i18next-browser-languagedetector](https://github.com/i18next/i18next-browser-languageDetector), Excalidraw is now translated in 20 languages and the whole process has been very low maintenance.

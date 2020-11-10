@@ -150,3 +150,10 @@ pre[class*="language-"] {
 .token.entity {
   cursor: help;
 }
+
+
+svg {
+  max-width: 100%;
+  height: initial;
+  width: initial;
+}
