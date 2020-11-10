@@ -1,6 +1,6 @@
 ---
 title: Open Colors
-date: 2020-11-09
+date: 2020-11-10
 note: Part of a series where we pick apart various libraries and projects we use on Excalidraw.
 author: Lipis
 link: https://twitter.com/lipis
