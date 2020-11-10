@@ -1,5 +1,5 @@
 ---
-title: "How to use the library: Polygons and Stars"
+title: How to use the library; Polygons and Stars
 date: 2020-11-14
 author: Lipis
 link: https://twitter.com/lipis
