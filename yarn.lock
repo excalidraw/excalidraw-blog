@@ -6788,10 +6788,10 @@ gatsby-remark-prismjs@3.6.0:
     parse-numeric-range "^0.0.2"
     unist-util-visit "^1.4.1"
 
-gatsby-remark-responsive-iframe@2.4.17:
-  version "2.4.17"
-  resolved "https://registry.yarnpkg.com/gatsby-remark-responsive-iframe/-/gatsby-remark-responsive-iframe-2.4.17.tgz#8e86163d5d644ee764328e764769e9ab4152a75c"
-  integrity sha512-j7EWCGknU4PiLTp2AqO3rAqvXwHiIF77IWV1/R75QLoEYI8/cqFdMSl7v6bT5oQ2J0ghjlrPVzGo0xF1ybj7ZA==
+gatsby-remark-responsive-iframe@2.5.0:
+  version "2.5.0"
+  resolved "https://registry.yarnpkg.com/gatsby-remark-responsive-iframe/-/gatsby-remark-responsive-iframe-2.5.0.tgz#9c0eaeb23b794225e07397d3f31cc8fa0a8afeaf"
+  integrity sha512-uP6gSu8J5hhskp8hJ5tqNGNzWIeUWjZPMKFsr82lMDRJkG52qVxGHSo9DB9AjPEVGSTBKpc9UDyaCOsGrorHMg==
   dependencies:
     "@babel/runtime" "^7.11.2"
     cheerio "^1.0.0-rc.3"
@@ -14784,16 +14784,7 @@ unist-util-visit@^1.0.0, unist-util-visit@^1.1.0, unist-util-visit@^1.4.1:
   dependencies:
     unist-util-visit-parents "^2.0.0"
 
-unist-util-visit@^2.0.0, unist-util-visit@^2.0.2:
-  version "2.0.2"
-  resolved "https://registry.yarnpkg.com/unist-util-visit/-/unist-util-visit-2.0.2.tgz#3843782a517de3d2357b4c193b24af2d9366afb7"
-  integrity sha512-HoHNhGnKj6y+Sq+7ASo2zpVdfdRifhTgX2KTU3B/sO/TTlZchp7E3S4vjRzDJ7L60KmrCPsQkVK3lEF3cz36XQ==
-  dependencies:
-    "@types/unist" "^2.0.0"
-    unist-util-is "^4.0.0"
-    unist-util-visit-parents "^3.0.0"
-
-unist-util-visit@^2.0.3:
+unist-util-visit@^2.0.0, unist-util-visit@^2.0.2, unist-util-visit@^2.0.3:
   version "2.0.3"
   resolved "https://registry.yarnpkg.com/unist-util-visit/-/unist-util-visit-2.0.3.tgz#c3703893146df47203bb8a9795af47d7b971208c"
   integrity sha512-iJ4/RczbJMkD0712mGktuGpm/U4By4FfDonL7N/9tATGIF4imikjOuagyMY53tnZq3NP6BcmlrHhEKAfGWjh7Q==
