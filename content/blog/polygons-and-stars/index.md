@@ -9,7 +9,7 @@ What makes Excalidraw so great is the simplicity and of course we don't want to 
 
 <!-- end -->
 
-The first implementation was made by [Pete Hunt](https://github.com/excalidraw/excalidraw/pull/1787) a few months back. So by now you might already know how you can start adding shapes to the library that you use often for later use in different diagrams (press `9` or shoose it from the top menu). Afterwards you can export it and share with others or open an existing library that you found somewhere else.
+The first implementation of the library was made by [Pete Hunt](https://github.com/excalidraw/excalidraw/pull/1787) a few months back. So by now you might already know how you can start adding shapes to the library that you use often for later use in different diagrams (press `9` or shoose it from the top menu). Afterwards you can export it and share with others or open an existing library that you found somewhere else.
 
 Another way to import is to upload your library somewhere (like [gist](http://gist.github.com/)) and then getting the link to the raw file you can use the following URL to add the shapes directly into your library like this:
 
