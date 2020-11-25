@@ -5,7 +5,7 @@ author: Lipis
 link: https://twitter.com/lipis
 ---
 
-What makes Excalidraw so great is the simplicity and of course we don't want to start adding more and more features, as this simplicity will be lost. What we can do though is to make use of one of our latest feature, which is the library.
+What makes Excalidraw so great is the simplicity and of course we don't want to start adding more and more features, as this simplicity will be lost. What we can do though is to make use of one of our latest feature: **the library**.
 
 <!-- end -->
 
