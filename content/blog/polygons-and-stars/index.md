@@ -19,7 +19,7 @@ https://excalidraw.com/?addLibrary=<link-to-excalidrawlib>
 
 ### Polygons and Stars example
 
-As an example you can add [polygons](https://excalidraw.com/?addLibrary=https://gist.githubusercontent.com/lipis/c148134151ac57b7f5df62cba69a4ee4/raw/a52fa9df8fc892e0a63d48aa6f3645299922bcc2/polygons.excalidrawlib) or [stars](https://excalidraw.com/?addLibrary=https://gist.githubusercontent.com/lipis/a0de24a467a2869ed45635fa976afdcf/raw/ace7e402f7b0e48dc6738ddac6b5e6608b2aa7d4/stars.excalidawlib) into your library and modify them as you need.
+As an example you can add [polygons](https://excalidraw.com/?addLibrary=https://gist.githubusercontent.com/lipis/c148134151ac57b7f5df62cba69a4ee4/raw/a52fa9df8fc892e0a63d48aa6f3645299922bcc2/polygons.excalidrawlib) or [stars](https://excalidraw.com/?addLibrary=https://gist.githubusercontent.com/lipis/a0de24a467a2869ed45635fa976afdcf/raw/ace7e402f7b0e48dc6738ddac6b5e6608b2aa7d4/stars.excalidawlib) directly into your library and modify them as you need, or download the [`stars.excalidrawlib`](https://gist.github.com/lipis/a0de24a467a2869ed45635fa976afdcf)
 
 Here is how they look, what is going to be imported and as awlays you can click the images to open them directly in Excalidraw.
 
