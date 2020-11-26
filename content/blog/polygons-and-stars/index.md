@@ -5,13 +5,13 @@ author: Lipis
 link: https://twitter.com/lipis
 ---
 
-What makes Excalidraw so great is the simplicity and of course we don't want to start adding more and more features, as this simplicity will be lost. What we can do though is to make use of one of our latest feature: **the library**.
+What makes Excalidraw so great is the simplicity and of course we don't want to start adding more and more features, as this simplicity will be lost. What we can do though is to make use of one of our latest and very powerful feature: **the library**.
 
 <!-- end -->
 
-The first implementation of the library was made by [Pete Hunt](https://github.com/excalidraw/excalidraw/pull/1787) a few months back. So by now you might already know how you can start adding shapes to the library that you use often for later use in different diagrams (press `9` or shoose it from the top menu). Afterwards you can export it and share with others or open an existing library that you found somewhere else.
+The first implementation of the library was made by [Pete Hunt](https://github.com/excalidraw/excalidraw/pull/1787) a few months back. So by now you might already know how you can start adding shapes to the library, that you use often for later use in different diagrams (press `9` or shoose it from the top menu). Afterwards you can export it and share with others or open an existing library that you found somewhere else.
 
-Another way to import is to upload your library somewhere (like [gist](http://gist.github.com/)) and then getting the link to the raw file you can use the following URL to add the shapes directly into your library like this:
+Another way to import is to upload your library somewhere (like [gist](http://gist.github.com/)) and then by getting the direct link to the raw file you can use that URL to add the shapes directly into your library like this:
 
 ```
 https://excalidraw.com/?addLibrary=<link-to-excalidrawlib>
