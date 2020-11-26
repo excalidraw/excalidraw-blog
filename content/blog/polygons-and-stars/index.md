@@ -31,4 +31,4 @@ https://excalidraw.com/#json=5394737318068224,XZC0jx3WBYiFI6mcGofmIQ
 
 ---
 
-If you are interested on how these shapes were done you can check the Python source: [`polygons.py`](https://github.com/excalidraw/excalidraw-playground/blob/master/py-excalidraw/polygons.py) ans [`stars.py`](https://github.com/excalidraw/excalidraw-playground/blob/master/py-excalidraw/stars.py). Feel free to modify them to fill your needs or create other shapes easily based on these examples.
+These shapes were automatically generated using Python with tht help of the Excalidraw lib. Checkout the source of [`polygons.py`](https://github.com/excalidraw/excalidraw-playground/blob/master/py-excalidraw/polygons.py) and [`stars.py`](https://github.com/excalidraw/excalidraw-playground/blob/master/py-excalidraw/stars.py) if you are interested on how they were done. Feel free to experiment with different shapes.
