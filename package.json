@@ -23,7 +23,7 @@
     "gatsby-remark-smartypants": "2.5.0",
     "gatsby-source-filesystem": "2.5.0",
     "gatsby-transformer-remark": "2.11.0",
-    "gatsby-transformer-sharp": "2.5.21",
+    "gatsby-transformer-sharp": "2.7.0",
     "prismjs": "1.22.0",
     "react": "16.13.1",
     "react-dom": "16.13.1",
