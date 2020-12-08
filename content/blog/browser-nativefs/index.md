@@ -64,8 +64,9 @@ attribute.
 Given a Blob, you can set the anchor's `href` attribute to a `blob:` URL that you can get from the
 [`URL.createObjectURL()`](https://developer.mozilla.org/en-US/docs/Web/API/URL/createObjectURL)
 method.
+
 <blockquote>
-To prevent memory leaks, always revoke the URL after the download.
+  To prevent memory leaks, always revoke the URL after the download.
 </blockquote>
 
 ```js
