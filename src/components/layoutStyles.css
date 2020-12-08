@@ -1,5 +1,9 @@
 /* global.css */
 
+:root {
+  color-scheme: dark light;
+}
+
 body {
   --bg: #fff;
   /* OC Gray 9 */
@@ -10,6 +14,7 @@ body {
   --hr: hsla(0, 0%, 0%, 0.2);
 
   background-color: var(--bg);
+  font-family: system-ui, sans-serif;
 }
 
 body.dark {
@@ -30,10 +35,20 @@ h6 {
   color: var(--textTitle);
 }
 
-body.dark span,
+body.dark,
 ul,
-p {
+p,
+blockquote {
   color: var(--textNormal);
+}
+
+blockquote {
+  border-left-color: var(--textNormal);
+}
+
+figcaption {
+  text-align: center;
+  font-size: .9rem;
 }
 
 body.dark a {
