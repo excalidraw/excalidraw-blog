@@ -12,7 +12,7 @@
     "gatsby-plugin-react-helmet": "3.5.0",
     "gatsby-plugin-sharp": "2.8.0",
     "gatsby-plugin-sitemap": "2.5.1",
-    "gatsby-plugin-twitter": "2.3.12",
+    "gatsby-plugin-twitter": "2.6.0",
     "gatsby-plugin-typography": "2.7.0",
     "gatsby-plugin-zeit-now": "0.3.0",
     "gatsby-remark-copy-linked-files": "2.5.0",
