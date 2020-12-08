@@ -64,9 +64,9 @@ attribute.
 Given a Blob, you can set the anchor's `href` attribute to a `blob:` URL that you can get from the
 [`URL.createObjectURL()`](https://developer.mozilla.org/en-US/docs/Web/API/URL/createObjectURL)
 method.
-{% Aside 'caution' %}
+<blockquote>
 To prevent memory leaks, always revoke the URL after the download.
-{% endAside %}
+</blockquote>
 
 ```js
 const saveFile = async (blob) => {
@@ -255,7 +255,7 @@ modify the file, and overwrite it with my changes, or even save it as a new file
   <img src="iphone-original.png" width="300" alt="An Excalidraw drawing on an iPhone.">
   <figcaption>
     Starting an Excalidraw drawing on an iPhone where the File System Access API is not supported,
-    but where a file can be saved (downloaded) to the Downloads folder.</a>)
+    but where a file can be saved (downloaded) to the Downloads folder.
   </figcaption>
 </figure>
 
