@@ -362,5 +362,3 @@ This article was reviewed by [Joe Medley](https://github.com/jpmedley) and
 [Kayce Basques](https://github.com/kaycebasques).
 Thanks to the [contributors to Excalidraw](https://github.com/excalidraw/excalidraw/graphs/contributors)
 for their work on the project and for reviewing my Pull Requests.
-[Hero image](https://unsplash.com/photos/hXrPSgGFpqQ) by
-[Ilya Pavlov](https://unsplash.com/@ilyapavlov) on Unsplash.
