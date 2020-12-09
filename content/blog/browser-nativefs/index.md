@@ -1,6 +1,6 @@
 ---
 title: Reading and writing files and directories with the browser-nativefs library
-date: 2020-12-08
+date: 2020-12-09
 note: 'This post appeared first on <a href="https://web.dev/browser-nativefs/">web.dev</a>.'
 author: tomayac
 link: https://twitter.com/tomayac
