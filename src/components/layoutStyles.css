@@ -1,9 +1,3 @@
-/* global.css */
-
-:root {
-  color-scheme: dark light;
-}
-
 body {
   --bg: #fff;
   /* OC Gray 9 */
@@ -35,6 +29,12 @@ h6 {
   color: var(--textTitle);
 }
 
+h1,
+h2,
+h3 {
+  line-height: 1.4;
+}
+
 body.dark,
 ul,
 p,
@@ -48,7 +48,7 @@ blockquote {
 
 figcaption {
   text-align: center;
-  font-size: .9rem;
+  font-size: 0.9rem;
 }
 
 body.dark a {
