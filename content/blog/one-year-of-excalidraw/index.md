@@ -21,12 +21,6 @@ It's been a nice and steady growth, given that our only marketing is Twitter, an
 
 ![Weekly visists](ga-users.png)
 
-### Scenes
-
-We are storing all the scenes in our backend with [end to end encryption](/end-to-end-encryption/) (which means we don't have access to the actual drawings since they are all encrypted) and the grand total number of the scenes is almost **50K**!
-
-https://excalidraw.com/#json=4813629115334656,c7EAKG7n-Cb8WlTu_Z4abQ
-
 ### Commits
 
 We have well over [100 contributors](https://github.com/excalidraw/excalidraw/graphs/contributors) to the project and we have almost daily incremental improvments and deployments to production. Everything is updated frequntly and automatically with tools like [Vercel](https://vercel.com/), [Dependabot](https://github.blog/2020-06-01-keep-all-your-packages-up-to-date-with-dependabot/), and others.
