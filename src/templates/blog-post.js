@@ -14,7 +14,7 @@ function BlogPostTemplate({ data, pageContext: { previous, next }, location }) {
     `https://blog.excalidraw.com${post.fields.slug}`
   )}`;
   return (
-    <Layout location={location} title={siteTitle}>
+    <Layout location={location} title={siteTitle} parentClassName={"blog-post"}>
       <SEO title={post.frontmatter.title} description={post.excerpt} />
       <h1
         style={{
