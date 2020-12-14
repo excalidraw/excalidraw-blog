@@ -1,3 +1,8 @@
+.blog-post h3 {
+  margin-top: 1rem;
+  margin-bottom: .5rem;
+}
+
 .blog-post svg,
 .blog-post img {
   max-width: 100%;

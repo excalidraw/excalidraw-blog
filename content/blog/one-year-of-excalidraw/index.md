@@ -39,6 +39,19 @@ Excalidraw is fully open sourced and we r¸ely on many other open source project
 
 ## Some of our features
 
+### Collaboration
+
+Collaborating with multiple users was first implemented by [idlewinn](https://github.com/idlewinn) and improved gradually. It's end to end encrypted, so you can be safe that your drawings are not seen by anyone that you don't want to.
+[#879](https://github.com/excalidraw/excalidraw/pull/879)
+
+### Excalicharts
+
+Copy any two columns data from Excel, Spreadsheet or comma separated values (CSV) from a text file and paste them into Excalidraw. The first implementation was done by [petehunt](https://github.com/petehunt) and the improvements by [lipis](https://github.com/lipis). [#1723](https://github.com/excalidraw/excalidraw/pull/1723), [#2495](https://github.com/excalidraw/excalidraw/pull/2495)
+
+### Free Draw mode
+
+The free hand draw was added by [kbariotis](https://github.com/kbariotis). [#1570](https://github.com/excalidraw/excalidraw/pull/1570)
+
 ## Conclusion
 
 Bla bla
