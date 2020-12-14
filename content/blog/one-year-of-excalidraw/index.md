@@ -60,6 +60,10 @@ Copy any two columns data from Excel, Spreadsheet or comma separated values (CSV
 
 The free hand draw was added by [kbariotis](https://github.com/kbariotis). [#1570](https://github.com/excalidraw/excalidraw/pull/1570)
 
+### Gatsby plugin
+
+A plugin for Gatsby where you can very easily insert Excalidraw links and it will convert it to SVG during build time. We are actually using it in this post for our charts. Implemented by [trevorblades](https://github.com/trevorblades) and you can find it under [@excalidraw/gatsby-embedder-excalidraw](https://github.com/excalidraw/gatsby-embedder-excalidraw).
+
 ## Conclusion
 
 Bla bla
