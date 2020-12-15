@@ -25,7 +25,7 @@ It's been a nice and steady growth, given that our only marketing is Twitter, an
 
 We have well over [100 contributors](https://github.com/excalidraw/excalidraw/graphs/contributors) to the project and we have almost daily incremental improvments and deployments to production. Everything is updated frequntly and automatically with tools like [Vercel](https://vercel.com/), [Dependabot](https://github.blog/2020-06-01-keep-all-your-packages-up-to-date-with-dependabot/), and others.
 
-https://excalidraw.com/#json=6023171731881984,xdvF0yToj1SKcf-ov13XQg
+https://excalidraw.com/#json=6587513858686976,Vpfv23pE8zGMascMQY2U8Q
 
 ## Our basic tech stack
 
