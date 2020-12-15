@@ -33,32 +33,32 @@ Excalidraw is fully open sourced and we r¸ely on many other open source project
 
 ## Some of our features
 
-### Collaboration
+### 🤝 Collaboration
 
 Collaborating with multiple users was first implemented by [idlewinn](https://github.com/idlewinn) and improved gradually. It's end to end encrypted, so you can be safe that your drawings are not seen by anyone that you don't want to.
 [#879](https://github.com/excalidraw/excalidraw/pull/879)
 
-### Your data is encrypted
+### 🔒 Your data is encrypted
 
 The [backend](https://github.com/excalidraw/excalidraw-json) support for storing data was implemted by [lipis](https://github.com/lipis) and the client support for encrypting the data before submiting was done by [vjeux](https://github.com/vjeux). Read more on how we are doing it in [end to end encryption](/end-to-end-encryption/) article. [#642](https://github.com/excalidraw/excalidraw/pull/642)
 
-### Library
+### 📚 Library
 
 The library was first introduced by [petehunt](https://github.com/petehunt). Later after adding support for saving the library as a file, we eventually have a public directory for libraries. Visit [libraries.excalidraw.com](https://libraries.excalidraw.com) for more. [#1787](https://github.com/excalidraw/excalidraw/pull/1787)
 
-### Excalicharts
+### 📊 Excalicharts
 
 Copy any two columns data from Excel, Spreadsheet or comma separated values (CSV) from a text file and paste them into Excalidraw. The first implementation was done by [petehunt](https://github.com/petehunt) and the improvements by [lipis](https://github.com/lipis). [#1723](https://github.com/excalidraw/excalidraw/pull/1723), [#2495](https://github.com/excalidraw/excalidraw/pull/2495)
 
-### Free Draw mode
+### ✍️ Free Draw mode
 
 The free hand draw was added by [kbariotis](https://github.com/kbariotis). [#1570](https://github.com/excalidraw/excalidraw/pull/1570)
 
-### Translations
+### 🏳 Translations
 
 From early on, users were asking for supporting multiple languages. The final implementation of it was done by [vjeux](https://github.com/vjeux) and the automatic integration with our [Crowdin](https://crowdin.com/project/excalidraw) project was done by [lipis](https://github.com/lipis). [#638](https://github.com/excalidraw/excalidraw/pull/638)
 
-### Gatsby plugin
+### ⚙️ Gatsby plugin
 
 A plugin for Gatsby where you can very easily insert Excalidraw links and it will convert it to SVG during build time. We are actually using it in this post for our charts. Implemented by [trevorblades](https://github.com/trevorblades) and you can find it under [@excalidraw/gatsby-embedder-excalidraw](https://github.com/excalidraw/gatsby-embedder-excalidraw).
 
