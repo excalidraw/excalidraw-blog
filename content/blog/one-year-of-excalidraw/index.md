@@ -15,7 +15,7 @@ Some words from the big boss [@vjeux](https://twitter.com/vjeux)
 
 ## Let's start with some numbers
 
-It's been a nice and steady growth, given that our only marketing is Twitter, and of course all the love that we are receiving over there. We are reaching around **60K vistis** per month and the grand total of the visits in our first year is well over **500K**!
+It's been a nice and steady growth, given that our only marketing is Twitter, and of course all the love that we are receiving over there. We are reaching around **60K visits** per month and the grand total of the visits in our first year is well over **500K**!
 
 ### Visists
 
