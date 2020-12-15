@@ -5,13 +5,13 @@ author: Lipis
 link: https://twitter.com/lipis
 ---
 
-We recently updated our support for copy/pasting data into Excalidraw and converting it to a _beautiful_ chart. All you have to do is to copy a two column table, paste it in your scene and the rest is up to us.
+One of the hidden features of Excalidraw, is that you can generate _beautiful_ charts in seconds. We recently updated our support for copying any two column data from another source and by pasting it in your scene, we generate a bar chart automagically. Read on to find out how.
 
 <!-- end -->
 
 ## Examples
 
-You copy any two columns data from Excal, Spreadsheet or even HTML tables and paste it directly to Excalidraw. This is the generated chart from the data below it.
+Copy any two columns data from Excel, Spreadsheet, or even HTML tables and paste it directly to Excalidraw (note: you need to have at least one column that contains numbers). This is the generated chart from the data below it.
 
 https://excalidraw.com/#json=6035723371151360,_YC8ms6v1fhghy3SCLYljQ
 
@@ -30,7 +30,7 @@ https://excalidraw.com/#json=6035723371151360,_YC8ms6v1fhghy3SCLYljQ
 | Nov   |      288 |
 | Dec   |      687 |
 
-But it doesn't stop here. You can copy the data from a text file as comma separated values (CSV). Open your favorite editor type the values, copy/paste and you are ready to go.
+But it doesn't stop there. You can also copy the data from a plain text file as comma separated values (CSV). Open your favorite editor type the values separated by comma or tab, copy/paste and you are ready to go. Here is another example from the data bellow the chart.
 
 https://excalidraw.com/#json=4659903914311680,mBoVCGfah7dPzNI90_8JcA
 
@@ -47,6 +47,10 @@ Sat,193
 
 ## Modifying the chart
 
-Once the chart is inserted you can very easily select it and change some of the properties to adjust it to your needs. With just a few clicks we could have the following result.
+Once the chart is imported you can select it and change any of the properties to adjust it to your needs. With just a few clicks we could have the following result.
 
 https://excalidraw.com/#json=5256133992251392,-IbUT9ofyNLaS0gJpKjibw
+
+## Implementation
+
+The implementation of this feature was done in two iterations and if you are interested on how it was done, check out the first [pull request](https://github.com/excalidraw/excalidraw/pull/1723) by [petehunt](https://github.com/petehunt) and the [second one](https://github.com/excalidraw/excalidraw/pull/2495) by [lipis](https://github.com/lipis). It quite an _experimental_ feature and overall works fine, but if you find any edge case that you think it should convert it to a char but it's not, [submit an issue](https://github.com/excalidraw/excalidraw/issues).
