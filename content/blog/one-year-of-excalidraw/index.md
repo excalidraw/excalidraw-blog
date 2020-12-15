@@ -70,7 +70,3 @@ If you have any question you can always drop by our [discussion](https://github.
 ## Get involved
 
 Excalidraw wouldn't be able to become such a product without all the contributors that gave us not only suggestions and reporting bugs, but actual fixes with hunderds of pull requests. Bla bla bla..
-
----
-
-_**P.S.** We will update all the numbers on **1st of Jnuary of 2021** to have a complete picture. So you still have the time to influence the results of the December and spread the word, but only if you are supper happy with the product._
