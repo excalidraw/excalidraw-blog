@@ -21,21 +21,93 @@ January 2020 and [blogged about it](reflections-on-excalidraw/), he proposed the
 [Issue #561](https://github.com/excalidraw/excalidraw/issues/561#issue-555138343):
 
 > "Would be great to wrap excalidraw within electron (or equivalent) and publish it as a native
-  application to the various app stores."
+> application to the various app stores."
 
 The immediate reaction by [@voluntadpear](https://github.com/voluntadpear) was to suggest:
 
 > "What about making it a PWA instead? Android currently supports adding them to the Play Store as
-  Trusted Web Activities and hopefully iOS will do the same soon.
+> Trusted Web Activities and hopefully iOS will do the same soon.
 > On Desktop, Chrome lets you download a desktop shortcut to a PWA."
 
-The resolution @vjeux came to was simple:
+The decision that @vjeux took was simple:
 
 > "We should do both :)"
 
-While work on converting the back then version of Excalidraw into a PWA was started by
+While work on converting the version of Excalidraw from back then into a PWA was started by
 @voluntadpear and later others, [@lipis](https://github.com/lipis) independently
-[went on](https://github.com/excalidraw/excalidraw/issues/561#issuecomment-579573783) and created
+[went ahead](https://github.com/excalidraw/excalidraw/issues/561#issuecomment-579573783) and created
 a [separate repo](https://github.com/excalidraw/excalidraw-desktop) for Excalidraw Desktop.
 
-The initial goal set by @vjeux, *i.e.*, to submit Excalidraw to the various app stores
+To this day, the initial goal set by @vjeux, that is, to submit Excalidraw to the various app stores, has not been
+reached yet. Honestly, no one has even started the submission process to any of the stores.
+But why is that? Before I try to provide an answer, let me quickly look at Electron, the platform.
+
+## What is Electron?
+
+The unique selling point of [Electron](https://www.electronjs.org/) is that it allows you to
+_"build cross-platform desktop apps with JavaScript, HTML, and CSS"_. Apps built with Electron are _"compatible with Mac, Windows, and Linux"_, that is, _"Electron apps build and run on three platforms"_.
+According to the homepage, the hard parts that Electron makes easy are [automatic updates](https://www.electronjs.org/docs/api/auto-updater), [native menus and notifications](https://www.electronjs.org/docs/api/menu), [crash reporting](https://www.electronjs.org/docs/api/crash-reporter), [debugging and profiling](https://www.electronjs.org/docs/api/content-tracing), and [Windows installers](https://www.electronjs.org/docs/api/auto-updater#windows). Turns out, some of the promised features need a detailed look at the small print.
+
+For example, automatic updates _"are [currently] only [supported] on macOS and Windows. There is no built-in support for auto-updater on Linux, so it is recommended to use the distribution's package manager to update your app"_.
+
+Developers can create native menus by calling `Menu.setApplicationMenu(menu)`.
+On Windows and Linux, the menu will be set as each window's top menu, while on macOS there are many system-defined standard menus, like the [Services](https://developer.apple.com/documentation/appkit/nsapplication/1428608-servicesmenu?language=objc) menu.
+To make one's menus a standard menu, developers should set their menu's `role` accordingly, and Electron will recognize them and make them become standard menus. This means that a lot of menu-related code will make use of the following platform check: `const isMac = process.platform === 'darwin'`.
+
+Windows installers can be made with [windows-installer](https://github.com/electron/windows-installer).
+The README of the project highlights that _"for a production app you need to sign your application. Internet Explorer's SmartScreen filter will block your app from being downloaded, and many anti-virus vendors will consider your app as malware unless you obtain a valid cert"_.
+
+Looking at just these three examples, it is far from "write once, run everywhere". Distributing an app on app stores requires [code signing](https://www.electronjs.org/docs/tutorial/code-signing), a security technology for certifying app ownership.
+Packaging an app requires using tools like [electron-forge](https://github.com/electron-userland/electron-forge)
+and thinking about where to host packages for app updates.
+It gets complex relatively quickly, especially when the objective truly is cross platform support.
+I want to note that it is _abolutely_ possible to create stunning Electron apps with enough effort and dedication.
+For Excalidraw Desktop, we were not there.
+
+## Where Excalidraw Desktop left off
+
+Excalidraw Desktop so far is basically the Excalidraw Web app bundled as an [`.asar`](https://github.com/electron/asar)
+file with an added **About Excalidraw** window.
+The look and feel of the application is almost identical to the Web version.
+
+<figure>
+  <img src="excalidraw-desktop.png" alt="The Excalidraw Desktop application running in an Electron wrapper.">
+  <figcaption>Excalidraw Desktop is almost indistinguishable from the Web version</figcaption>
+</figure>
+
+<figure>
+  <img src="about-excalidraw.png" alt="The Excalidraw Desktop 'About' window displaying the version of the Electron wrapper and the Web app.">
+  <figcaption>The <strong>About Excalidraw</strong> menu providing insights into the versions</figcaption>
+</figure>
+
+On macOS, there is now a native menu at the top of the application, but since none of the menu actions—apart from **Close Window**—are hooked up to to anything, the menu is, in its current state, pretty useless and all actions can be performed via the regular Excalidraw toolbars and the context menu.
+
+<figure>
+  <img src="menu.png" alt="The Excalidraw Desktop menu bar on macOS with the 'File', 'Close Window' menu item selected.">
+  <figcaption>The menu bar of Excalidraw Desktop on macOS</figcaption>
+</figure>
+
+We use [electron-builder](https://github.com/electron-userland/electron-builder), which supports
+[file type associations](https://www.electron.build/configuration/configuration#PlatformSpecificBuildOptions-fileAssociations).
+By double-clicking a `.excalidraw` file, ideally the Excalidraw Desktop app should open.
+The relevant excerpt of our `electron-builder.json` file looks like this:
+
+```json
+{
+  "fileAssociations": [
+    {
+      "ext": "excalidraw",
+      "name": "Excalidraw",
+      "description": "Excalidraw file",
+      "role": "Editor",
+      "mimeType": "application/json"
+    }
+  ]
+}
+```
+
+Unfortunately, in practice, this does not always work as intended, since, depending on the installation type (for the current user, for all users) apps on Windows&nbsp;10 do not have the rights to associate a file type to themselves.
+
+These shortcomings and the pending work to make the experience truly native-like on _all_ platforms (which, again, with enough effort _is_ possible) were a strong argument for us to reconsider our investment in Excalidraw Desktop.
+The way bigger argument for us, though, was that we foresee that for _our_ use case, we do not need all the features Electron offers.
+The grown and still growing set of capabilities of the Web serves us equally well, if not better.
