@@ -23,13 +23,13 @@ It's been a nice and steady growth, given that our only marketing is Twitter, an
 
 ### Commits
 
-We have well over [100 contributors](https://github.com/excalidraw/excalidraw/graphs/contributors) to the project and we have almost daily incremental improvments and deployments to production. Everything is updated frequntly and automatically with tools like [Vercel](https://vercel.com/), [Dependabot](https://github.blog/2020-06-01-keep-all-your-packages-up-to-date-with-dependabot/), and others.
+We have well over [100 contributors](https://github.com/excalidraw/excalidraw/graphs/contributors) to the project and we have almost daily incremental improvments and deployments to production. Everything is updated frequntly and automatically with tools like [Vercel](https://vercel.com/), [Dependabot](https://github.blog/2020-06-01-keep-all-your-packages-up-to-date-with-dependabot/), [Crowdin](https://crowdin.com/project/excalidraw), and others.
 
 https://excalidraw.com/#json=5581555745423360,ey-JjKwlVeZcWNtx_m823A
 
 ## Our basic tech stack
 
-Excalidraw is fully open sourced and we r¸ely on many other open source projects. We couldn't do it without [Rough.js](https://github.com/rough-stuff/rough) of course and our main stack among other things is [React](https://github.com/facebook/react) and [TypeScript](https://github.com/microsoft/TypeScript). Our full list of [dependencies](https://github.com/excalidraw/excalidraw/network/dependencies) is listed on GitHub and we are using Dependabot to keep them all up to date.
+Excalidraw is fully open sourced and we rely on many other open source projects. We couldn't do it without [Rough.js](https://github.com/rough-stuff/rough) of course and our main stack among other things is [React](https://github.com/facebook/react) and [TypeScript](https://github.com/microsoft/TypeScript). Our full list of [dependencies](https://github.com/excalidraw/excalidraw/network/dependencies) is listed on GitHub and we are using Dependabot to keep them all up to date.
 
 ## Some of our features
 
