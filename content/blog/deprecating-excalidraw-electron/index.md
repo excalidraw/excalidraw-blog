@@ -111,3 +111,56 @@ Unfortunately, in practice, this does not always work as intended, since, depend
 These shortcomings and the pending work to make the experience truly native-like on _all_ platforms (which, again, with enough effort _is_ possible) were a strong argument for us to reconsider our investment in Excalidraw Desktop.
 The way bigger argument for us, though, was that we foresee that for _our_ use case, we do not need all the features Electron offers.
 The grown and still growing set of capabilities of the Web serves us equally well, if not better.
+
+## How the Web serves us today and in the future
+
+Even in 2020, [jQuery](https://jquery.com/) is still [incredibly popular](https://almanac.httparchive.org/en/2020/javascript#libraries).
+For many developers it has become a habit to use it, despite the fact that today they [might not need jQuery](http://youmightnotneedjquery.com/). There is a similar resource for Electron, aptly called [You Might Not Need Electron](https://youmightnotneedelectron.com/).
+Let me outline in the following why we think we do not need Electron.
+
+### Installable Progressive Web App
+
+Excalidraw today is an [installable](https://web.dev/installable/) Progressive Web App with a [service worker](https://excalidraw.com/service-worker.js) and
+a [Web App Manifest](https://excalidraw.com/manifest.json). It caches all its resources in two caches, one for fonts and font-related CSS
+and one for everything else.
+
+<figure>
+  <img src="excalidraw-cache.png" alt="Chrome DevTools Application tab showing the two Excalidraw caches.">
+  <figcaption>Excalidraw's cache contents</figcaption>
+</figure>
+
+This means the application is fully offline-capable and can run without a network connection.
+Chromium-based browsers on both desktop and mobile prompt the user if they want to install the app.
+
+<figure>
+  <img src="install-excalidraw.png" alt="Excalidraw prompting the user to install the app in Chrome on macOS.">
+  <figcaption>The Excalidraw install dialog in Chrome</figcaption>
+</figure>
+
+Excalidraw is configured to run as a standalone application, so when you install it, you get an app that runs in its own window.
+It is fully integrated in the operating system's multitasking UI, gets its own app icon on the home screen, Dock, or task bar,
+depending on what platform you install it.
+
+<figure>
+  <img src="excalidraw-pwa.png" alt="Excalidraw running in its own window.">
+  <figcaption>The Excalidraw PWA</figcaption>
+</figure>
+
+<figure>
+  <img src="excalidraw-icon.png" alt="Excalidraw icon on the macOS Dock.">
+  <figcaption>The Excalidraw icon</figcaption>
+</figure>
+
+### File system access
+
+Excalidraw makes use of [browser-nativefs](https://github.com/GoogleChromeLabs/browser-nativefs)
+for accessing the file system of the operating system. On supporting browsers, this allows for a true open-->edit-->save flow and true over-saving and "save as", with a transparent fallback for other browsers.
+You can learn more about this feature in my blog post [Reading and writing files and directories with the browser-nativefs library](browser-nativefs/).
+
+### Drag and drop support
+
+### File handling
+
+https://web.dev/file-handling/
+
+### URL handling
