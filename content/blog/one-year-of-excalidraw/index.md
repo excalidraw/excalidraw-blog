@@ -44,7 +44,7 @@ The [backend](https://github.com/excalidraw/excalidraw-json) support for storing
 
 ### Library
 
-The library was first introduced by [petehunt](https://github.com/petehunt). [#1787](https://github.com/excalidraw/excalidraw/pull/1787)
+The library was first introduced by [petehunt](https://github.com/petehunt). Later after adding support for saving the library as a file, we eventually have a public directory for libraries. Visit [libraries.excalidraw.com](https://libraries.excalidraw.com) for more. [#1787](https://github.com/excalidraw/excalidraw/pull/1787)
 
 ### Excalicharts
 
@@ -71,10 +71,6 @@ If you have any question you can always drop by our [discussion](https://github.
 ## Get involved
 
 Excalidraw wouldn't be able to become such a product without all the contributors that gave us not only suggestions and reporting bugs, but actual fixes with hunderds of pull requests. Bla bla bla..
-
-## Acknowledgments
-
-All the charts were just pasted as data in Excalidraw. It's one of the [cool hidden features](https://twitter.com/excalidraw/status/1337355475474669569) and we would love you to try it.
 
 ---
 
