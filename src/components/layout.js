@@ -8,7 +8,7 @@ import Excalidraw from "./excalidraw";
 import "./layoutStyles.css";
 import Toggle from "./Toggle";
 
-const Layout = ({ location, title, children }) => {
+const Layout = ({ location, title, children, parentClassName }) => {
   const rootPath = `${__PATH_PREFIX__}/`;
   return (
     <div
@@ -71,7 +71,7 @@ const Layout = ({ location, title, children }) => {
         <span style={{ clear: "both" }} />
         {location.pathname === rootPath ? <h1>{title}</h1> : null}
       </header>
-      <main>{children}</main>
+      <main className={parentClassName}>{children}</main>
       <footer
         style={{
           textAlign: "center",
