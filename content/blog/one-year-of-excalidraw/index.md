@@ -29,7 +29,7 @@ https://excalidraw.com/#json=5581555745423360,ey-JjKwlVeZcWNtx_m823A
 
 ## Our basic tech stack
 
-Excalidraw is fully open sourced and we rely on many other open source projects. We couldn't do it without [Rough.js](https://github.com/rough-stuff/rough) of course and our main stack among other things is [React](https://github.com/facebook/react) and [TypeScript](https://github.com/microsoft/TypeScript). Our full list of [dependencies](https://github.com/excalidraw/excalidraw/network/dependencies) is listed on GitHub and we are using Dependabot to keep them all up to date.
+Excalidraw is fully open source, but it also stands on the shoulders of many other open source projects. We couldn't do it without [Rough.js](https://github.com/rough-stuff/rough), the library that gives Excalidraw its unique look, and [React](https://github.com/facebook/react), of course. [TypeScript](https://github.com/microsoft/TypeScript) is also essential to tame the complexity of our codebase, giving a helping to hand to new contributors (and old ones alike), and reducing the need to write as many tests. Our full list of [dependencies](https://github.com/excalidraw/excalidraw/network/dependencies) is listed on GitHub and we are thankful to Dependabot to keep them all up to date.
 
 ## Some of our features
 
