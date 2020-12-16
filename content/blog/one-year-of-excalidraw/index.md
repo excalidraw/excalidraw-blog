@@ -57,6 +57,16 @@ The [free hand draw](https://github.com/excalidraw/excalidraw/pull/1570) was add
 
 From early on, users were asking for supporting multiple languages. The [final implementation](https://github.com/excalidraw/excalidraw/pull/638) of it was done by [vjeux](https://github.com/vjeux) and the automatic integration with our [Crowdin](https://crowdin.com/project/excalidraw) project was done by [lipis](https://github.com/lipis).
 
+### 💾 File system integration and file handling
+
+In Excalidraw, we use the [browser-nativefs](https://github.com/GoogleChromeLabs/browser-nativefs) library
+to integrate with the file system of the operating system. This allows us to support a true open→edit→save
+workflow with proper over-saving and save-as on supporting browsers, and a fallback to downloading files
+and file uploads on other browsers. Read more about this feature in [tomayac](https://github.com/tomayac)'s
+[article](https://blog.excalidraw.com/browser-nativefs/). We also have
+[experimental support](https://web.dev/file-handling/#demo) for file type
+association, so that when you double-click an `.excalidraw` file in your file explorer, the Excalidraw PWA opens.
+
 ### ⚙️ Gatsby plugin
 
 A plugin for Gatsby where you can very easily insert Excalidraw links and it will convert it to SVG during build time. We are actually using it in this post for our charts. Implemented by [trevorblades](https://github.com/trevorblades) and you can find it under [@excalidraw/gatsby-embedder-excalidraw](https://github.com/excalidraw/gatsby-embedder-excalidraw).
