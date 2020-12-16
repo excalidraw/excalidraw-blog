@@ -47,7 +47,7 @@ The library was [first introduced](https://github.com/excalidraw/excalidraw/pull
 
 ### 📊 Excalicharts
 
-Copy any two columns data from Excel, Spreadsheet or comma separated values (CSV) from a text file and paste them into Excalidraw. The [first implementation](https://github.com/excalidraw/excalidraw/pull/1723) was done by [petehunt](https://github.com/petehunt) and the [improvements](https://github.com/excalidraw/excalidraw/pull/2495) by [lipis](https://github.com/lipis).
+While we aim to keep Excalidraw simple to use, sometimes we hide little easter eggs that you need to find out for yourself (or follow our [Twitter account](https://twitter.com/excalidraw)). For example, you can copy any two column-tabulated data from Excel, Spreadsheets, or comma separated values (CSV) from a text file and paste them into Excalidraw to get a nice graph out of it. The [first implementation](https://github.com/excalidraw/excalidraw/pull/1723) was done by [petehunt](https://github.com/petehunt) and the [improvements](https://github.com/excalidraw/excalidraw/pull/2495) by [lipis](https://github.com/lipis).
 
 ### ✍️ Free Draw mode
 
