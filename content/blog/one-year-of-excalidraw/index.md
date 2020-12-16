@@ -23,7 +23,7 @@ It's been a nice and steady growth, given that our only marketing is Twitter, an
 
 ### Commits
 
-We have over [100 contributors](https://github.com/excalidraw/excalidraw/graphs/contributors) that help us ship almost daily fixes, improvements, and new features right to production. Using tools and services like [Vercel](https://vercel.com/), [Dependabot](https://github.blog/2020-06-01-keep-all-your-packages-up-to-date-with-dependabot/), [Crowdin](https://crowdin.com/project/excalidraw) we can to smooth this process out, or even completely automate it.
+We have over [100 contributors](https://github.com/excalidraw/excalidraw/graphs/contributors) that help us ship almost daily fixes, improvements, and new features right to production. Using tools and services like [Vercel](https://vercel.com/), [Dependabot](https://github.blog/2020-06-01-keep-all-your-packages-up-to-date-with-dependabot/), [Crowdin](https://crowdin.com/project/excalidraw) we can smooth this process out, or even completely automate it.
 
 https://excalidraw.com/#json=5581555745423360,ey-JjKwlVeZcWNtx_m823A
 
@@ -31,7 +31,7 @@ https://excalidraw.com/#json=5581555745423360,ey-JjKwlVeZcWNtx_m823A
 
 Excalidraw is fully open source, but it also stands on the shoulders of many other open source projects. We couldn't do it without [Rough.js](https://github.com/rough-stuff/rough), the library that gives Excalidraw its unique look, and [React](https://github.com/facebook/react), of course. [TypeScript](https://github.com/microsoft/TypeScript) is also essential to tame the complexity of our codebase, giving a helping to hand to new contributors (and old ones alike), and reducing the need to write as many tests. Our full list of [dependencies](https://github.com/excalidraw/excalidraw/network/dependencies) is listed on GitHub and we are thankful to Dependabot to keep them all up to date.
 
-## Some of our features
+## Some of our coolest features
 
 ### 🤝 Collaboration
 
@@ -59,13 +59,7 @@ From early on, users were asking for supporting multiple languages. The [final i
 
 ### 💾 File system integration and file handling
 
-In Excalidraw, we use the [browser-nativefs](https://github.com/GoogleChromeLabs/browser-nativefs) library
-to integrate with the file system of the operating system. This allows us to support a true open→edit→save
-workflow with proper over-saving and save-as on supporting browsers, and a fallback to downloading files
-and file uploads on other browsers. Read more about this feature in [tomayac](https://github.com/tomayac)'s
-[article](https://blog.excalidraw.com/browser-nativefs/). We also have
-[experimental support](https://web.dev/file-handling/#demo) for file type
-association, so that when you double-click an `.excalidraw` file in your file explorer, the Excalidraw PWA opens.
+In Excalidraw, we use the [browser-nativefs](https://github.com/GoogleChromeLabs/browser-nativefs) library to integrate with the file system of the operating system. This allows us to support a true open→edit→save workflow with proper over-saving and save-as on supporting browsers, and a fallback to downloading files and file uploads on other browsers. Read more about this feature in [tomayac](https://github.com/tomayac)'s [article](/browser-nativefs/). We also have [experimental support](https://web.dev/file-handling/#demo) for file type association, so that when you double-click an `.excalidraw` file in your file explorer, the Excalidraw PWA opens.
 
 ### ⚙️ Gatsby plugin
 
