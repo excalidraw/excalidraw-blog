@@ -23,7 +23,7 @@ It's been a nice and steady growth, given that our only marketing is Twitter, an
 
 ### Commits
 
-We have well over [100 contributors](https://github.com/excalidraw/excalidraw/graphs/contributors) to the project and we have almost daily incremental improvments and deployments to production. Everything is updated frequntly and automatically with tools like [Vercel](https://vercel.com/), [Dependabot](https://github.blog/2020-06-01-keep-all-your-packages-up-to-date-with-dependabot/), [Crowdin](https://crowdin.com/project/excalidraw), and others.
+We have over [100 contributors](https://github.com/excalidraw/excalidraw/graphs/contributors) that help us ship almost daily fixes, improvements, and new features right to production. Using tools and services like [Vercel](https://vercel.com/), [Dependabot](https://github.blog/2020-06-01-keep-all-your-packages-up-to-date-with-dependabot/), [Crowdin](https://crowdin.com/project/excalidraw) we can to smooth this process out, or even completely automate it.
 
 https://excalidraw.com/#json=5581555745423360,ey-JjKwlVeZcWNtx_m823A
 
