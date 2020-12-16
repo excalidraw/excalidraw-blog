@@ -35,7 +35,7 @@ Excalidraw is fully open source, but it also stands on the shoulders of many oth
 
 ### 🤝 Collaboration
 
-Collaborating with multiple users was [first implemented](https://github.com/excalidraw/excalidraw/pull/879) by [idlewinn](https://github.com/idlewinn) and improved gradually. It's end to end encrypted, so you can be safe that your drawings are not seen by anyone that you don't want to.
+Collaborating with multiple users was [first implemented](https://github.com/excalidraw/excalidraw/pull/879) by [idlewinn](https://github.com/idlewinn) and improved gradually from them on. It's end to end encrypted which means that not only our servers can't read the contents, but if it ever happens to fall into someone else's hands they won't be able to read it either.
 
 ### 🔒 Your data is encrypted
 
