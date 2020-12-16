@@ -43,7 +43,7 @@ The [backend](https://github.com/excalidraw/excalidraw-json) support for storing
 
 ### 📚 Library
 
-The library was [first introduced](https://github.com/excalidraw/excalidraw/pull/1787) by [petehunt](https://github.com/petehunt). Later after adding support for saving the library as a file, we eventually have a public directory for libraries. Visit [libraries.excalidraw.com](https://libraries.excalidraw.com) for more.
+The library was [first implemented](https://github.com/excalidraw/excalidraw/pull/1787) by [petehunt](https://github.com/petehunt). Later after adding support for saving the library as a file, we eventually introduced a public directory for libraries. Visit [libraries.excalidraw.com](https://libraries.excalidraw.com) for more.
 
 ### 📊 Excalicharts
 
