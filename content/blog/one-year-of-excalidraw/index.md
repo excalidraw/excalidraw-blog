@@ -39,7 +39,7 @@ Collaborating with multiple users was [first implemented](https://github.com/exc
 
 ### 🔒 Your data is encrypted
 
-The [backend](https://github.com/excalidraw/excalidraw-json) support for storing data was implemted by [lipis](https://github.com/lipis) and the client [support for encrypting](https://github.com/excalidraw/excalidraw/pull/642) the data before submiting was done by [vjeux](https://github.com/vjeux). Read more on how we are doing it in [end to end encryption](/end-to-end-encryption/) article.
+The [backend](https://github.com/excalidraw/excalidraw-json) support for storing data was implemented by [lipis](https://github.com/lipis) and the client [support for encrypting](https://github.com/excalidraw/excalidraw/pull/642) the data before submitting was done by [vjeux](https://github.com/vjeux). Read more on how we are doing it in [end to end encryption](/end-to-end-encryption/) article.
 
 ### 📚 Library
 
