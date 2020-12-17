@@ -23,7 +23,7 @@ The decision that [@vjeux](https://github.com/vjeux) took in the end was simple:
 
 > "We should do both :)"
 
-While work on converting the version of Excalidraw from back then into a PWA was started by [@voluntadpear](https://github.com/voluntadpear) and later others, [@lipis](https://github.com/lipis) independently [went ahead](https://github.com/excalidraw/excalidraw/issues/561#issuecomment-579573783) and created a [separate repo](https://github.com/excalidraw/excalidraw-desktop) for Excalidraw Desktop.
+While work on converting the version of Excalidraw into a PWA was started by [@voluntadpear](https://github.com/voluntadpear) and later others, [@lipis](https://github.com/lipis) independently [went ahead](https://github.com/excalidraw/excalidraw/issues/561#issuecomment-579573783) and created a [separate repo](https://github.com/excalidraw/excalidraw-desktop) for Excalidraw Desktop.
 
 To this day, the initial goal set by [@vjeux](https://github.com/vjeux), that is, to submit Excalidraw to the various app stores, has not been reached yet. Honestly, no one has even started the submission process to any of the stores. But why is that? Before I try to provide an answer, let me quickly look at Electron, the platform.
 
