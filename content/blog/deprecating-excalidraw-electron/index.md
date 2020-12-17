@@ -114,7 +114,7 @@ Excalidraw is configured to run as a standalone application, so when you install
 
 ### File system access
 
-Excalidraw makes use of [browser-nativefs](https://github.com/GoogleChromeLabs/browser-nativefs) for accessing the file system of the operating system. On supporting browsers, this allows for a true open-->edit-->save workflow and actual over-saving and "save as", with a transparent fallback for other browsers. You can learn more about this feature in my blog post [Reading and writing files and directories with the browser-nativefs library](browser-nativefs/).
+Excalidraw makes use of [browser-nativefs](https://github.com/GoogleChromeLabs/browser-nativefs) for accessing the file system of the operating system. On supporting browsers, this allows for a true open→edit→save workflow and actual over-saving and "save as", with a transparent fallback for other browsers. You can learn more about this feature in my blog post [Reading and writing files and directories with the browser-nativefs library](browser-nativefs/).
 
 ### Drag and drop support
 
