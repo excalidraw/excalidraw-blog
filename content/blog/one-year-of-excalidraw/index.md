@@ -70,6 +70,7 @@ A plugin for Gatsby where you can very easily insert Excalidraw links and it wil
 One of the last things we've introduced this year was the completely rewritten npm package, available at [`@excalidraw/excalidraw`](https://www.npmjs.com/package/@excalidraw/excalidraw). Long time in the making (thanks to [@aakansha1216](https://twitter.com/aakansha1216) for most of the work), this package allows you to easily embed Excalidraw as a React component into your apps. We're nearing a 1.0.0 release, and will continue to actively develop it alongside our web app, so be sure to check it out and report any issues or requests to our [GitHub issue tracker](https://github.com/excalidraw/excalidraw/issues).
 
 (As you may have noticed, the package is under [`@excalidraw`](https://www.npmjs.com/search?q=%40excalidraw) namespace under which we plan to also publish related packages. One of them is [`@excalidraw/utils`](https://www.npmjs.com/package/@excalidraw/utils).)
+
 ## Conclusion
 
 Bla bla
