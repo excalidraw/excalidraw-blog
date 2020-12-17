@@ -11,7 +11,7 @@ On the [Excalidraw project](https://github.com/excalidraw/), we have decided to 
 
 ## How Excalidraw Desktop came into being
 
-Soon after [@vjeux](https://twitter.com/vjeux) had created the initial version of Excalidraw in January 2020 and [blogged about it](reflections-on-excalidraw/), he proposed the following in [Issue #561](https://github.com/excalidraw/excalidraw/issues/561#issue-555138343):
+Soon after [@vjeux](https://twitter.com/vjeux) had created the initial version of Excalidraw in January 2020 and [blogged about it](/reflections-on-excalidraw/), he proposed the following in [Issue #561](https://github.com/excalidraw/excalidraw/issues/561#issue-555138343):
 
 > "Would be great to wrap Excalidraw within Electron (or equivalent) and publish it as a native application to the various app stores."
 
@@ -114,7 +114,7 @@ Excalidraw is configured to run as a standalone application, so when you install
 
 ### File system access
 
-Excalidraw makes use of [browser-nativefs](https://github.com/GoogleChromeLabs/browser-nativefs) for accessing the file system of the operating system. On supporting browsers, this allows for a true open→edit→save workflow and actual over-saving and "save as", with a transparent fallback for other browsers. You can learn more about this feature in my blog post [Reading and writing files and directories with the browser-nativefs library](browser-nativefs/).
+Excalidraw makes use of [browser-nativefs](https://github.com/GoogleChromeLabs/browser-nativefs) for accessing the file system of the operating system. On supporting browsers, this allows for a true open→edit→save workflow and actual over-saving and "save as", with a transparent fallback for other browsers. You can learn more about this feature in my blog post [Reading and writing files and directories with the browser-nativefs library](/browser-nativefs/).
 
 ### Drag and drop support
 
