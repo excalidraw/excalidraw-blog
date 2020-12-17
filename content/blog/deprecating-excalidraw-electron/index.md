@@ -1,6 +1,6 @@
 ---
 title: Deprecating Excalidraw Electron in favor of the Web version
-date: 2020-12-16
+date: 2020-12-17
 author: tomayac
 link: https://twitter.com/tomayac
 ---
