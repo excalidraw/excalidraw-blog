@@ -17,6 +17,8 @@ In my ideal workflow, I want to take the data and generate the chart, then treat
 
 ## Examples
 
+![Copy pasting charts](charts.gif)
+
 Copy any two columns data from Excel, Spreadsheet, or even HTML tables and paste it directly to Excalidraw. It will work when the number of columns is one or two. Here is the generated chart from the data below it.
 
 https://excalidraw.com/#json=6035723371151360,_YC8ms6v1fhghy3SCLYljQ
