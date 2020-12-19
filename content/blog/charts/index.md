@@ -1,5 +1,5 @@
 ---
-title: Magic Charts
+title: Tell your story with Charts
 date: 2020-12-20
 author: Lipis
 link: https://twitter.com/lipis
