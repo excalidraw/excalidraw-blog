@@ -5,9 +5,16 @@ author: Lipis
 link: https://twitter.com/lipis
 ---
 
-One of the hidden features of Excalidraw, is that you can generate _beautiful_ charts in seconds. We recently updated our support for copying any two column data from another source and by pasting it in your scene, we generate a bar chart automagically. Read on to find out how.
+One of the hidden features of Excalidraw, is that you can generate charts in seconds. Once you imported the chart, all the elements are yours to manipulate using Excalidraw features for you to tell the story you want! Read more to see how to make a chart.
 
 <!-- end -->
+
+## Telling a story
+
+Charts primary reason to be created is to tell a story. I don't know about you, but I often spend a lot of time configuring the chart to be telling the story I want. I will make one or two elements stand out by changing their color, adding arrows to annotate some parts, adding white boxes around information that's extraneous... Unfortunately, this is often not well supported by charting libraries.
+
+In my ideal workflow, I want to take the data and generate the chart, then treat all the elements of the chart as free form and modify them however I want. This is exactly how Excalidraw charting feature works! Once you're chart is generated, you can use all the power of Excalidraw to style it, move things around, hide some details...
+
 
 ## Examples
 
@@ -53,4 +60,4 @@ https://excalidraw.com/#json=5256133992251392,-IbUT9ofyNLaS0gJpKjibw
 
 ## Implementation
 
-The implementation of this feature was done in two iterations and if you are interested on how it was done, check out the first [pull request](https://github.com/excalidraw/excalidraw/pull/1723) by [petehunt](https://github.com/petehunt) and the [second one](https://github.com/excalidraw/excalidraw/pull/2495) by [lipis](https://github.com/lipis). It quite an _experimental_ feature and overall works fine, but if you find any edge case that you think it should convert it to a char but it's not, [submit an issue](https://github.com/excalidraw/excalidraw/issues).
+The implementation of this feature was done in two iterations and if you are interested on how it was done, check out the first [pull request](https://github.com/excalidraw/excalidraw/pull/1723) by [petehunt](https://github.com/petehunt) and the [second one](https://github.com/excalidraw/excalidraw/pull/2495) by [lipis](https://github.com/lipis). If you find any edge case, [submit an issue](https://github.com/excalidraw/excalidraw/issues) and we will make sure to address it!
