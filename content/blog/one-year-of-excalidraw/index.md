@@ -53,9 +53,9 @@ While we aim to keep Excalidraw simple to use, sometimes we hide little easter e
 
 The [free hand draw](https://github.com/excalidraw/excalidraw/pull/1570) was added by [kbariotis](https://github.com/kbariotis).
 
-### 🏳 Translations
+### 🇺🇳 Translations
 
-From early on, users were asking for supporting multiple languages. The [final implementation](https://github.com/excalidraw/excalidraw/pull/638) of it was done by [vjeux](https://github.com/vjeux) and the automatic integration with our [Crowdin](https://crowdin.com/project/excalidraw) project was done by [lipis](https://github.com/lipis).
+From early on, users were asking for supporting multiple languages. The [final implementation](https://github.com/excalidraw/excalidraw/pull/638) of it was done by [vjeux](https://github.com/vjeux) and the automatic integration with our [Crowdin](https://crowdin.com/project/excalidraw) project was done by [lipis](https://github.com/lipis). UI support for right-to-left languages was [implemented](https://github.com/excalidraw/excalidraw/pull/1154) by [j-f1](https://github.com/j-f1).
 
 ### 💾 File system integration and file handling
 
