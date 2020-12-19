@@ -15,7 +15,6 @@ Charts primary reason to be created is to tell a story. I don't know about you, 
 
 In my ideal workflow, I want to take the data and generate the chart, then treat all the elements of the chart as free form and modify them however I want. This is exactly how Excalidraw charting feature works! Once you're chart is generated, you can use all the power of Excalidraw to style it, move things around, hide some details...
 
-
 ## Examples
 
 Copy any two columns data from Excel, Spreadsheet, or even HTML tables and paste it directly to Excalidraw. It will work when the number of columns is one or two. Here is the generated chart from the data below it.
