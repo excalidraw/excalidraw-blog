@@ -65,7 +65,7 @@ In Excalidraw, we use the [browser-nativefs](https://github.com/GoogleChromeLabs
 
 A plugin for Gatsby where you can very easily insert Excalidraw links and it will convert it to SVG during build time. We are actually using it in this post for our charts. Implemented by [trevorblades](https://github.com/trevorblades) and you can find it under [@excalidraw/gatsby-embedder-excalidraw](https://github.com/excalidraw/gatsby-embedder-excalidraw).
 
-### 📦 NPM package
+### 📦 npm package
 
 One of the last things we've introduced this year was the completely rewritten npm package, available at [`@excalidraw/excalidraw`](https://www.npmjs.com/package/@excalidraw/excalidraw). Long time in the making (thanks to [@aakansha1216](https://twitter.com/aakansha1216) for most of the work), this package allows you to easily embed Excalidraw as a React component into your apps.
 
