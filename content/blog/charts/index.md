@@ -11,7 +11,7 @@ One of the hidden features of Excalidraw, is that you can generate _beautiful_ c
 
 ## Examples
 
-Copy any two columns data from Excel, Spreadsheet, or even HTML tables and paste it directly to Excalidraw (note: you need to have at least one column that contains numbers). This is the generated chart from the data below it.
+Copy any two columns data from Excel, Spreadsheet, or even HTML tables and paste it directly to Excalidraw. It will work when the number of columns is one or two. Here is the generated chart from the data below it.
 
 https://excalidraw.com/#json=6035723371151360,_YC8ms6v1fhghy3SCLYljQ
 
@@ -30,7 +30,7 @@ https://excalidraw.com/#json=6035723371151360,_YC8ms6v1fhghy3SCLYljQ
 | Nov   |      288 |
 | Dec   |      687 |
 
-But it doesn't stop there. You can also copy the data from a plain text file as comma separated values (CSV). Open your favorite editor type the values separated by comma or tab, copy/paste and you are ready to go. Here is another example from the data bellow the chart.
+But it doesn't stop there. You can also copy the data from a plain text file as comma separated values (CSV). Open your favorite editor, type the values separated by comma or tab, copy/paste and you are ready to go. Here is another example from the data bellow the chart.
 
 https://excalidraw.com/#json=4659903914311680,mBoVCGfah7dPzNI90_8JcA
 
