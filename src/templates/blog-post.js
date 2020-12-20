@@ -34,6 +34,16 @@ function BlogPostTemplate({ data, pageContext: { previous, next }, location }) {
         }}
       >
         <strong>{post.frontmatter.date}</strong>
+        {post.frontmatter.author && (
+          <span style={{ opacity: 0.75, fontStyle: "italic" }}>
+            {", by "}
+            {post.frontmatter.link ? (
+              <a href={post.frontmatter.link}>{post.frontmatter.author}</a>
+            ) : (
+              <>{post.frontmatter.author}</>
+            )}
+          </span>
+        )}
         {post.frontmatter.note ? (
           <>
             {" • "}
@@ -43,18 +53,6 @@ function BlogPostTemplate({ data, pageContext: { previous, next }, location }) {
       </p>
       <div dangerouslySetInnerHTML={{ __html: post.html }} />
       <p style={{ fontFamily: "var(--ui-font)", marginBottom: 0 }}>
-        {post.frontmatter.author ? (
-          <>
-            by{" "}
-            {post.frontmatter.link ? (
-              <a href={post.frontmatter.link}>{post.frontmatter.author}</a>
-            ) : (
-              <>{post.frontmatter.author}</>
-            )}
-            {" • "}
-          </>
-        ) : null}
-
         <a href={discussUrl}>Discuss on Twitter</a>
         {" • "}
         <a href={editUrl}>Edit on GitHub</a>
