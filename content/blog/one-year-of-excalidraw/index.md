@@ -32,7 +32,7 @@ In addition, Excalidraw was made possible thanks to awesome services such as [Ve
 
 ### 🤝 Collaboration
 
-When the lockdown started, companies all around the world struggled to adapt to remote work. [idlewinn](https://github.com/idlewinn) and [petehunt](https://github.com/petehunt) [implemented live collaboration](https://github.com/excalidraw/excalidraw/pull/879) to Excalidraw in order for it to be used for interviews, brainstorms, presentations... If you're curious, we [explained the inner workings in a blog post](https://blog.excalidraw.com/building-excalidraw-p2p-collaboration-feature/).
+When the lockdown started, companies all around the world struggled to adapt to remote work. [idlewinn](https://github.com/idlewinn) and [petehunt](https://github.com/petehunt) [implemented live collaboration](https://github.com/excalidraw/excalidraw/pull/879) to Excalidraw in order for it to be used for interviews, brainstorms, presentations... If you're curious, we [explained the inner workings in a blog post](/building-excalidraw-p2p-collaboration-feature/).
 
 ### 🔒 Your data is encrypted
 
@@ -40,7 +40,7 @@ Most of Excalidraw use cases involve drawing sensitive data, we architected our 
 
 ### 🇺🇳 Translations
 
-It was important for us early on to make sure that Excalidraw was translated in many languages so that it could be used everywhere in the world. The [initial implementation](https://github.com/excalidraw/excalidraw/pull/638) of it was done by [fernandoalava](https://github.com/fernandoalava) and the automatic integration with our [Crowdin](https://crowdin.com/project/excalidraw) project was done by [lipis](https://github.com/lipis). UI support for right-to-left languages was [implemented](https://github.com/excalidraw/excalidraw/pull/1154) by [j-f1](https://github.com/j-f1) and [Ellinor Rapp](https://www.myfonts.com/newsletters/cc/200712.html) added support for glyphs from many more languages in the hand-written font. You can read more [about how we manage translations on the blog](https://blog.excalidraw.com/enabling-translations/).
+It was important for us early on to make sure that Excalidraw was translated in many languages so that it could be used everywhere in the world. The [initial implementation](https://github.com/excalidraw/excalidraw/pull/638) of it was done by [fernandoalava](https://github.com/fernandoalava) and the automatic integration with our [Crowdin](https://crowdin.com/project/excalidraw) project was done by [lipis](https://github.com/lipis). UI support for right-to-left languages was [implemented](https://github.com/excalidraw/excalidraw/pull/1154) by [j-f1](https://github.com/j-f1) and [Ellinor Rapp](https://www.myfonts.com/newsletters/cc/200712.html) added support for glyphs from many more languages in the hand-written font. You can read more [about how we manage translations on the blog](/enabling-translations/).
 
 ### 📱 Mobile first
 
