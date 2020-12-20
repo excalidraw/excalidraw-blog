@@ -76,6 +76,7 @@ One of the last things we've introduced this year was the completely rewritten n
 - https://dev.to/ndsn/why-excalidraw-is-mightier-than-the-pen-and-the-sword-329f
 - https://news.ycombinator.com/item?id=23525648
 - https://news.ycombinator.com/item?id=22663435
+- https://web.dev/browser-nativefs/
 
 ## Get involved
 
