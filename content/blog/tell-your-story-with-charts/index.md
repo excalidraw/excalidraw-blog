@@ -3,6 +3,7 @@ title: Tell your story with Charts
 date: 2020-12-20
 author: Lipis
 link: https://twitter.com/lipis
+image: og.png
 ---
 
 One of the hidden features of Excalidraw, is that you can generate charts in seconds. Once you imported the chart, all the elements are yours to manipulate using Excalidraw features for you to tell the story you want! Read more to see how to make a chart.
