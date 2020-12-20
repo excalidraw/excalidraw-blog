@@ -48,8 +48,11 @@ const SEO = ({ description = "", lang = "en", meta = [], title, image }) => {
           content: metaDescription,
         },
         {
-          name: "twitter:image",
           property: "og:image",
+          content: metaImage,
+        },
+        {
+          name: "twitter:image",
           content: metaImage,
         },
         {
