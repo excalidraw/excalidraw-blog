@@ -26,7 +26,9 @@ const SEO = ({ description = "", lang = "en", meta = [], title, image }) => {
   );
 
   const metaDescription = description || site.siteMetadata.description;
-  const metaTitle = title || site.siteMetadata.title;
+  const metaTitle = title
+    ? `${title} | ${site.siteMetadata.title}`
+    : site.siteMetadata.title;
   let metaImage = image || site.siteMetadata.image;
   if (!metaImage.includes("http")) {
     metaImage = `${site.siteMetadata.siteUrl}${metaImage}`;
@@ -45,7 +47,7 @@ const SEO = ({ description = "", lang = "en", meta = [], title, image }) => {
         },
         {
           property: "og:title",
-          content: title,
+          content: metaTitle,
         },
         {
           property: "og:description",
@@ -53,10 +55,6 @@ const SEO = ({ description = "", lang = "en", meta = [], title, image }) => {
         },
         {
           property: "og:image",
-          content: metaImage,
-        },
-        {
-          name: "twitter:image",
           content: metaImage,
         },
         {
@@ -74,6 +72,10 @@ const SEO = ({ description = "", lang = "en", meta = [], title, image }) => {
         {
           name: "twitter:description",
           content: metaDescription,
+        },
+        {
+          name: "twitter:image",
+          content: metaImage,
         },
       ].concat(meta)}
     />
