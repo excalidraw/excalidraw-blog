@@ -36,6 +36,11 @@
   padding: 4px 0;
 }
 
+th,
+td {
+  border-color: #adb5bd;
+}
+
 @media only screen and (max-width: 640px) {
   .blog-post table {
     width: 90%;

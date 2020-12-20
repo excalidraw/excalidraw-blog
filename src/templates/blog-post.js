@@ -15,7 +15,11 @@ function BlogPostTemplate({ data, pageContext: { previous, next }, location }) {
   )}`;
   return (
     <Layout location={location} title={siteTitle} parentClassName={"blog-post"}>
-      <SEO title={post.frontmatter.title} description={post.excerpt} />
+      <SEO
+        title={post.frontmatter.title}
+        description={post.excerpt}
+        image={post.frontmatter.image && post.frontmatter.image.publicURL}
+      />
       <h1
         style={{
           marginBottom: 0,
@@ -112,6 +116,10 @@ export const pageQuery = graphql`
         note
         author
         link
+        image {
+          id
+          publicURL
+        }
       }
       fields {
         slug
