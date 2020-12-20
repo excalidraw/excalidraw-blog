@@ -21,13 +21,11 @@ This success was only made possible thanks to the over [100 contributors](https:
 
 https://excalidraw.com/#json=5035223658004480,t4Y53hm-6O1PgeUVwG_GMQ
 
-
 ## Tech stack
 
 Excalidraw is fully open source, but it also stands on the shoulders of many other projects. We couldn't do it without [Rough.js](https://github.com/rough-stuff/rough), the library that gives Excalidraw its unique look, and [React](https://github.com/facebook/react), of course. [TypeScript](https://github.com/microsoft/TypeScript) is also essential to tame the complexity of our codebase, giving a helping to hand to new contributors (and old ones alike). Our full list of [dependencies](https://github.com/excalidraw/excalidraw/network/dependencies) is listed on GitHub.
 
 In addition, Excalidraw was made possible thanks to awesome services such as [Vercel](https://vercel.com/) for hosting and pull request previews, [Crowdin](https://crowdin.com/project/excalidraw) for managing dozens of translation, [Code Sandbox](https://codesandbox.io/) to get started hacking on the project, [Sentry](https://sentry.io/) for error reporting, and [Dependabot](https://github.blog/2020-06-01-keep-all-your-packages-up-to-date-with-dependabot/) to keep our dependencies up to date,.
-
 
 ## Some of our coolest features
 
