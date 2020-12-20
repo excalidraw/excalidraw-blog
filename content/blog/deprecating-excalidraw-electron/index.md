@@ -3,6 +3,7 @@ title: Deprecating Excalidraw Electron in favor of the Web version
 date: 2020-12-17
 author: tomayac
 link: https://twitter.com/tomayac
+image: excalidraw-icon.png
 ---
 
 On the [Excalidraw project](https://github.com/excalidraw/), we have decided to deprecate [Excalidraw Desktop](https://github.com/excalidraw/excalidraw-desktop), an [Electron](https://www.electronjs.org/) wrapper for Excalidraw, in favor of the Web version that you can—and always could—find at [excalidraw.com](https://excalidraw.com/). After a careful analysis, we have decided that [Progressive Web App](https://web.dev/pwa/) (PWA) is the future we want to build upon. Read on to learn more about our rationale.

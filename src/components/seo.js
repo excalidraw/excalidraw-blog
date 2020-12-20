@@ -9,7 +9,7 @@ import { graphql, useStaticQuery } from "gatsby";
 import React from "react";
 import Helmet from "react-helmet";
 
-const SEO = ({ description = "", lang = "en", meta = [], title }) => {
+const SEO = ({ description = "", lang = "en", meta = [], title, image }) => {
   const { site } = useStaticQuery(
     graphql`
       query SEO {
@@ -17,7 +17,8 @@ const SEO = ({ description = "", lang = "en", meta = [], title }) => {
           siteMetadata {
             title
             description
-            author
+            image
+            siteUrl
           }
         }
       }
@@ -25,16 +26,18 @@ const SEO = ({ description = "", lang = "en", meta = [], title }) => {
   );
 
   const metaDescription = description || site.siteMetadata.description;
+  const metaTitle = title || site.siteMetadata.title;
+  let metaImage = image || site.siteMetadata.image;
+  if (!metaImage.includes("http")) {
+    metaImage = `${site.siteMetadata.siteUrl}${metaImage}`;
+  }
 
   return (
     <Helmet
       htmlAttributes={{
         lang,
       }}
-      title={title || site.siteMetadata.title}
-      titleTemplate={
-        title ? `%s | ${site.siteMetadata.title}` : site.siteMetadata.title
-      }
+      title={metaTitle}
       meta={[
         {
           name: "description",
@@ -49,6 +52,14 @@ const SEO = ({ description = "", lang = "en", meta = [], title }) => {
           content: metaDescription,
         },
         {
+          property: "og:image",
+          content: metaImage,
+        },
+        {
+          name: "twitter:image",
+          content: metaImage,
+        },
+        {
           property: "og:type",
           content: "website",
         },
@@ -57,12 +68,8 @@ const SEO = ({ description = "", lang = "en", meta = [], title }) => {
           content: "summary",
         },
         {
-          name: "twitter:creator",
-          content: site.siteMetadata.author,
-        },
-        {
           name: "twitter:title",
-          content: title,
+          content: metaTitle,
         },
         {
           name: "twitter:description",
