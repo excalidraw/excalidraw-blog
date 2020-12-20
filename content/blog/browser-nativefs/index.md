@@ -4,6 +4,7 @@ date: 2020-12-09
 note: 'This post appeared first on <a href="https://web.dev/browser-nativefs/">web.dev</a>.'
 author: tomayac
 link: https://twitter.com/tomayac
+image: chrome-save-as.png
 ---
 
 Browsers have been able to deal with files and directories for a long time. The [File API](https://w3c.github.io/FileAPI/) provides features for representing file objects in web applications, as well as programmatically selecting them and accessing their data. The moment you look closer, though, all that glitters is not gold.
