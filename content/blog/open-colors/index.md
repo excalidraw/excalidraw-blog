@@ -4,6 +4,7 @@ date: 2020-11-10
 note: Part of a series where we pick apart various libraries and projects we use on Excalidraw.
 author: Lipis
 link: https://twitter.com/lipis
+image: og.png
 ---
 
 One of the qualities of Excalidraw is its simplicity. Even though we have the option to use any color of the [spectrum](https://www.google.com/search?q=%23c0ffee&hl=en), we have decided to limit our palette to a curated set of 15 colors in three different shades.
@@ -16,8 +17,7 @@ The [Open Colors](https://yeun.github.io/open-color/) color scheme has a total o
 
 I remember it was my very first [pull request](https://github.com/excalidraw/excalidraw/pull/378) to Excalidraw to add the **Open Colors** color scheme. I've known about this color scheme for a while now, but never found a great project to actually use it on. Excalidraw was a perfect fit.
 
-They say a picture is worth a thousand words.  
-(Click on the image below to open it in Excalidraw.)
+They say a picture is worth a thousand words. (Click on the image below to open it in Excalidraw.)
 
 https://excalidraw.com/#json=5120999011909632,Y57VloPaA1LSKT4-1NTgNA
 
