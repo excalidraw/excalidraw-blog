@@ -55,9 +55,9 @@ Sat,193
 
 ## Modifying the chart
 
-Once the chart is imported you can select it and change any of the properties to adjust it to your needs. With just a few clicks we could have the following result.
+Once the chart is imported you can select it and change any of the properties to adjust it to your needs. For example, here is the story of Excalidraw traffic in 2020.
 
-https://excalidraw.com/#json=5256133992251392,-IbUT9ofyNLaS0gJpKjibw
+https://excalidraw.com/#json=6443031091740672,amxJZJxlZAlUBLADWIukFg
 
 ## Implementation
 
