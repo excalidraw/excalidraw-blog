@@ -102,5 +102,12 @@ module.exports = {
     },
     "gatsby-plugin-twitter",
     "gatsby-plugin-zeit-now",
+    {
+      resolve: `gatsby-plugin-canonical-urls`,
+      options: {
+        siteUrl: `https://blog.excalidraw.com`,
+        stripQueryString: true,
+      },
+    },
   ],
 };
