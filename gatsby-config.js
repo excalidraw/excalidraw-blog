@@ -1,7 +1,6 @@
 module.exports = {
   siteMetadata: {
     title: "Excalidraw Blog",
-    author: "Christopher Chedeau",
     description: "Virtual whiteboard for sketching hand-drawn like diagrams",
     siteUrl: "https://blog.excalidraw.com",
     social: {
