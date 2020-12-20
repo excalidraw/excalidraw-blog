@@ -74,6 +74,8 @@ One of the last things we've introduced this year was the completely rewritten n
 
 - https://pakstech.com/blog/draw-diagrams/
 - https://dev.to/ndsn/why-excalidraw-is-mightier-than-the-pen-and-the-sword-329f
+- https://news.ycombinator.com/item?id=23525648
+- https://news.ycombinator.com/item?id=22663435
 
 ## Get involved
 
