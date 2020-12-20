@@ -3,6 +3,7 @@ title: One Year of Excalidraw
 date: 2020-12-25
 author: Excalidraw Team
 link: https://github.com/orgs/excalidraw/people
+image: og.png
 ---
 
 > It's been kind of a different year, but it was the first year and pretty amazing for [Excalidraw](https://excalidraw.com).
