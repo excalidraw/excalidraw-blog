@@ -18,6 +18,7 @@ const SEO = ({ description = "", lang = "en", meta = [], title, image }) => {
             title
             description
             image
+            siteUrl
           }
         }
       }
@@ -26,7 +27,10 @@ const SEO = ({ description = "", lang = "en", meta = [], title, image }) => {
 
   const metaDescription = description || site.siteMetadata.description;
   const metaTitle = title || site.siteMetadata.title;
-  const metaImage = image || site.siteMetadata.image;
+  let metaImage = image || site.siteMetadata.image;
+  if (!metaImage.includes("http")) {
+    metaImage = `${site.siteMetadata.siteUrl}${metaImage}`;
+  }
 
   return (
     <Helmet
