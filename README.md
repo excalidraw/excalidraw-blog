@@ -1,6 +1,10 @@
 # Excalidraw Blog
 
+> For news and updates visit: https://blog.excalidraw.com.
+
 ## Develop
+
+We are using [Gatsby](https://www.gatsbyjs.com/) and in order to run it locally, execute the following from the root:
 
 ```
 yarn
