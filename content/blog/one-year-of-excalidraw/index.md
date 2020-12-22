@@ -32,7 +32,7 @@ In addition, Excalidraw was made possible thanks to awesome services such as [Ve
 
 ### 🤝 Collaboration
 
-When the lockdown started, companies all around the world struggled to adapt to remote work. [idlewinn](https://github.com/idlewinn) and [petehunt](https://github.com/petehunt) [implemented live collaboration](https://github.com/excalidraw/excalidraw/pull/879) in Excalidraw to enable it to be used for interviews, brainstorms, presentations, and more. If you're curious, we [explained the inner workings in a blog post](/building-excalidraw-p2p-collaboration-feature/).
+When the lockdown started, companies all around the world struggled to adapt to remote work. [idlewinn](https://github.com/idlewinn) and [petehunt](https://github.com/petehunt) [implemented live collaboration](https://github.com/excalidraw/excalidraw/pull/879) to enable it to be used for interviews, brainstorming, presentations, and more. If you're curious, we [explained how it works in a blog post](/building-excalidraw-p2p-collaboration-feature/).
 
 ### 🔒 Your data is encrypted
 
