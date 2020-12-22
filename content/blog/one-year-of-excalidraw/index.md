@@ -36,7 +36,7 @@ When the lockdown started, companies all around the world struggled to adapt to 
 
 ### 🔒 Your data is encrypted
 
-Most of Excalidraw use cases involve drawing sensitive data, we architected our system such that our servers never see the content of your drawings through end-to-end encryption. The [backend](https://github.com/excalidraw/excalidraw-json) support for storing data was implemented by [lipis](https://github.com/lipis) and the client [support for encrypting](https://github.com/excalidraw/excalidraw/pull/642) the data before submitting was done by [vjeux](https://github.com/vjeux). Read more on how we are doing it in [end to end encryption](/end-to-end-encryption/) article.
+Many of Excalidraw use cases involve drawing sensitive data. As such, we architected our system so that our servers never see the content of your drawings, using end-to-end encryption. The [backend](https://github.com/excalidraw/excalidraw-json) support for storing data was implemented by [lipis](https://github.com/lipis), while the [client-side encryption itself](https://github.com/excalidraw/excalidraw/pull/642) was added by [vjeux](https://github.com/vjeux). Read how we are doing it in our article on [end-to-end encryption](/end-to-end-encryption/).
 
 ### 🇺🇳 Translations
 
