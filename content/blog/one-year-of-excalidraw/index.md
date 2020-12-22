@@ -58,6 +58,10 @@ While we aim to keep Excalidraw simple to use, sometimes we hide little easter e
 
 The [free hand draw](https://github.com/excalidraw/excalidraw/pull/1570) was added by [kbariotis](https://github.com/kbariotis).
 
+### #️⃣ Grid and Stats
+
+From early on people were asking for more precision in their hand drawn diagrams. We complied by adding the [grid support](https://github.com/excalidraw/excalidraw/pull/1788) implemented by [dai-chi](https://github.com/dai-shi) and—inspired by _YouTube's stats for nerds_—our own version of [stats](https://github.com/excalidraw/excalidraw/pull/2453) implemented by [lipis](https://github.com/lipis). Both features could be found under the context menu from the canvas.
+
 ### 💾 File system integration and file handling
 
 In Excalidraw, we use the [browser-nativefs](https://github.com/GoogleChromeLabs/browser-nativefs) library to integrate with the file system of the operating system. This allows us to support a true open→edit→save workflow with proper over-saving and save-as on supported browsers, with a fallback to file uploads and downloads on other browsers. Read more about this feature in [tomayac](https://github.com/tomayac)'s [earlier article](/browser-nativefs/) on this blog. We also have [experimental support](https://web.dev/file-handling/#demo) for file type association, so that when you double-click an `.excalidraw` file in your file explorer, the Excalidraw PWA opens.
