@@ -80,7 +80,7 @@ One of the last things we've introduced this year was a completely rewritten npm
 
 ## Get involved
 
-Excalidraw wouldn't have become what it is today without all the wonderful contributions. If you haven't already, you can start today! And remember, it's not just code that makes Excalidraw better. Every bit helps, be it bug reports, translations, suggestions for improvements, or just hanging out on our [Discord chat](https://discord.com/invite/UexuTaE) :).
+Excalidraw wouldn't have become what it is today without all the wonderful contributions. If you haven't already, you can start today! And remember, it's not just code that makes Excalidraw better. Every bit helps, be it bug reports, translations, suggestions for improvements, or just hanging out on our [Discord chat](https://discord.com/invite/UexuTaE).
 
 ## What's next
 
