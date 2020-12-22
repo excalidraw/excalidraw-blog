@@ -84,4 +84,4 @@ Excalidraw wouldn't have become what it is today without all the wonderful contr
 
 ## What's next
 
-We will continue working hard on improving the performance, adding features where it makes sense, fixing bugs, working with [designers](https://github.com/excalidraw/excalidraw/issues/2506) to make Excalidraw look better, and more. But whatever we do, we'll try our best to ensure we don't lose the simplicity and charm that makes Excalidraw the product you love. 💕 
+We will continue working hard on improving the performance, adding features where it makes sense, fixing bugs, working with [designers](https://github.com/excalidraw/excalidraw/issues/2506) to make Excalidraw look better, and more. But whatever we do, we'll try our best to ensure we don't lose the simplicity and charm that makes Excalidraw the product you love. 💕
