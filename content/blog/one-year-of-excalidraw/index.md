@@ -18,7 +18,7 @@ https://excalidraw.com/#json=6443031091740672,amxJZJxlZAlUBLADWIukFg
 
 ### Commits
 
-This success was only made possible thanks to the over [100 contributors](https://github.com/excalidraw/excalidraw/graphs/contributors) that helped us ship new features, improvements and fixes right to production.
+This success was only made possible thanks to the over [100 contributors](https://github.com/excalidraw/excalidraw/graphs/contributors) that helped us ship new features, improvements, and fixes right to production.
 
 https://excalidraw.com/#json=5035223658004480,t4Y53hm-6O1PgeUVwG_GMQ
 
