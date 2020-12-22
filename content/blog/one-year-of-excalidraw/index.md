@@ -10,7 +10,7 @@ image: og.png
 
 <!-- end -->
 
-Excalidraw started as a way to procrastinate on January 1st, 2020 and ended up being a fully fledged product only one year later! It unfortunately became a core part of many people's workflows due to the pandemic. In this post, we'll go over the most important features that made Excalidraw what it is.
+Excalidraw started as a way to procrastinate on January 1st, 2020, and ended up being a fully fledged product only one year later! In this post, we'll go over the most important features that made Excalidraw what it is, today.
 
 I think we should start with the traffic Excalidraw received. We ended the year at **20k weekly active users** which is pretty incredible for a project that was started only a year ago.
 
