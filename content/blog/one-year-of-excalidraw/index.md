@@ -1,6 +1,6 @@
 ---
 title: One Year of Excalidraw
-date: 2020-12-25
+date: 2021-01-02
 author: Excalidraw Team
 link: https://github.com/orgs/excalidraw/people
 image: og.png
