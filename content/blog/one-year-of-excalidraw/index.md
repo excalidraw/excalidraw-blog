@@ -20,7 +20,7 @@ https://excalidraw.com/#json=6443031091740672,amxJZJxlZAlUBLADWIukFg
 
 This success was only made possible thanks to the over [100 contributors](https://github.com/excalidraw/excalidraw/graphs/contributors) that helped us ship new features, improvements, and fixes right to production.
 
-https://excalidraw.com/#json=6586287846850560,ArZZV_fkah9rGHy1Lymq0Q
+https://excalidraw.com/#json=6671570797854720,bqkIFBlioHfMMLYHtcdGjA
 
 ## Tech stack
 
