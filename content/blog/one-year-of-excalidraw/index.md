@@ -72,7 +72,7 @@ We also have a plugin for Gatsby that automatically converts links to saved Exca
 
 ### 📦 npm package
 
-One of the last things we've introduced this year was a completely rewritten npm package, available at [`@excalidraw/excalidraw`](https://www.npmjs.com/package/@excalidraw/excalidraw). A long time in the making (thanks to [@aakansha1216](https://twitter.com/aakansha1216) for most of the work), this package allows you to easily embed Excalidraw as a React component into your apps.
+One of the last things we've introduced this year was a completely new npm package, available at [`@excalidraw/excalidraw`](https://www.npmjs.com/package/@excalidraw/excalidraw). A long time in the making (thanks to [@aakansha1216](https://twitter.com/aakansha1216) for most of the work), this package allows you to easily embed Excalidraw as a React component into your apps.
 
 ## Excalidraw in the news
 
