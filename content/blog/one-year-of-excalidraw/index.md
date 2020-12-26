@@ -56,7 +56,7 @@ While we aim to keep Excalidraw simple to use, sometimes we hide little easter e
 
 ### ✍️ Free Draw mode
 
-The [free hand draw](https://github.com/excalidraw/excalidraw/pull/1570) was added by [kbariotis](https://github.com/kbariotis).
+The [free hand draw](https://github.com/excalidraw/excalidraw/pull/1570) was one of the most [requested](https://github.com/excalidraw/excalidraw/issues/25) features. Thanks to [kbariotis](https://github.com/kbariotis) for implementing this.
 
 ### #️⃣ Grid and Stats
 
