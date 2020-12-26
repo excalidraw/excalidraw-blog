@@ -16,7 +16,7 @@ I think we should start with the traffic Excalidraw received. We ended the year 
 
 https://excalidraw.com/#json=6443031091740672,amxJZJxlZAlUBLADWIukFg
 
-### Commits
+## Commits
 
 This success was only made possible thanks to the over [100 contributors](https://github.com/excalidraw/excalidraw/graphs/contributors) that helped us ship new features, improvements, and fixes right to production.
 
