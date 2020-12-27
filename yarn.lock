@@ -6523,14 +6523,14 @@ gatsby-plugin-manifest@2.9.1:
     semver "^7.3.2"
     sharp "^0.26.3"
 
-gatsby-plugin-offline@3.7.0:
-  version "3.7.0"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-offline/-/gatsby-plugin-offline-3.7.0.tgz#f4ca6c142695a099fdf3b758684bcbc5d0ad0181"
-  integrity sha512-mhwR4E/59xUCRv9TrEJLf0l8yI/+o8NNtVfQllRsqj64mBlg6x2KGyWjdPea2W0ictd4gi6HnMT/cRa1brjKZQ==
+gatsby-plugin-offline@3.7.1:
+  version "3.7.1"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-offline/-/gatsby-plugin-offline-3.7.1.tgz#ecf3f8b238dd3e63261c38bfdd672217cfc3cb22"
+  integrity sha512-PRx44UwdvGF0uxTZKdTn8K4YTelrIAHeOa/OigTM4QROZBDIfmpvZ9o92uE8oMtN9rPu7aG9tv8q8CQpzx/RYw==
   dependencies:
     "@babel/runtime" "^7.12.5"
     cheerio "^1.0.0-rc.3"
-    gatsby-core-utils "^1.7.0"
+    gatsby-core-utils "^1.7.1"
     glob "^7.1.6"
     idb-keyval "^3.2.0"
     lodash "^4.17.20"
@@ -6774,17 +6774,17 @@ gatsby-remark-smartypants@2.7.0:
     retext-smartypants "^3.0.3"
     unist-util-visit "^1.4.1"
 
-gatsby-source-filesystem@2.8.0:
-  version "2.8.0"
-  resolved "https://registry.yarnpkg.com/gatsby-source-filesystem/-/gatsby-source-filesystem-2.8.0.tgz#72bd65eda0b49aa27c618d9a1eb86e1c1df5d943"
-  integrity sha512-wZXwL/B+PvgSAi4Fkrw33yBk6FdDoz6g2mRfS6NxVVQotbA2oNe+jFc+IL0j9/cUMTItP3rW+8V8U9ufASQfAw==
+gatsby-source-filesystem@2.8.1:
+  version "2.8.1"
+  resolved "https://registry.yarnpkg.com/gatsby-source-filesystem/-/gatsby-source-filesystem-2.8.1.tgz#85b5dce6ed7a1df5d43a54e91f8682d2b219a656"
+  integrity sha512-awvrQ63dayVFsbTnPS8dIpFCsDnvwj5RKUCtwn5wL+DKerOFgcCfyXHsSx4rrnIlnvs30yzR7qNgN5tHSx2++Q==
   dependencies:
     "@babel/runtime" "^7.12.5"
     better-queue "^3.8.10"
     chokidar "^3.4.3"
     file-type "^16.0.0"
     fs-extra "^8.1.0"
-    gatsby-core-utils "^1.7.0"
+    gatsby-core-utils "^1.7.1"
     got "^9.6.0"
     md5-file "^5.0.0"
     mime "^2.4.6"
