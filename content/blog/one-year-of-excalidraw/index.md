@@ -113,7 +113,7 @@ We will continue working hard on improving the performance, adding features wher
 
 ## Some cool drawings
 
-The best part of this project is to see a constant stream of awesome public drawings that people are making with Excalidraw. Here are some of our favorites this year.
+The best part of this project is to see a constant stream of awesome public drawings that people are making with Excalidraw. Here are some of our favorites from 2020.
 
 https://twitter.com/LeaVerou/status/1306001020636540934
 
