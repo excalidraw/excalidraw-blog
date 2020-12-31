@@ -82,10 +82,6 @@ https://twitter.com/Vjeux/status/1257906664239333376
 
 We also launched virtual blackboard. Thanks to [@xixixao](https://twitter.com/xixixao) for building this. https://twitter.com/Msieur_Jo/status/1245288337897914373
 
-### 🏹 Arrow Binding
-
-This was also one of the most awaited features. Thanks to [@xixixao](https://twitter.com/xixixao) for building this. https://twitter.com/excalidraw/status/1292403762427039744
-
 ### 📦 npm package
 
 One of the last things we've introduced this year was a completely new npm package, available at [`@excalidraw/excalidraw`](https://www.npmjs.com/package/@excalidraw/excalidraw). A long time in the making (thanks to [@aakansha1216](https://twitter.com/aakansha1216) for most of the work), this package allows you to easily embed Excalidraw as a React component into your apps.
