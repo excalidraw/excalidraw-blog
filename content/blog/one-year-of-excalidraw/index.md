@@ -70,7 +70,7 @@ https://twitter.com/excalidraw/status/1260287781596794880
 
 ### #️⃣ Grid and Stats
 
-From early on people were asking for more precision in their hand drawn diagrams. We complied by adding the [grid support](https://github.com/excalidraw/excalidraw/pull/1788) implemented by [dai-chi](https://github.com/dai-shi) and—inspired by _YouTube's stats for nerds_—our own version of [stats](https://github.com/excalidraw/excalidraw/pull/2453) implemented by [lipis](https://github.com/lipis). Both features could be found under the context menu from the canvas.
+From early on, people were asking for more precision in their hand drawn diagrams. We complied by adding the [grid support](https://github.com/excalidraw/excalidraw/pull/1788) implemented by [dai-shi](https://github.com/dai-shi), and—inspired by _YouTube's stats for nerds_—our own version of [stats](https://github.com/excalidraw/excalidraw/pull/2453) implemented by [lipis](https://github.com/lipis). Both features could be found under the context menu by right-clicking on the canvas.
 
 ### 💾 File system integration and file handling
 
