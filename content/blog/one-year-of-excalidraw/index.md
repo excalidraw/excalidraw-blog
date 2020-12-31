@@ -66,7 +66,7 @@ https://twitter.com/excalidraw/status/1292403762427039744
 
 Related, the [free hand drawing](https://github.com/excalidraw/excalidraw/pull/1570), one of the most [requested](https://github.com/excalidraw/excalidraw/issues/25) features, was implemented by [kbariotis](https://github.com/kbariotis).
 
-# 🔄 More powerful editing
+### 🔄 More powerful editing
 
 We must give a shout-out to [dai-shi](https://github.com/dai-shi) for continuous implementations of seemingly simple, but in fact pretty hard problems such as rotation and resizing, especially in combination of editing multiple elements at once.
 
