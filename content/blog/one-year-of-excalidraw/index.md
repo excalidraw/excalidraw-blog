@@ -92,16 +92,19 @@ One of the last things we've introduced this year was a completely new npm packa
 
 ## Excalidraw in the news
 
-- https://pakstech.com/blog/draw-diagrams/
-- https://dev.to/ndsn/why-excalidraw-is-mightier-than-the-pen-and-the-sword-329f
-- https://news.ycombinator.com/item?id=23525648
-- https://news.ycombinator.com/item?id=22663435
-- https://web.dev/browser-nativefs/
-- https://www.producthunt.com/posts/excalidraw
-- React Europe talk https://www.youtube.com/watch?v=fix2-SynPGE
-
+- Featured twice on Hacker News:
+  - https://news.ycombinator.com/item?id=23525648
+  - https://news.ycombinator.com/item?id=22663435
+- As an example on **web.dev** article: https://web.dev/browser-nativefs/
+- A few blog posts:
+  - https://pakstech.com/blog/draw-diagrams/
+  - https://dev.to/ndsn/why-excalidraw-is-mightier-than-the-pen-and-the-sword-329f
+- On Product Hunt: https://www.producthunt.com/posts/excalidraw
+- React Europe talk: https://www.youtube.com/watch?v=fix2-SynPGE
+- Used to illustrate an O'Reilly Book: https://www.amazon.com/dp/1492057096
 - Another book: https://twitter.com/dchest/status/1264237749642637312
-- Used to illustrate an O'Reilly Book: https://www.amazon.com/Building-Serverless-Applications-Google-Cloud/dp/1492057096 https://twitter.com/wietsevenema/status/1253752608671621124
+
+https://twitter.com/wietsevenema/status/1253752608671621124
 
 ## Get involved
 
