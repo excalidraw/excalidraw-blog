@@ -58,9 +58,13 @@ https://twitter.com/dbs_sticky/status/1340349749086580736
 
 While we aim to keep Excalidraw simple to use, sometimes we hide little easter eggs that you need to find out for yourself (or find some hints by following our [Twitter account](https://twitter.com/excalidraw)). For example, you can copy any two-column dataset from a spreadsheet, or comma separated values (CSV) from a text file, and paste them into Excalidraw to quickly produce a chart. The [first implementation](https://github.com/excalidraw/excalidraw/pull/1723) was done by [petehunt](https://github.com/petehunt) and several [improvements](https://github.com/excalidraw/excalidraw/pull/2495) were made by [lipis](https://github.com/lipis).
 
-### ✍️ Free Draw mode
+### 🏹 Lines and Arrows
 
-The [free hand draw](https://github.com/excalidraw/excalidraw/pull/1570) was one of the most [requested](https://github.com/excalidraw/excalidraw/issues/25) features. Thanks to [kbariotis](https://github.com/kbariotis) for implementing this.
+Possibly the single most complex feature in Excalidraw, lines/arrows have come a long way since the beginning. Initially, we've only had two-point lines. Multi-point support was added by [gasimgasimzada](https://github.com/GasimGasimzada), with improvements (such as rotation) by [dai-shi](https://github.com/dai-shi), line editing by [dwelle](https://github.com/dwelle), and by popular demand the arrow binding by [xixixao](https://github.com/xixixao).
+
+https://twitter.com/excalidraw/status/1292403762427039744
+
+Related, the [free hand drawing](https://github.com/excalidraw/excalidraw/pull/1570), one of the most [requested](https://github.com/excalidraw/excalidraw/issues/25) features, was implemented by [kbariotis](https://github.com/kbariotis).
 
 https://twitter.com/excalidraw/status/1260287781596794880
 
