@@ -46,7 +46,7 @@ It was important for us early on to make sure that Excalidraw was translated int
 
 ### 📱 Mobile first
 
-Touch support and mobile-optimized layout [were](https://github.com/excalidraw/excalidraw/pull/787) [first](https://github.com/excalidraw/excalidraw/pull/788) [added](https://github.com/excalidraw/excalidraw/pull/790) by [j-f1](https://github.com/j-f1). This includes the creation of a toolbar for mobile devices that displays relevant controls while still leaving most of the screen free for the canvas.
+Touch support and mobile-optimized layout [was](https://github.com/excalidraw/excalidraw/pull/787) [first](https://github.com/excalidraw/excalidraw/pull/788) [added](https://github.com/excalidraw/excalidraw/pull/790) by [j-f1](https://github.com/j-f1). This includes the creation of a toolbar for mobile devices that displays relevant controls while still leaving most of the screen free for the canvas.
 
 ### 📚 Library
 
