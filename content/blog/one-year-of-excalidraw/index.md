@@ -50,7 +50,7 @@ Touch support and mobile-optimized layout [was](https://github.com/excalidraw/ex
 
 ### 📚 Library
 
-The library was [first implemented](https://github.com/excalidraw/excalidraw/pull/1787) by [petehunt](https://github.com/petehunt). Later, after adding support for exporting the library to a file, we eventually introduced a public directory for libraries. Visit [libraries.excalidraw.com](https://libraries.excalidraw.com) for more.
+The library was [first implemented](https://github.com/excalidraw/excalidraw/pull/1787) by [petehunt](https://github.com/petehunt). After adding support for exporting/importing the library, we eventually introduced a public directory where you can share yours. Visit [libraries.excalidraw.com](https://libraries.excalidraw.com) for more.
 
 https://twitter.com/dbs_sticky/status/1340349749086580736
 
