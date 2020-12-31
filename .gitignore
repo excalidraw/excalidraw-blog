@@ -1,9 +1,10 @@
-.cache/
+.cache
 .DS_Store
 .yarn-integrity
 *.log
-node_modules/
+node_modules
 npm-debug.log*
+package-lock.json
 public
 yarn-debug.log*
 yarn-error.log
