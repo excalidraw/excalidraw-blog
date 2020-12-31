@@ -84,7 +84,7 @@ We also launched virtual blackboard. Thanks to [@xixixao](https://twitter.com/xi
 
 ### 🏹 Arrow Binding
 
-https://twitter.com/excalidraw/status/1292403762427039744
+This was also one of the most awaited features. Thanks to [@xixixao](https://twitter.com/xixixao) for building this. https://twitter.com/excalidraw/status/1292403762427039744
 
 ### 📦 npm package
 
@@ -103,6 +103,9 @@ One of the last things we've introduced this year was a completely new npm packa
 - React Europe talk: https://www.youtube.com/watch?v=fix2-SynPGE
 - Used to illustrate an O'Reilly Book: https://www.amazon.com/dp/1492057096
 - Another book: https://twitter.com/dchest/status/1264237749642637312
+- Few companies also integrated Excalidraw in the product
+  - [HackerRank](https://blog.hackerrank.com/virtual-whiteboarding-for-system-design-interviews/)
+  - [Lobelia Earth](https://twitter.com/lobeliaearth/status/1275073557484244992)
 
 https://twitter.com/wietsevenema/status/1253752608671621124
 
