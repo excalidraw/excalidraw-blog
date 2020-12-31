@@ -108,7 +108,7 @@ https://twitter.com/wietsevenema/status/1253752608671621124
 
 ## Get involved
 
-Excalidraw wouldn't have become what it is today without all the wonderful contributions. If you haven't already, you can start today! And remember, it's not just code that makes Excalidraw better. Every bit helps, be it bug reports, translations, suggestions for improvements, or just hanging out on our [Discord chat](https://discord.com/invite/UexuTaE).
+Excalidraw wouldn't have become what it is today without all the wonderful contributions. If you haven't already, you can start today! And remember, it's not just code that makes Excalidraw better. Every bit helps, be it bug reports, translations, suggestions for improvements, or just hanging out on our [Discord chat](https://discord.com/invite/UexuTaE). Also don't forget to follow us on Twitter [@excalidraw](https://twitter.com/excalidraw) for all the latest news and announcements.
 
 ## What's next
 
