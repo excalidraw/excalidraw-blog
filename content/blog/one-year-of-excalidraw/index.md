@@ -30,7 +30,7 @@ https://excalidraw.com/#json=6671570797854720,bqkIFBlioHfMMLYHtcdGjA
 
 ### 🤝 Collaboration
 
-When the lockdown started, companies all around the world struggled to adapt to remote work. [idlewinn](https://github.com/idlewinn) and [petehunt](https://github.com/petehunt) [implemented live collaboration](https://github.com/excalidraw/excalidraw/pull/879) to enable it to be used for interviews, brainstorming, presentations, and more. If you're curious, we [explained how it works in a blog post](/building-excalidraw-p2p-collaboration-feature/).
+When the lockdown started, companies all around the world struggled to adapt to remote work. [idlewinn](https://github.com/idlewinn) and [petehunt](https://github.com/petehunt) [implemented live collaboration](https://github.com/excalidraw/excalidraw/pull/879) that could be used for interviews, brainstorming, presentations, and more. If you're curious, we [explained how it works in a blog post](/building-excalidraw-p2p-collaboration-feature/).
 
 https://twitter.com/Vjeux/status/1238907727906127872
 
