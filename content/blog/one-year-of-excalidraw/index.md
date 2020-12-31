@@ -22,7 +22,7 @@ Excalidraw is fully open source, but it also stands on the shoulders of many oth
 
 In addition, Excalidraw was made possible thanks to awesome services such as [Vercel](https://vercel.com/) for hosting and pull request previews, [Crowdin](https://crowdin.com/project/excalidraw) for managing dozens of translations, [CodeSandbox](https://codesandbox.io/) for easy hacking on the project, [Sentry](https://sentry.io/) for error reporting, and [Dependabot](https://github.blog/2020-06-01-keep-all-your-packages-up-to-date-with-dependabot/) to keep our dependencies up to date.
 
-Finally, this success couldn't have been possible without to the over [100 contributors](https://github.com/excalidraw/excalidraw/graphs/contributors) that helped us ship new features, improvements, and fixes right to production.
+Finally, this success wouldn't be possible without you, the over [100 contributors](https://github.com/excalidraw/excalidraw/graphs/contributors) who helped us ship new features, improvements, and fixes right to production.
 
 https://excalidraw.com/#json=6671570797854720,bqkIFBlioHfMMLYHtcdGjA
 
@@ -78,13 +78,15 @@ In Excalidraw, we use the [browser-nativefs](https://github.com/GoogleChromeLabs
 
 ### ⚙️ Gatsby plugin
 
-We also have a plugin for Gatsby that automatically converts links to saved Excalidraw drawings to inline SVG at build time. We are actually using it in this post for our charts. Implemented by [trevorblades](https://github.com/trevorblades) & [j-f1](https://github.com/j-f1), and you can find it under [@excalidraw/gatsby-embedder-excalidraw](https://github.com/excalidraw/gatsby-embedder-excalidraw).
+We also have a plugin for Gatsby that automatically converts links to saved Excalidraw drawings to inline SVG at build time. We are actually using it in this post for our charts. Implemented by [trevorblades](https://github.com/trevorblades) and [j-f1](https://github.com/j-f1). You can find it under [@excalidraw/gatsby-embedder-excalidraw](https://github.com/excalidraw/gatsby-embedder-excalidraw).
 
 https://twitter.com/Vjeux/status/1257906664239333376
 
 ### 🌒 Dark Mode
 
-We also launched virtual blackboard. Thanks to [@xixixao](https://twitter.com/xixixao) for building this. https://twitter.com/Msieur_Jo/status/1245288337897914373
+To help protect your eyes, [@xixixao](https://twitter.com/xixixao) added dark mode, effectively turning Excalidraw into an actual blackboard.
+
+https://twitter.com/Msieur_Jo/status/1245288337897914373
 
 ### 📦 npm package
 
@@ -102,16 +104,16 @@ One of the last things we've introduced this year was a completely new npm packa
 - On Product Hunt: https://www.producthunt.com/posts/excalidraw
 - React Europe talk: https://www.youtube.com/watch?v=fix2-SynPGE
 - Used to illustrate an O'Reilly Book: https://www.amazon.com/dp/1492057096
+
+    https://twitter.com/wietsevenema/status/1253752608671621124
 - Another book: https://twitter.com/dchest/status/1264237749642637312
 - Few companies also integrated Excalidraw in the product
   - [HackerRank](https://blog.hackerrank.com/virtual-whiteboarding-for-system-design-interviews/)
   - [Lobelia Earth](https://twitter.com/lobeliaearth/status/1275073557484244992)
 
-https://twitter.com/wietsevenema/status/1253752608671621124
-
 ## Get involved
 
-Excalidraw wouldn't have become what it is today without all the wonderful contributions. If you haven't already, you can start today! And remember, it's not just code that makes Excalidraw better. Every bit helps, be it bug reports, translations, suggestions for improvements, or just hanging out on our [Discord chat](https://discord.com/invite/UexuTaE). Also don't forget to follow us on Twitter [@excalidraw](https://twitter.com/excalidraw) for all the latest news and announcements.
+Excalidraw wouldn't have become what it is today without all the wonderful contributions. If you haven't already, you can start today! And remember, it's not just code that makes Excalidraw better. Every bit helps, be it bug reports, translations, suggestions for improvements, or just hanging out on our [Discord chat](https://discord.com/invite/UexuTaE). Don't forget to follow us on Twitter [@excalidraw](https://twitter.com/excalidraw) for all the latest news and announcements.
 
 ## What's next
 
