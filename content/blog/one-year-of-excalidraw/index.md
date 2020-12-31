@@ -155,8 +155,6 @@ https://twitter.com/ilyamkin/status/1226609908327514113
 
 https://twitter.com/dai_shi/status/1240494226531479552
 
-https://twitter.com/dai_shi/status/1245273872053579776
-
 https://twitter.com/bartekci/status/1246270772043296768
 
 https://twitter.com/masbagal/status/1247763747755589633
