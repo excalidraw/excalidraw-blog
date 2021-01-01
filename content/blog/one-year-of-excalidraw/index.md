@@ -60,7 +60,7 @@ While we aim to keep Excalidraw simple to use, sometimes we hide little easter e
 
 ### 🏹 Lines and Arrows
 
-Possibly the single most complex feature in Excalidraw, lines/arrows have come a long way since the beginning. Initially, we've only had two-point lines. Multi-point support was added by [gasimgasimzada](https://github.com/GasimGasimzada), with improvements by [dai-shi](https://github.com/dai-shi), line editing by [dwelle](https://github.com/dwelle), and by popular demand the arrow binding by [xixixao](https://github.com/xixixao).
+Possibly the single most complex feature in Excalidraw, lines/arrows have come a long way since the beginning. Initially, we've only had two-point lines. Multi-point support was added by [gasimgasimzada](https://github.com/GasimGasimzada), with improvements by [dai-shi](https://github.com/dai-shi), line editing by [dwelle](https://github.com/dwelle), arrowheads by [steveruizok](https://github.com/steveruizok), and by popular demand the arrow binding by [xixixao](https://github.com/xixixao).
 
 https://twitter.com/excalidraw/status/1292403762427039744
 
