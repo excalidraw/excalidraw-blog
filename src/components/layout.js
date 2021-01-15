@@ -83,8 +83,6 @@ const Layout = ({ location, title, children, parentClassName }) => {
           {" • "}
           <Link to="/">Blog</Link>
           {" • "}
-          <a href="https://howto.excalidraw.com">How to</a>
-          {" • "}
           <a href="https://twitter.com/excalidraw">Twitter</a>
           {" • "}
           <a href="https://github.com/excalidraw/excalidraw-blog">Source</a>
