@@ -2,7 +2,7 @@
   "author": "Christopher Chedeau <vjeuxx@gmail.com>",
   "dependencies": {
     "@weknow/gatsby-remark-twitter": "0.2.3",
-    "gatsby": "2.30.1",
+    "gatsby": "2.30.3",
     "gatsby-embedder-excalidraw": "1.1.1",
     "gatsby-image": "2.9.0",
     "gatsby-plugin-canonical-urls": "2.8.0",
