@@ -6556,17 +6556,17 @@ gatsby-plugin-react-helmet@3.9.0:
   dependencies:
     "@babel/runtime" "^7.12.5"
 
-gatsby-plugin-sharp@2.12.2:
-  version "2.12.2"
-  resolved "https://registry.yarnpkg.com/gatsby-plugin-sharp/-/gatsby-plugin-sharp-2.12.2.tgz#3f3b028e65d6d34bd41fa3d463fde773a9d8b77f"
-  integrity sha512-25jys0BnsO6jLa5Iv1ykerLBpeaHKSmeq9ATeTghrdHVVQmi+H2uEjJdp1kskdHQOCa03850ZfwXyKjp80F2hg==
+gatsby-plugin-sharp@2.13.2:
+  version "2.13.2"
+  resolved "https://registry.yarnpkg.com/gatsby-plugin-sharp/-/gatsby-plugin-sharp-2.13.2.tgz#ace1bc78227e18ddd882d266decafb6748a8863f"
+  integrity sha512-e3awqhwAq6so5NxIsLV10uiI557tCWsQaopEFp5IzC5J+CqqY1R57rzvymtR+foWCDnkSk4int6ZdlRDevMiDA==
   dependencies:
     "@babel/runtime" "^7.12.5"
     async "^3.2.0"
     bluebird "^3.7.2"
     fs-extra "^9.0.1"
-    gatsby-core-utils "^1.8.0"
-    gatsby-telemetry "^1.8.1"
+    gatsby-core-utils "^1.9.0"
+    gatsby-telemetry "^1.9.0"
     got "^10.7.0"
     imagemin "^7.0.1"
     imagemin-mozjpeg "^9.0.0"
@@ -6574,7 +6574,7 @@ gatsby-plugin-sharp@2.12.2:
     lodash "^4.17.20"
     mini-svg-data-uri "^1.2.3"
     potrace "^2.1.8"
-    probe-image-size "^5.0.0"
+    probe-image-size "^6.0.0"
     progress "^2.0.3"
     semver "^7.3.4"
     sharp "^0.27.0"
@@ -6799,10 +6799,10 @@ gatsby-source-filesystem@2.9.1:
     valid-url "^1.0.9"
     xstate "^4.14.0"
 
-gatsby-telemetry@^1.8.1:
-  version "1.8.1"
-  resolved "https://registry.yarnpkg.com/gatsby-telemetry/-/gatsby-telemetry-1.8.1.tgz#c9fefb0a16d437c9ddb4722fd92909c390bf0c4e"
-  integrity sha512-Az+2rArUf2Qxef6dOxYIo6SadRSFHWCckZGThiedwWguvjz4WLF4G4d7k1q/6BvzIu+tk/SrH+/fQ/Un6WOXPQ==
+gatsby-telemetry@^1.8.1, gatsby-telemetry@^1.9.0:
+  version "1.9.0"
+  resolved "https://registry.yarnpkg.com/gatsby-telemetry/-/gatsby-telemetry-1.9.0.tgz#91083de2f85c3dc69a38653fddd5e33af0daab75"
+  integrity sha512-RWjA7/oG+Z2m/gNhv9/rvOjcKxSNm9n+PaVfTJGcQa5M3BTLwkf9tPSswpo8WAPu2kgnlql3bH12eKB61f5VAw==
   dependencies:
     "@babel/code-frame" "^7.10.4"
     "@babel/runtime" "^7.12.5"
@@ -6812,7 +6812,7 @@ gatsby-telemetry@^1.8.1:
     boxen "^4.2.0"
     configstore "^5.0.1"
     fs-extra "^8.1.0"
-    gatsby-core-utils "^1.8.0"
+    gatsby-core-utils "^1.9.0"
     git-up "^4.0.2"
     is-docker "^2.1.1"
     lodash "^4.17.20"
