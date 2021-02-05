@@ -80,7 +80,7 @@ From early on, people were asking for more precision in their hand drawn diagram
 
 ### 💾 File system integration and file handling
 
-In Excalidraw, we use the [browser-nativefs](https://github.com/GoogleChromeLabs/browser-nativefs) library to integrate with the file system of the operating system. This allows us to support a true open→edit→save workflow with proper over-saving and save-as on supported browsers, with a fallback to file uploads and downloads on other browsers. Read more about this feature in [tomayac](https://github.com/tomayac)'s [earlier article](/browser-nativefs/) on this blog. We also have [experimental support](https://web.dev/file-handling/#demo) for file type association, so that when you double-click an `.excalidraw` file in your file explorer, the Excalidraw PWA opens.
+In Excalidraw, we use the [browser-fs-access](https://github.com/GoogleChromeLabs/browser-fs-access) library to integrate with the file system of the operating system. This allows us to support a true open→edit→save workflow with proper over-saving and save-as on supported browsers, with a fallback to file uploads and downloads on other browsers. Read more about this feature in [tomayac](https://github.com/tomayac)'s [earlier article](/browser-fs-access/) on this blog. We also have [experimental support](https://web.dev/file-handling/#demo) for file type association, so that when you double-click an `.excalidraw` file in your file explorer, the Excalidraw PWA opens.
 
 ### ⚙️ Gatsby plugin
 
@@ -104,7 +104,7 @@ One of the last things we've introduced this year was a completely new npm packa
   - https://news.ycombinator.com/item?id=23525648
   - https://news.ycombinator.com/item?id=22663435
   - https://news.ycombinator.com/item?id=25608336
-- As an example on **web.dev** article: https://web.dev/browser-nativefs/
+- As an example on **web.dev** article: https://web.dev/browser-fs-access/
 - A few blog posts:
   - https://pakstech.com/blog/draw-diagrams/
   - https://dev.to/ndsn/why-excalidraw-is-mightier-than-the-pen-and-the-sword-329f
