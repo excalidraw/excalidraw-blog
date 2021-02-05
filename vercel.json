@@ -1,0 +1,5 @@
+{
+  "redirects": [
+    { "source": "/browser-nativefs", "destination": "/browser-fs-access" }
+  ]
+}
