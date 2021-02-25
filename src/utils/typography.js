@@ -2,7 +2,7 @@ import Typography from "typography";
 import Wordpress2016 from "typography-theme-wordpress-2016";
 
 Wordpress2016.headerFontFamily = "BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif".split(
-  ", "
+  ", ",
 );
 Wordpress2016.headerWeight = 700;
 
