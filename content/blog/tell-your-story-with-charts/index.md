@@ -14,7 +14,7 @@ One of the hidden features of Excalidraw, is that you can generate charts in sec
 
 Charts primary reason to be created is to tell a story. I don't know about you, but I often spend a lot of time configuring the chart to be telling the story I want. I will make one or two elements stand out by changing their color, adding arrows to annotate some parts, adding white boxes around information that's extraneous... Unfortunately, this is often not well supported by charting libraries.
 
-In my ideal workflow, I want to take the data and generate the chart, then treat all the elements of the chart as free form and modify them however I want. This is exactly how Excalidraw charting feature works! Once you're chart is generated, you can use all the power of Excalidraw to style it, move things around, hide some details...
+In my ideal workflow, I want to take the data and generate the chart, then treat all the elements of the chart as free form and modify them however I want. This is exactly how Excalidraw charting feature works! Once your chart is generated, you can use all the power of Excalidraw to style it, move things around, hide some details...
 
 ## Examples
 
