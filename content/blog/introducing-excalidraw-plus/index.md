@@ -32,7 +32,7 @@ We didn't want to keep you waiting any longer, but we are hard at work to bring 
 
 One of our goals is to get Excalidraw to as many people as possible, and our commitment to the open source project remains strong. Excalidraw+ is built on the same platform that you can build on yourself using our npm package, and you have, from [HackerRank⁠](https://www.hackerrank.com/), [Replit⁠](https://twitter.com/Replit/status/1385628186193448963), [RoamResearch⁠](https://roamresearch.com/), to Facebook and others.
 
-In fact, one of the reasons for creating Excalidraw+ is to ensure that the Excalidraw ecosystem not only survives, but thrives going forward. We will be able to invest more time and resources into it, which will benefit all, no matter what app you use                        Excalidraw to draw in.
+In fact, one of the reasons for creating Excalidraw+ is to ensure that the Excalidraw ecosystem not only survives, but thrives going forward. We will be able to invest more time and resources into it, which will benefit all, no matter what app you use Excalidraw to draw in.
 
 As for the [excalidraw.com](excalidraw.com) website, it will of course continue to be free and actively developed.
 
