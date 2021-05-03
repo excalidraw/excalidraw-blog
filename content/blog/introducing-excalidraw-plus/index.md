@@ -26,7 +26,7 @@ During the initial release there might be some rough edges, but we'll work with 
 
 **[Sign-up for Excalidraw+](https://plus.excalidraw.com)** for $7/month.
 
-![](https://plus.excalidraw.com/lp/organize.mp4)
+https://plus.excalidraw.com/lp/organize.mp4
 
 ## Open Source & Excalidraw
 
