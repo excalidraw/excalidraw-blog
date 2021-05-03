@@ -42,6 +42,8 @@ We believe that this is going to be a win-win situation. People that want to use
 
 Think big, start small. Excalidraw has a bright future ahead, and we extend an invitation for you to come and shape that future with us!
 
-<a style="margin: 0 auto" href="https://plus.excalidraw.com">Join Excalidraw+</a>
+<center>
+<a href="https://plus.excalidraw.com">Join Excalidraw+</a>
+</center>
 
 <a style="margin: 0 auto" href="https://plus.excalidraw.com"><img src="./excalidraw-plus.png"></a>
