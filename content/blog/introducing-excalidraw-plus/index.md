@@ -26,7 +26,7 @@ During the initial release there might be some rough edges, but we'll work with 
 
 **[Sign-up for Excalidraw+](https://plus.excalidraw.com)** for $7/month.
 
-https://plus.excalidraw.com/lp/organize.mp4
+<video src="./organize.mp4" autoplay playsinline loop style="width: 100%; height: auto;"></video>
 
 ## Open Source & Excalidraw
 
