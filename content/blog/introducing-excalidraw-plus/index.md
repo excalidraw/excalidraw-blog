@@ -1,7 +1,7 @@
 ---
 title: Introducing Excalidraw+
 date: 2021-05-03
-author: excalidraw
+author: Excalidraw Team
 link: https://twitter.com/excalidraw
 image: excalidraw-plus.png
 ---
@@ -38,8 +38,10 @@ As for the [excalidraw.com](excalidraw.com) website, it will of course continue 
 
 We believe that this is going to be a win-win situation. People that want to use Excalidraw in a work environment will finally have a solution that works well for them and the open source project will be properly funded so that it can stand the test of time.
 
-# We’re just beginning
+## We’re just beginning
 
 Think big, start small. Excalidraw has a bright future ahead, and we extend an invitation for you to come and shape that future with us!
 
-<center>[Join Excalidraw+](https://plus.excalidraw.com)</center>
+<center><a href="https://plus.excalidraw.com">Join Excalidraw+</a></center>
+
+<img src="./excalidraw-plus.png" style="margin: 0 auto">
