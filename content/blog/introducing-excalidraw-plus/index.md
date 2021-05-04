@@ -34,7 +34,7 @@ One of our goals is to get Excalidraw to as many people as possible, and our com
 
 In fact, one of the reasons for creating Excalidraw+ is to ensure that the Excalidraw ecosystem not only survives, but thrives going forward. We will be able to invest more time and resources into it, which will benefit all, no matter what app you use Excalidraw to draw in.
 
-As for the [excalidraw.com](excalidraw.com) website, it will of course continue to be free and actively developed.
+As for the [excalidraw.com](https://excalidraw.com) website, it will of course continue to be free and actively developed.
 
 We believe that this is going to be a win-win situation. People that want to use Excalidraw in a work environment will finally have a solution that works well for them and the open source project will be properly funded so that it can stand the test of time.
 
