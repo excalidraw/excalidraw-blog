@@ -6,7 +6,11 @@ link: https://twitter.com/excalidraw
 image: excalidraw-plus.png
 ---
 
+Excalidraw has had tremendous success as a tool for drawing up your ideas, but it hasn't put teamwork on the center stage. Read on to find out what we've been up to for the past several months!
+
 <!-- end -->
+
+<hr/>
 
 Excalidraw, the virtual whiteboard app for sketching hand-drawn like diagrams, has come a [long way](https://blog.excalidraw.com/one-year-of-excalidraw/). With the remote work becoming the status quo, Excalidraw was able to show its true potential and we've come to a point where over 100K people have used it just the last month!
 
