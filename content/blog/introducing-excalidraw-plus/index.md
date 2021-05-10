@@ -28,7 +28,7 @@ In the coming weeks we'll focus on making collaboration more robust, especially 
 
 We didn't want to keep you waiting any longer, but we are hard at work to bring many more awesome features to Excalidraw+.
 
-**[Try Excalidraw+ for free](https://plus.excalidraw.com)**, and then for $7/month.
+**[Try Excalidraw+ for free](https://plus.excalidraw.com/?utm_source=excalidraw&utm_medium=blog&utm_campaign=launch)**, and then for $7/month.
 
 <video src="./organize.mp4" autoplay playsinline loop muted style="width: 100%; height: auto;"></video>
 
@@ -47,7 +47,7 @@ We believe that this is going to be a win-win situation. People that want to use
 Think big, start small. Excalidraw has a bright future ahead, and we extend an invitation for you to come and shape that future with us!
 
 <center>
-<a href="https://plus.excalidraw.com">Join Excalidraw+</a>
+<a href="https://plus.excalidraw.com/?utm_source=excalidraw&utm_medium=blog&utm_campaign=launch">Join Excalidraw+</a>
 </center>
 
-<a style="margin: 0 auto" href="https://plus.excalidraw.com"><img src="./excalidraw-plus.png"></a>
+<a style="margin: 0 auto" href="https://plus.excalidraw.com/?utm_source=excalidraw&utm_medium=blog&utm_campaign=launch"><img src="./excalidraw-plus.png"></a>
