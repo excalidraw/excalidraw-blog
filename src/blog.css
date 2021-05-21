@@ -1,0 +1,48 @@
+.blog-post h3 {
+  margin-top: 1rem;
+  margin-bottom: .5rem;
+}
+
+.blog-post svg,
+.blog-post img {
+  max-width: 100%;
+  margin: 4px auto;
+  display: block;
+}
+
+.blog-post table {
+  width: 60%;
+  margin: 0 auto 1.75rem;
+}
+
+.blog-post th {
+  font-weight: 700;
+  font-size: 1.1em;
+  border-bottom-width: 3px;
+}
+
+.blog-post td[align="right"],
+.blog-post th[align="right"] {
+  text-align: right;
+}
+
+.blog-post td[align="center"],
+.blog-post th[align="center"] {
+  text-align: center;
+}
+
+.blog-post td,
+.blog-post th {
+  padding: 4px 0;
+}
+
+th,
+td {
+  border-color: #adb5bd;
+}
+
+@media only screen and (max-width: 640px) {
+  .blog-post table {
+    width: 90%;
+  }
+}

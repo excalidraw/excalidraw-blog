@@ -3,9 +3,10 @@ title: End-to-End Encryption in the Browser
 date: 2020-03-21
 author: vjeux
 link: https://twitter.com/vjeux
+image: og.png
 ---
 
-[Excalidraw](https://excalidraw.com/) is a whiteboard tool that lets you easily sketch diagrams that have a hand-drawn feel to them. It is very handy to dump your thoughts many of which are sensitive: designs for new features not yet released, interview questions, org charts...
+[Excalidraw](https://excalidraw.com/) is a whiteboard tool that lets you easily sketch diagrams that have a hand-drawn feel to them. It is very handy to dump your thoughts many of which are sensitive: designs for new features not yet released, interview questions, org charts, etc.
 
 <!-- end -->
 
@@ -49,7 +50,7 @@ We generate a random key that will be used to encrypt the data.
 const key = await window.crypto.subtle.generateKey(
   { name: "AES-GCM", length: 128 },
   true, // extractable
-  ["encrypt", "decrypt"]
+  ["encrypt", "decrypt"],
 );
 ```
 
@@ -59,7 +60,7 @@ We encrypt the content with that random key. In this case, we only encrypt the c
 const encrypted = await window.crypto.subtle.encrypt(
   { name: "AES-GCM", iv: new Uint8Array(12) /* don't reuse key! */ },
   key,
-  new TextEncoder().encode(JSON.stringify(content))
+  new TextEncoder().encode(JSON.stringify(content)),
 );
 ```
 
@@ -107,7 +108,7 @@ const key = await window.crypto.subtle.importKey(
   },
   { name: "AES-GCM", length: 128 },
   false, // extractable
-  ["decrypt"]
+  ["decrypt"],
 );
 ```
 
@@ -117,7 +118,7 @@ We decrypt the message, decode it to string and parse it back as JSON.
 const decrypted = await window.crypto.subtle.decrypt(
   { name: "AES-GCM", iv: new Uint8Array(12) },
   key,
-  encrypted
+  encrypted,
 );
 const decoded = new window.TextDecoder().decode(new Uint8Array(decrypted));
 const content = JSON.parse(decoded);

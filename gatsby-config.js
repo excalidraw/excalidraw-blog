@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
     title: "Excalidraw Blog",
-    author: "Christopher Chedeau",
     description: "Virtual whiteboard for sketching hand-drawn like diagrams",
+    image: "/og-image.png",
     siteUrl: "https://blog.excalidraw.com",
     social: {
       twitter: "excalidraw",
@@ -60,6 +60,7 @@ module.exports = {
           "gatsby-remark-prismjs",
           "gatsby-remark-copy-linked-files",
           "gatsby-remark-smartypants",
+          "@weknow/gatsby-remark-twitter",
           {
             resolve: "gatsby-remark-embedder",
             options: {
@@ -102,5 +103,12 @@ module.exports = {
     },
     "gatsby-plugin-twitter",
     "gatsby-plugin-zeit-now",
+    {
+      resolve: `gatsby-plugin-canonical-urls`,
+      options: {
+        siteUrl: `https://blog.excalidraw.com`,
+        stripQueryString: true,
+      },
+    },
   ],
 };

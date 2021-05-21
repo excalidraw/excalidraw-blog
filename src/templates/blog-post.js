@@ -8,14 +8,18 @@ function BlogPostTemplate({ data, pageContext: { previous, next }, location }) {
   const post = data.markdownRemark;
   const siteTitle = data.site.siteMetadata.title;
   const editUrl = `https://github.com/excalidraw/excalidraw-blog/edit/master/${post.fileAbsolutePath.substr(
-    post.fileAbsolutePath.indexOf("content/blog")
+    post.fileAbsolutePath.indexOf("content/blog"),
   )}`;
   const discussUrl = `https://mobile.twitter.com/search?q=${encodeURIComponent(
-    `https://blog.excalidraw.com${post.fields.slug}`
+    `https://blog.excalidraw.com${post.fields.slug}`,
   )}`;
   return (
-    <Layout location={location} title={siteTitle}>
-      <SEO title={post.frontmatter.title} description={post.excerpt} />
+    <Layout location={location} title={siteTitle} parentClassName={"blog-post"}>
+      <SEO
+        title={post.frontmatter.title}
+        description={post.excerpt}
+        image={post.frontmatter.image && post.frontmatter.image.publicURL}
+      />
       <h1
         style={{
           marginBottom: 0,
@@ -30,6 +34,16 @@ function BlogPostTemplate({ data, pageContext: { previous, next }, location }) {
         }}
       >
         <strong>{post.frontmatter.date}</strong>
+        {post.frontmatter.author && (
+          <span style={{ opacity: 0.75, fontStyle: "italic" }}>
+            {", by "}
+            {post.frontmatter.link ? (
+              <a href={post.frontmatter.link}>{post.frontmatter.author}</a>
+            ) : (
+              <>{post.frontmatter.author}</>
+            )}
+          </span>
+        )}
         {post.frontmatter.note ? (
           <>
             {" • "}
@@ -39,18 +53,6 @@ function BlogPostTemplate({ data, pageContext: { previous, next }, location }) {
       </p>
       <div dangerouslySetInnerHTML={{ __html: post.html }} />
       <p style={{ fontFamily: "var(--ui-font)", marginBottom: 0 }}>
-        {post.frontmatter.author ? (
-          <>
-            by{" "}
-            {post.frontmatter.link ? (
-              <a href={post.frontmatter.link}>{post.frontmatter.author}</a>
-            ) : (
-              <>{post.frontmatter.author}</>
-            )}
-            {" • "}
-          </>
-        ) : null}
-
         <a href={discussUrl}>Discuss on Twitter</a>
         {" • "}
         <a href={editUrl}>Edit on GitHub</a>
@@ -112,6 +114,10 @@ export const pageQuery = graphql`
         note
         author
         link
+        image {
+          id
+          publicURL
+        }
       }
       fields {
         slug

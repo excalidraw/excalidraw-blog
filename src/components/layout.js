@@ -8,7 +8,7 @@ import Excalidraw from "./excalidraw";
 import "./layoutStyles.css";
 import Toggle from "./Toggle";
 
-const Layout = ({ location, title, children }) => {
+const Layout = ({ location, title, children, parentClassName }) => {
   const rootPath = `${__PATH_PREFIX__}/`;
   return (
     <div
@@ -71,7 +71,7 @@ const Layout = ({ location, title, children }) => {
         <span style={{ clear: "both" }} />
         {location.pathname === rootPath ? <h1>{title}</h1> : null}
       </header>
-      <main>{children}</main>
+      <main className={parentClassName}>{children}</main>
       <footer
         style={{
           textAlign: "center",
@@ -81,13 +81,11 @@ const Layout = ({ location, title, children }) => {
         <span>
           © {new Date().getFullYear()} Excalidraw
           {" • "}
-          <Link to="/">Blog</Link>
-          {" • "}
-          <a href="https://howto.excalidraw.com">How to</a>
-          {" • "}
           <a href="https://twitter.com/excalidraw">Twitter</a>
           {" • "}
-          <a href="https://github.com/excalidraw/excalidraw-blog">Source</a>
+          <a href="https://github.com/excalidraw/excalidraw-blog">
+            Source Code
+          </a>
           {" • "}
           <a href="https://github.com/excalidraw/excalidraw-blog/blob/master/LICENSE">
             MIT Licensed
