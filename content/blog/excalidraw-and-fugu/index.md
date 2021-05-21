@@ -373,6 +373,8 @@ Talking of which, I asked lipis one last question regarding what he thinks is mi
 
 > The File System Access API is great, but you know what? Most files that I care about these days live in my Dropbox or Google Drive, not on my hard disk. I wish the File System Access API would include an abstraction layer for remote file systems providers like Dropbox or Google to integrate with and that developers could code against. Users could then relax and know their files are safe with the cloud provider they trust.
 
+[👆 This talk was recorded in March 2021. We have since [introduced Excalidraw+](https://blog.excalidraw.com/introducing-excalidraw-plus/). Lipis' remark still holds for web apps in general, although we have solved the problem he raises for Excalidraw users.]
+
 I fully agree with lipis, I live in the cloud, too. Here's hoping that this will be implemented soon.
 
 ## Tabbed application mode
