@@ -14,3 +14,6 @@ svg {
   height: initial;
   width: initial;
 }
+video {
+  max-width: 100%;
+}
