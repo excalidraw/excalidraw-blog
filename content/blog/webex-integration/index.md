@@ -24,7 +24,7 @@ TODO
 
 For now, to use a specific embedded app such as Excalidraw in your Webex meeting, you will first need to enable it for for your organization (as an administrator) — once that's done, you will be able to use Excalidraw in your meetings going forward.
 
-When you open the Excalidra app for the first time, you will see a blank canvas. You can draw something to prepare beforehand, or you can start collaborating right away by clicking the "Open together" button at the bottom of the screen.
+When you open the Excalidraw app for the first time, you will see a blank canvas. You can draw something to prepare beforehand, or you can start collaborating right away by clicking the "Open together" button at the bottom of the screen.
 
 Your data is [end-to-end ecnrypted](/end-to-end-encryption) the same way as you are used to on https://excalidraw.com.
 
