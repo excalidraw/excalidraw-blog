@@ -12,7 +12,7 @@ Collaborate with colleagues using Excalidraw whiteboard directly in your Webex m
 
 ## Excalidraw ❤️ Meetings
 
-Listening to your stories it's amazing what you use Excalidraw for in the wild, from illustrating blog posts, to wireframing, teaching, presenting, to interviewing. One common denominator is collaboration, which has always been a core part of Excalidraw. Often times, text and drawings aren't enough, and for this purpose we're excited to anounce Excalidraw integration for Webex Meetings.
+Listening to your stories it's amazing what you use Excalidraw for in the wild, from illustrating blog posts, to wireframing, teaching, presenting, to interviewing. One common denominator is collaboration, which has always been a core part of Excalidraw. Oftentimes, text and drawings aren't enough, and for this purpose, we're excited to announce Excalidraw integration for Webex Meetings.
 
 ## Excalidraw in Webex
 
