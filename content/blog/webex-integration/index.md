@@ -18,7 +18,6 @@ Listening to your stories it's amazing what you use Excalidraw for in the wild, 
 
 <video src="./webex-blog-promo.mp4" autoplay playsinline loop muted style="width: 100%; height: auto;"></video>
 
-
 TODO
 
 ## How to use
