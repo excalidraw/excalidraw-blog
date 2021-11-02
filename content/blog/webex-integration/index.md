@@ -26,13 +26,13 @@ For now, to use a specific embedded app such as Excalidraw in your Webex meeting
 
 When you open the Excalidraw app for the first time, you will see a blank canvas. You can draw something to prepare beforehand, or you can start collaborating right away by clicking the "Open together" button at the bottom of the screen. See these steps illustrated on our [Webex homepage](https://webex.excalidraw.com/#how-to-install).
 
-Your data is [end-to-end ecnrypted](/end-to-end-encryption) the same way as you are used to on https://excalidraw.com.
+Your data is [end-to-end ecnrypted](/end-to-end-encryption) the same way as you are used to on [excalidraw.com](https://excalidraw.com).
 
 Note that the collaboration room is active only for the duration of the meeting. Each meeting creates its own room.
 
 ## More to come
 
-Some features you are used to from https://excalidraw.com such as exporting to [Excalidraw Plus](https://plus.excalidraw.com) or the recently added image support isn't yet available in Webex Meetings due to a few platform limitations that will be resolved over the coming weeks. For similar reasons, some features available on specific operating systems may not work on others (such as exporting to a file, which currently only works on Windows).
+Some features you are used to from [excalidraw.com](https://excalidraw.com) such as exporting to [Excalidraw Plus](https://plus.excalidraw.com) or the recently added image support isn't yet available in Webex Meetings due to a few platform limitations that will be resolved over the coming weeks. For similar reasons, some features available on specific operating systems may not work on others (such as exporting to a file, which currently only works on Windows).
 
 Also, collaborating between browsers and desktop clients doesn't work reliably yet as there's no official support for Emebedded Apps in browsers yet, so best stick to the desktop application.
 
