@@ -1079,13 +1079,6 @@
     lodash "^4.17.19"
     to-fast-properties "^2.0.0"
 
-"@dwelle/gatsby-embedder-excalidraw@1.1.4":
-  version "1.1.4"
-  resolved "https://registry.yarnpkg.com/@dwelle/gatsby-embedder-excalidraw/-/gatsby-embedder-excalidraw-1.1.4.tgz#71661191d676fbbce685dfd5316748689dad70fd"
-  integrity sha512-nRRZigZnGPwrtVT/CYYVraXPNIbvtKmlYhT8cocQXxR1ZLLuawqlFXfmGFXCkeyW/bvYTXEl2+/VX4VtP/jOPg==
-  dependencies:
-    puppeteer "^4.0.1"
-
 "@excalidraw/prettier-config@1.0.2":
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/@excalidraw/prettier-config/-/prettier-config-1.0.2.tgz#b7c061c99cee2f78b9ca470ea1fbd602683bba65"
@@ -6323,6 +6316,13 @@ gatsby-core-utils@^1.10.1:
     proper-lockfile "^4.1.1"
     tmp "^0.2.1"
     xdg-basedir "^4.0.0"
+
+gatsby-embedder-excalidraw@1.1.4:
+  version "1.1.4"
+  resolved "https://registry.yarnpkg.com/gatsby-embedder-excalidraw/-/gatsby-embedder-excalidraw-1.1.4.tgz#a6b82c1c6ab6f90000b6049e32864589f6dd4e93"
+  integrity sha512-TSF4QrBez/L27AOY8UTe534jxQFpjiT3JBSOwNmLqQ1dsWxZTi+e9j37NzyQZj87zkxantmOvmJfMSWJXydp2w==
+  dependencies:
+    puppeteer "^4.0.1"
 
 gatsby-graphiql-explorer@^0.11.0:
   version "0.11.0"

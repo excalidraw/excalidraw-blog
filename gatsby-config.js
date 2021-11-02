@@ -64,9 +64,7 @@ module.exports = {
           {
             resolve: "gatsby-remark-embedder",
             options: {
-              customTransformers: [
-                require("@dwelle/gatsby-embedder-excalidraw"),
-              ],
+              customTransformers: [require("gatsby-embedder-excalidraw")],
             },
           },
         ],
