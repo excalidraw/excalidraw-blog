@@ -26,7 +26,7 @@ For now, to use a specific embedded app such as Excalidraw in your Webex meeting
 
 When you open the Excalidraw app for the first time, you will see a blank canvas. You can draw something to prepare beforehand, or you can start collaborating right away by clicking the "Open together" button at the bottom of the screen. See these steps illustrated on our [Webex homepage](https://webex.excalidraw.com/#how-to-install).
 
-Your data is [end-to-end ecnrypted](/end-to-end-encryption) the same way as you are used to on [excalidraw.com](https://excalidraw.com), and the whole integration is open-source and [hosted on GitHub](https://github.com/excalidraw/excalidraw-webex).
+Your data is [end-to-end encrypted](/end-to-end-encryption) the same way as you are used to on [excalidraw.com](https://excalidraw.com), and the whole integration is open-source and [hosted on GitHub](https://github.com/excalidraw/excalidraw-webex).
 
 Note that the collaboration room is active only for the duration of the meeting. Each meeting creates its own room.
 
