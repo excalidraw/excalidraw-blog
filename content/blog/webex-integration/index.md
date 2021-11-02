@@ -1,8 +1,8 @@
 ---
 title: Introducing Webex Integration
 date: 2021-10-28
-author: David
-link: https://twitter.com/dluzar
+author: Aakansha, David
+link: https://twitter.com/aakansha1216, https://twitter.com/dluzar
 image: webex.png
 ---
 
