@@ -13,6 +13,12 @@ function BlogPostTemplate({ data, pageContext: { previous, next }, location }) {
   const discussUrl = `https://mobile.twitter.com/search?q=${encodeURIComponent(
     `https://blog.excalidraw.com${post.fields.slug}`,
   )}`;
+
+  const authors =
+    post.frontmatter.author?.split(",").filter((author) => author.trim()) || [];
+  const authorLinks =
+    post.frontmatter.link?.split(",").filter((link) => link.trim()) || [];
+
   return (
     <Layout location={location} title={siteTitle} parentClassName={"blog-post"}>
       <SEO
@@ -34,14 +40,19 @@ function BlogPostTemplate({ data, pageContext: { previous, next }, location }) {
         }}
       >
         <strong>{post.frontmatter.date}</strong>
-        {post.frontmatter.author && (
+        {authors.length && (
           <span style={{ opacity: 0.75, fontStyle: "italic" }}>
             {", by "}
-            {post.frontmatter.link ? (
-              <a href={post.frontmatter.link}>{post.frontmatter.author}</a>
-            ) : (
-              <>{post.frontmatter.author}</>
-            )}
+            {authors.map((author, idx) => (
+              <>
+                {authorLinks[idx] || authorLinks[0] ? (
+                  <a href={authorLinks[idx] || authorLinks[0]}>{author}</a>
+                ) : (
+                  <>{author}</>
+                )}
+                {idx < authors.length - 1 && ", "}
+              </>
+            ))}
           </span>
         )}
         {post.frontmatter.note ? (
