@@ -14,6 +14,13 @@ function BlogIndex({ data, location }) {
       <SEO />
       {posts.map(({ node }) => {
         const title = node.frontmatter.title || node.fields.slug;
+        const authors =
+          node.frontmatter.author
+            ?.split(",")
+            .filter((author) => author.trim()) || [];
+        const authorLinks =
+          node.frontmatter.link?.split(",").filter((link) => link.trim()) || [];
+
         return (
           <div key={node.fields.slug}>
             <h3
@@ -27,10 +34,21 @@ function BlogIndex({ data, location }) {
             </h3>
             <p style={{ marginBottom: "4px" }}>
               <strong>{node.frontmatter.date}</strong>
-              {node.frontmatter.author && node.frontmatter.link && (
+              {authors.length && (
                 <span style={{ opacity: 0.75, fontStyle: "italic" }}>
                   {", by "}
-                  <a href={node.frontmatter.link}>{node.frontmatter.author}</a>
+                  {authors.map((author, idx) => (
+                    <>
+                      {authorLinks[idx] || authorLinks[0] ? (
+                        <a href={authorLinks[idx] || authorLinks[0]}>
+                          {author}
+                        </a>
+                      ) : (
+                        <>{author}</>
+                      )}
+                      {idx < authors.length - 1 && ", "}
+                    </>
+                  ))}
                 </span>
               )}
             </p>
