@@ -6,7 +6,7 @@ link: https://twitter.com/aakansha1216, https://twitter.com/dluzar
 image: webex.png
 ---
 
-Collaborate with colleagues using Excalidraw whiteboard directly in your Webex meetings.
+Collaborate using Excalidraw whiteboard directly in your Webex meetings.
 
 <!-- end -->
 
