@@ -44,7 +44,7 @@ Two of the most heavily requested features were added towards the end of the yea
 
 https://twitter.com/excalidraw/status/1451280455647563783
 
-[Aakansha](https://twitter.com/aakansha1216) added support for [binding text to a container](https://github.com/excalidraw/excalidraw/pull/4343). No more manual resizing or adding line breaks so the text fits into your containers!
+Need to create sticky notes? [Aakansha](https://twitter.com/aakansha1216) added support for [binding text to a container] (https://github.com/excalidraw/excalidraw/pull/4343). No more manual resizing, positioning, or adding line breaks so the text fits into your containers!
 
 https://twitter.com/aakansha1216/status/1471509326674030592
 
