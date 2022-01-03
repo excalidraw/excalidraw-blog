@@ -19,6 +19,12 @@ function BlogPostTemplate({ data, pageContext: { previous, next }, location }) {
   const authorLinks =
     post.frontmatter.link?.split(",").filter((link) => link.trim()) || [];
 
+  let postHTML = post.html;
+
+  if (postHTML.includes("<!-- end -->")) {
+    postHTML = postHTML.split("<!-- end -->")[1];
+  }
+
   return (
     <Layout location={location} title={siteTitle} parentClassName={"blog-post"}>
       <SEO
@@ -62,7 +68,7 @@ function BlogPostTemplate({ data, pageContext: { previous, next }, location }) {
           </>
         ) : null}
       </p>
-      <div dangerouslySetInnerHTML={{ __html: post.html }} />
+      <div dangerouslySetInnerHTML={{ __html: postHTML }} />
       <p style={{ fontFamily: "var(--ui-font)", marginBottom: 0 }}>
         <a href={discussUrl}>Discuss on Twitter</a>
         {" • "}
