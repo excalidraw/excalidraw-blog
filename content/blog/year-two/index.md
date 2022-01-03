@@ -22,7 +22,9 @@ But it's not just the times. We are hearing far and wide how much you love Excal
 
 Probably the most commonly requested feature from people using Excalidraw was to be able to manage all their drawings and teams.
 
-[Excalidraw Plus](https://plus.excalidraw.com) was released in May 2021 to address this. But our another motive was to make Excalidraw sustainable and increase its funding.
+[Excalidraw Plus](https://plus.excalidraw.com) was released in May 2021 to address this. But another motive was to make Excalidraw sustainable and increase its funding.
+
+https://twitter.com/excalidraw/status/1389253752742350858
 
 We're succeeding on both fronts. Excalidraw+ has been adopted by many companies, big and small, as well as you lot 😉, and we are now able to invest back into the editor. In October, [Aakansha](https://twitter.com/aakansha1216), a long-time Excalidraw contributor, officially joined our ranks, and is currently devoting her time making the editor even better. ❤️
 
