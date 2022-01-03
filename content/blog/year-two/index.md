@@ -110,7 +110,7 @@ We've upgraded the collaboration server for smoother experience, and fixed some 
 
 More love will be shown to collaboration support this year!
 
-### Cisco Webex
+### Excalidraw for Cisco Webex
 
 We've started to integrate Excalidraw into other great platforms, and first one we've partenered with is Cisco Webex. This allows you to collaborate with people on Excalidraw drawings right within your Cisco meetings!
 
