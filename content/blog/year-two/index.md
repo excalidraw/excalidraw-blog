@@ -12,7 +12,7 @@ Excalidraw celebrated its second birthday! What happened during the last year an
 
 It's been another great year for [Excalidraw](https://excalidraw.com), the virtual whiteboard for sketching hand-drawn like diagrams. Let's review what happened since [the last time](https://blog.excalidraw.com/one-year-of-excalidraw/).
 
-The importance of remote working and collaboration has not been diminished, and more and more people are reaching for tools such as Excalidraw. **We've seen the usage go from 60K monthly active to 150K monthly active users!**
+The importance of remote working and collaboration has not been diminished, and more and more people are reaching for tools such as Excalidraw. **We've seen the usage go from 60K monthly active to 170K monthly active users!**
 
 ![uploaded image](https://i.imgur.com/F4rK7ls.jpg)
 
