@@ -14,7 +14,7 @@ It's been another great year for [Excalidraw](https://excalidraw.com), the virtu
 
 The importance of remote working and collaboration has not been diminished, and more and more people are reaching for tools such as Excalidraw. **We've seen the usage go from 60K monthly active to 170K monthly active users!**
 
-![uploaded image](https://i.imgur.com/F4rK7ls.jpg)
+![Excalidraw monthly active users](graph-mau.png)
 
 But it's not just the times. We are hearing far and wide how much you love Excalidraw. Thank you!
 
@@ -26,7 +26,7 @@ Probably the most commonly requested feature from people using Excalidraw was to
 
 https://twitter.com/excalidraw/status/1389253752742350858
 
-We're succeeding on both fronts. Excalidraw+ has been adopted by many companies, big and small, as well as you lot 😉, and we are now able to invest back into the editor. In October, [Aakansha](https://twitter.com/aakansha1216), a long-time Excalidraw contributor, officially joined our ranks, and is currently devoting her time making the editor even better. ❤️
+We're succeeding on both fronts. Excalidraw+ has been adopted by many companies, big and small, as well as you lot 😉, and we are now able to invest back into the editor. In October, [Aakansha](https://twitter.com/aakansha1216), a long-time Excalidraw maintainer, officially joined our ranks, and is currently devoting her time making the editor even better. ❤️
 
 We will be releasing a roadmap for Excalidraw+ soon, but in the near future we will be finishing the much requested yearly billing, improve workflows, and reduce friction from the initial load of the app to switching between drawings. We will support sharing libraries between team members, and managing these libraries. And we will finally introduce versioning.
 
