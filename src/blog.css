@@ -36,6 +36,11 @@
   padding: 4px 0;
 }
 
+.blog-post .twitter-tweet {
+  margin-left: auto;
+  margin-right: auto;
+}
+
 th,
 td {
   border-color: #adb5bd;
