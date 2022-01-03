@@ -96,7 +96,7 @@ Many more goodies are coming next year, but the above made installing already a 
 
 Everyone loves using libraries, but many of you also love creating and sharing your own (thank you!). The not so fun part is publishing and the busywork around it. That's why we've been focusing on smoothing out this part of the experience.
 
-Towards the end of year, Aakansha and David have [put a lot of work](https://github.com/excalidraw/excalidraw/pull/4115) into streamlining the publishing experience so that you don't have to manually create GitHub pull requests. We've also started requiring the authors to name invidiual library items — this will help everyone when searching for specific items they need, support for which will be added in early 2022.
+Towards the end of year, Aakansha and David have [put a lot of work](https://github.com/excalidraw/excalidraw/pull/4115) into [streamlining the publishing experience](https://github.com/excalidraw/excalidraw-libraries-server) so that you don't have to manually create GitHub pull requests. We've also started requiring the authors to name individual library items — this will help everyone when searching for specific items they need, support for which will be added in early 2022.
 
 https://twitter.com/aakansha1216/status/1461045987678453760
 
@@ -114,7 +114,7 @@ More love will be shown to collaboration support this year!
 
 ### Excalidraw for Cisco Webex
 
-We've started to integrate Excalidraw into other great platforms, and first one we've partenered with is Cisco Webex. This allows you to collaborate with people on Excalidraw drawings right within your Cisco meetings!
+We've started to integrate Excalidraw into other great platforms, and first one we've partnered with is Cisco Webex. This allows you to collaborate with people on Excalidraw drawings right within your Cisco meetings!
 
 Read more in our previous [blog post](/webex-meetings-integration).
 
