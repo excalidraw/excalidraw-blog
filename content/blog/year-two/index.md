@@ -48,7 +48,7 @@ Need to create sticky notes? [Aakansha](https://twitter.com/aakansha1216) added 
 
 https://twitter.com/aakansha1216/status/1471509326674030592
 
-The original freedraw tool was great, but as it was only an extension of the line tool, and it was often creating rough shapes with too many points, we thought it could use a boost. At the time, [Steve Ruiz](https://twitter.com/steveruizok) was finishing up his library [perfect-freedraw](https://github.com/steveruizok/perfect-freehand), so we've asked him [to integrate](https://github.com/excalidraw/excalidraw/pull/3512) it to Excalidraw. 🙏
+The original freedraw tool was great, but as it was only an extension of the line tool, and it was often creating rough shapes with too many points, we thought it could use a boost. At the time, [Steve Ruiz](https://twitter.com/steveruizok) was finishing up his library [perfect-freedraw](https://github.com/steveruizok/perfect-freehand), so we asked him [to integrate](https://github.com/excalidraw/excalidraw/pull/3512) it to Excalidraw. 🙏
 
 https://twitter.com/excalidraw/status/1391443782516740096
 
