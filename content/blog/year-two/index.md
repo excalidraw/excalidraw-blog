@@ -84,7 +84,7 @@ While it's easy to make beautiful drawings in Excalidraw, often nothing beats a 
 
 First, the library menu itself got better. [Arun](https://twitter.com/node_monk) made it easy to [clear your entire library](https://github.com/excalidraw/excalidraw/pull/2997), and we later introduced a way to select specific items so you can delete, or export them individually.
 
-Installing was improved as well, as Aakansha did some digging and [found out](https://github.com/excalidraw/excalidraw/pull/2997) we can reuse the editor's browser tab when installing libraries.
+Installing was improved as well, as Aakansha did some digging and [found out](https://github.com/excalidraw/excalidraw/pull/3299) we can reuse the editor's browser tab when installing libraries.
 
 And Arun [made sure](https://github.com/excalidraw/excalidraw-libraries/pull/106) the library page supports dark theme same as Excalidraw does.
 
