@@ -39,7 +39,7 @@
   "description": "All the news about Excalidraw",
   "devDependencies": {
     "@excalidraw/prettier-config": "1.0.2",
-    "husky": "4.3.8",
+    "husky": "7.0.4",
     "lint-staged": "10.5.4",
     "prettier": "2.2.1",
     "sharp": "0.28.1"
