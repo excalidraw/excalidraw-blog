@@ -10,11 +10,11 @@ It's been a great year for Excalidraw, and we're excited to share what we've bee
 
 <!-- end -->
 
-Greetings Excalidraw Fans! Thank you all for the support throughout the year, and for being a part of our growing user base! ❤️
+Greetings Excalidraw users! Thank you all for the support throughout the year, and for being a part of our growing user base! ❤️
 
 ![users in 2022](./users.jpg)
 
-With your help, we've recently crossed **350K monthly users** 🔥. On top of that, we’ve counted [**38K stars on GitHub**](https://github.com/excalidraw/excalidraw) just before the end of the year, and are constantly trending everywhere, such as on the [bestofjs.org](https://bestofjs.org/projects?sort=daily) project repository — this helps the open-source part of Excalidraw get in front of more developers like you!
+With your help, we've recently crossed **350K monthly users**. 🔥 On top of that, we’ve counted [**38K stars on GitHub**](https://github.com/excalidraw/excalidraw) just before the end of the year, and are constantly trending everywhere, such as on the [bestofjs.org](https://bestofjs.org) project repository — this helps the open-source part of Excalidraw get in front of more developers like you!
 
 ![bestofjs](./bestofjs2.png)
 
@@ -198,18 +198,42 @@ Those slides must have taken a lot of work! (Or maybe not, with Excalidraw 😋)
 
 https://twitter.com/FUSAKLA/status/1538248868885893120
 
-Whereever we are, you rock hard at Excalidraw! 🍉
+Wherever we are, you rock hard at Excalidraw! 🍉
 
-# What's coming up?
+# Coming up
 
-TODO
+## Excalidraw
 
-## npm
+Last year we've added many great features, and yet we are not done! At the same time, we want to make sure that the editor retains its simplicity and low friction.
 
-## Features
+We'll also be focusing on performance so that even huge drawings can be edited smoothly.
+
+And we're not forgetting [libraries](https://libraries.excalidraw.com). More on that soon!
+
+## Package
+
+Next year, we will taking the [Excalidraw package](https://www.npmjs.com/package/@excalidraw/excalidraw) to the next level, beginning with the upcoming npm release bringing the redesigned editor to your apps, and featuring an improved API to customize some parts of the editor UI. We'll use this as a test bed on whether this type of new API works well, and we'll be making changes to the rest of the editor to allow for much greater customization.
+
+There are lots of places in need of much smoother experience, such as the images API, listening on changes, and programmatic API in general, so we'll be working on that, too.
 
 ## Plus
 
+For [Plus](https://plus.excalidraw.com), we'll be making strides on three fronts. Features, friction, and management.
+
+We've learned from your feedback, and are adding features that you will like. From better sharing and readonly links integration, to presenting from Excalidraw a breeze.
+
+At the same time, we want to ensure the app is as frictionless as possible. Getting your ideas on the canvas is what Excalidraw is about.
+
+And we want to make it easier for business to make the transition. From user provisioning and auth (think SAML and SCIM), to billing, and enterprise support.
+
+# Join us!
+
+As alluded at the top, we are looking for talented devs such as you! 💪
+
 ---
+
+It's going to be a packed year for Excalidraw all along!
+
+Happy New Year everyone! 🎉
 
 Excalidraw Team
