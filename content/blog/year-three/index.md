@@ -12,7 +12,11 @@ It's been a great year for Excalidraw, and we're excited to share what we've bee
 
 Greetings Excalidraw Fans! Thank you all for the support throughout the year, and for being a part of our growing user base! ❤️
 
-With your help, just before the end of the year we’ve crossed [38K stars on GitHub](https://github.com/excalidraw/excalidraw), and are constantly trending everywhere, such as on the [bestofjs.org](https://bestofjs.org/projects?sort=daily) project repository — this helps the open-source part of Excalidraw get in front of more developers like you!
+![users in 2022](./users.jpg)
+
+With your help, we've recently crossed **350K monthly users** 🔥. On top of that, we’ve counted [**38K stars on GitHub**](https://github.com/excalidraw/excalidraw) just before the end of the year, and are constantly trending everywhere, such as on the [bestofjs.org](https://bestofjs.org/projects?sort=daily) project repository — this helps the open-source part of Excalidraw get in front of more developers like you!
+
+![bestofjs](./bestofjs2.png)
 
 Let's have a look at what we and you have been up to the past year!
 
@@ -148,7 +152,7 @@ To please the accountants, we've added yearly billing (it's cheaper, too).
 
 https://twitter.com/excalidraw/status/1545109954616508416
 
-Commentings is easier in Plus now, too.
+Commenting is easier in Plus now, too!
 
 https://twitter.com/excalidrawPlus/status/1552670831402225664
 
@@ -156,9 +160,7 @@ https://twitter.com/excalidrawPlus/status/1552670831402225664
 
 Another major thing happening in the Excalidraw ecosystem was the release of the [Excalidraw VS Code extension](https://marketplace.visualstudio.com/items?itemName=pomdtr.excalidraw-editor), maintained by [Achille Lacoin](https://twitter.com/pomdtrr?ref_src=twsrc%5Etfw).
 
-If neither the [excalidraw.com](https://excalidrwa.com) app, nor the [Plus app](https://plus.excalidraw.com) suits your needs, perhaps editing Excalidraw files from your VS Code workspace will.
-
-Try it out!
+If neither the [excalidraw.com](https://excalidrwa.com) app, nor the [Plus app](https://plus.excalidraw.com) suits your needs, perhaps editing Excalidraw files from your VS Code workspace will. Try it out!
 
 https://twitter.com/excalidraw/status/1511332566216884237
 
