@@ -61,12 +61,12 @@ module.exports = {
           "gatsby-remark-copy-linked-files",
           "gatsby-remark-smartypants",
           "@weknow/gatsby-remark-twitter",
-          {
-            resolve: "gatsby-remark-embedder",
-            options: {
-              customTransformers: [require("gatsby-embedder-excalidraw")],
-            },
-          },
+          // {
+          //   resolve: "gatsby-remark-embedder",
+          //   options: {
+          //     customTransformers: [require("gatsby-embedder-excalidraw")],
+          //   },
+          // },
         ],
       },
     },
