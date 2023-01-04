@@ -218,6 +218,8 @@ https://twitter.com/Vjeux/status/1586062861662507008
 
 Excalidraw is also getting big on Twitch and YouTube, from [@t3dotgg](https://www.youtube.com/@t3dotgg) to [@d0nutptr](https://www.twitch.tv/d0nutptr), [melkeydev](https://www.twitch.tv/melkeydev), [@devagr](https://www.youtube.com/@devagr), among [others](https://twitter.com/excalidraw/status/1596176397411971072)!
 
+Speaking of YouTube, Aakansha recently explained how to build your own Excalidraw over at [Chirag's channel](https://www.youtube.com/watch?v=1lNJVDfsTSo).
+
 You rock hard at Excalidraw! 🍉
 
 # Coming up
