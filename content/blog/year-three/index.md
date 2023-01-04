@@ -3,7 +3,7 @@ title: Three for three
 date: 2023-01-03
 author: Excalidraw Team
 link: https://github.com/orgs/excalidraw/people
-image: og.png
+image: og2.png
 ---
 
 It's been a great year for Excalidraw, and we're excited to share what we've been up to!
