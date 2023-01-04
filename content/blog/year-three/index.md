@@ -220,6 +220,8 @@ Excalidraw is also getting big on Twitch and YouTube, from [@t3dotgg](https://ww
 
 Speaking of YouTube, Aakansha recently explained how to build your own Excalidraw over at [Chirag's channel](https://www.youtube.com/watch?v=1lNJVDfsTSo).
 
+https://twitter.com/aakansha1216/status/1562817277258371073
+
 You rock hard at Excalidraw! 🍉
 
 # Coming up
@@ -251,6 +253,8 @@ And we want to make it easier for business to make the transition. From user pro
 # Join the Excalidraw team!
 
 As alluded at the top, we are looking for talented devs such as you! If you're as pumped about building Excalidraw as we are, we have open positions at both the Excalidraw editor and Excalidraw Plus. Check the [details](https://excalidraw.slite.com/app/docs/kqzVFHykBHg-we/Join-the-Excalidraw-team) and drop us an [email](mailto:careers@excalidraw.com)! 💪
+
+If you don't feel as confident but want to prove yourself, start contributing to [excalidraw](https://github.com/excalidraw/excalidraw). That's always a good way through which to join our ranks!
 
 ---
 
