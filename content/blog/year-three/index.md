@@ -116,7 +116,7 @@ Want to help make Excalidraw better yourself? We'll soon be making it easier to 
 
 If you don't know, last year we've unveiled [Excalidraw Plus](https://plus.excalidraw.com/), an app aimed at teams built on top of the Excalidraw editor, offering companies much needed authorization and team management, and everyone a secure environment to organize their drawings, while still keeping our focus on simplicity and low friction. Adoption is not slowing down, and the app development is not lagging behind!
 
-We have big plans this year you will certainly appreciate, but let's give a shout-out to a few things happening in Plus last year.
+We have big plans this year you will certainly appreciate, but let's give a shout-out to a few things that happened in Plus last year.
 
 ---
 
