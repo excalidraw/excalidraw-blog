@@ -84,7 +84,7 @@ It's hidden under the context menu because the only way to unlock elements at th
 
 https://twitter.com/excalidraw/status/1512104367213658122
 
-Libraries is something we'll be spending way more time on this year, but a big change led by [Ishtiaq](https://twitter.com/ishtiaq103) last year was moving libraries to a sidebar, allowing you to keep the libary open at all times:
+Libraries is something we'll be spending way more time on this year, but a big change led by [Ishtiaq](https://twitter.com/ishtiaq103) last year was moving libraries to a sidebar, allowing you to keep the library open at all times:
 
 https://twitter.com/excalidraw/status/1539269812253335553
 
