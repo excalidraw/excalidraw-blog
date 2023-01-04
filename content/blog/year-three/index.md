@@ -3,7 +3,7 @@ title: Three for three
 date: 2023-01-03
 author: Excalidraw Team
 link: https://github.com/orgs/excalidraw/people
-image: og2.png
+image: og3.jpg
 ---
 
 It's been a great year for Excalidraw, and we're excited to share what we've been up to!
@@ -20,7 +20,7 @@ With your help, we've recently crossed **350K monthly users**. 🔥 On top of th
 
 Let's have a look at what we and you have been up to the past year!
 
-(Psst, if you don't get to the end of the post, and you're looking for work, we're hiring! 🚀)
+(Psst, if you don't get to the end of the post, and you're looking for work, [we're hiring](https://excalidraw.slite.com/app/docs/kqzVFHykBHg-we/Join-the-Excalidraw-team)! 🚀)
 
 # What we’ve shipped in the editor
 
@@ -68,7 +68,9 @@ One missing feature was to add background to freedraw shapes, which was correct 
 
 https://twitter.com/excalidraw/status/1491456843742605313
 
-Until we do a proper redesign of the color picker, a useful feature we've added last year is to pick from the custom colors you've been already using on your canvas:
+Until we do a proper redesign of the color picker, a useful feature we've added last year is to pick from the custom colors you've been already using on your canvas.
+
+You'll be able to pick from more shades and better colors in the upcoming color picker. 🎨
 
 https://twitter.com/aakansha1216/status/1498292311381655554
 
@@ -77,6 +79,8 @@ Now having a prominent position in the toolbar, previously you may have missed w
 https://twitter.com/aakansha1216/status/1502296876405891074
 
 [Tom Sherman](https://twitter.com/tomus_sherman) added element locking to the editor, allowing you to lock elements in place to prevent accidental modifications or deletions.
+
+It's hidden under the context menu because the only way to unlock elements at the moment is by right-clicking and unlocking them from the context menu again. Thus, we haven't put the lock button elsewhere in the UI so you don't lock elements unintentionally as you explore what each button does, and not knowing how to unlock them.
 
 https://twitter.com/excalidraw/status/1512104367213658122
 
@@ -98,7 +102,7 @@ And then also allowed adding midpoints to any segment from within the line edito
 
 https://twitter.com/excalidraw/status/1570059398881636354
 
-[Ryan](https://twitter.com/_ryan_di) and [David](https://twitter.com/dluzar) have improved the default radius sizing for rectangles, making rectangles rounding to look across sizes. While in the future we may support customizing radius to a point, our goal still is to make diagramming easy with as little tinkering with settings as possible.
+[Ryan](https://twitter.com/_ryan_di) and [David](https://twitter.com/dluzar) have improved the default radius sizing for rectangles, making rectangles rounding to look similar across different sizes. While in the future we may support customizing radius to a point, our goal still is to make diagramming easy with as little tinkering with the settings as possible.
 
 https://twitter.com/excalidraw/status/1600883623980171265
 
@@ -156,13 +160,17 @@ Commenting is easier in Plus now, too!
 
 https://twitter.com/excalidrawPlus/status/1552670831402225664
 
-# VS Code extension
+# VS Code extension & GitHub
 
-Another major thing happening in the Excalidraw ecosystem was the release of the [Excalidraw VS Code extension](https://marketplace.visualstudio.com/items?itemName=pomdtr.excalidraw-editor), maintained by [Achille Lacoin](https://twitter.com/pomdtrr?ref_src=twsrc%5Etfw).
+Another major thing happening in the Excalidraw ecosystem was the release of the [Excalidraw VS Code extension](https://marketplace.visualstudio.com/items?itemName=pomdtr.excalidraw-editor), maintained by [Achille Lacoin](https://twitter.com/pomdtrr?ref_src=twsrc%5Etfw). 💜
 
-If neither the [excalidraw.com](https://excalidrwa.com) app, nor the [Plus app](https://plus.excalidraw.com) suits your needs, perhaps editing Excalidraw files from your VS Code workspace will. Try it out!
+If neither the [excalidraw.com](https://excalidrwa.com) app, nor the [Plus app](https://plus.excalidraw.com) suits your needs, perhaps editing Excalidraw files from your VS Code workspace will. And you can use the extension on [vscode.dev](https://vscode.dev/) & [github.dev](https://github.dev/), too – try it out!
 
 https://twitter.com/excalidraw/status/1511332566216884237
+
+And you'll be able to use Excalidraw in the upcoming [GitHub Blocks](https://blocks.githubnext.com/):
+
+https://twitter.com/excalidraw/status/1590828212615102464
 
 # Community
 
@@ -184,7 +192,13 @@ To illustrating whole books!
 
 https://twitter.com/Pragmatic_Eng/status/1575167020139970562
 
-Used at conferences...
+Or making awesome illustrations in general:
+
+https://twitter.com/jamesspurin/status/1605154429170229249
+
+https://twitter.com/victor_bigfield/status/1608796818225127424
+
+At conferences...
 
 https://twitter.com/erikras/status/1522342340664303616
 
@@ -198,13 +212,19 @@ Those slides must have taken a lot of work! (Or maybe not, with Excalidraw 😋)
 
 https://twitter.com/FUSAKLA/status/1538248868885893120
 
-Wherever we are, you rock hard at Excalidraw! 🍉
+And not to forget [Chris's](https://twitter.com/Vjeux) talk at Next.js Conf!
+
+https://twitter.com/Vjeux/status/1586062861662507008
+
+Excalidraw is also getting big on Twitch and YouTube, from [@t3dotgg](https://www.youtube.com/@t3dotgg) to [@d0nutptr](https://www.twitch.tv/d0nutptr), [melkeydev](https://www.twitch.tv/melkeydev), [@devagr](https://www.youtube.com/@devagr), among [others](https://twitter.com/excalidraw/status/1596176397411971072)!
+
+You rock hard at Excalidraw! 🍉
 
 # Coming up
 
 ## Excalidraw
 
-Last year we've added many great features, and yet we are not done! At the same time, we want to make sure that the editor retains its simplicity and low friction.
+Last year we've added many great features, but we are not done! And we want to improve on existing ones, too, such as as better text editing support, arrow binding, and more. At the same time, making sure the editor retains its simplicity and low friction.
 
 We'll also be focusing on performance so that even huge drawings can be edited smoothly.
 
@@ -226,13 +246,13 @@ At the same time, we want to ensure the app is as frictionless as possible. Gett
 
 And we want to make it easier for business to make the transition. From user provisioning and auth (think SAML and SCIM), to billing, and enterprise support.
 
-# Join us!
+# Join the Excalidraw team!
 
-As alluded at the top, we are looking for talented devs such as you! 💪
+As alluded at the top, we are looking for talented devs such as you! If you're as pumped about building Excalidraw as we are, we have open positions at both the Excalidraw editor and Excalidraw Plus. Check the [details](https://excalidraw.slite.com/app/docs/kqzVFHykBHg-we/Join-the-Excalidraw-team) and drop us an [email](mailto:careers@excalidraw.com)! 💪
 
 ---
 
-It's going to be a packed year for Excalidraw all along!
+It's going to be a packed year for Excalidraw across the board!
 
 Happy New Year everyone! 🎉
 
