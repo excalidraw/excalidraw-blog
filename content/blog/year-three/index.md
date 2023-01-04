@@ -84,7 +84,7 @@ It's hidden under the context menu because the only way to unlock elements at th
 
 https://twitter.com/excalidraw/status/1512104367213658122
 
-Libraries is something we'll be spending way more time on this year, but a big change led by [Ishtiaq](https://twitter.com/ishtiaq103) last year was moving libraries to a sidebar, allowing you to keep the library open at all times:
+Libraries are something we'll be spending way more time on this year, but a big change led by [Ishtiaq](https://twitter.com/ishtiaq103) last year was moving libraries to a sidebar, allowing you to keep the library open at all times:
 
 https://twitter.com/excalidraw/status/1539269812253335553
 
@@ -142,7 +142,7 @@ On that note, we've also made it possible to choose what page will be loaded fir
 
 https://twitter.com/excalidraw/status/1559936348508884994
 
-To reduce friction further, you can now create drawings even quicker. Use the "start drawing" button in the Dashboard, or <kbd>Opt/Alt + A</kbd> everywhere else.
+To reduce friction further, you can now create drawings even quicker. Use the "Start drawing" button in the Dashboard, or <kbd>Opt/Alt + A</kbd> everywhere else.
 
 https://twitter.com/excalidraw/status/1571886450903220232
 
@@ -152,7 +152,7 @@ https://twitter.com/excalidraw/status/1508847388517089292
 
 https://twitter.com/excalidrawPlus/status/1549790547606388736
 
-To please the accountants, we've added yearly billing (it's cheaper, too).
+To please the accountants, we've added yearly billing (it's cheaper, too 😉).
 
 https://twitter.com/excalidraw/status/1545109954616508416
 
@@ -204,7 +204,7 @@ https://twitter.com/erikras/status/1522342340664303616
 
 https://twitter.com/excalidraw/status/1573305116333338626
 
-Look, he's our Aakansha! ❤️
+Look, here's our Aakansha! ❤️
 
 https://twitter.com/aakansha1216/status/1555559465508040705
 
