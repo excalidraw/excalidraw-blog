@@ -6,7 +6,7 @@ link: https://github.com/orgs/excalidraw/people
 image: og3.jpg
 ---
 
-It's been a great year for Excalidraw, and we're excited to share what we've been up to!
+How did Excalidraw fare in its third year of existence, and what's to come? Let's find out!
 
 <!-- end -->
 
