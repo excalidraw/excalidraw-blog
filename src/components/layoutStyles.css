@@ -35,6 +35,10 @@ h3 {
   line-height: 1.4;
 }
 
+h1, h1 code {
+  font-size: 2.5rem;
+}
+
 body.dark,
 ul,
 p,
