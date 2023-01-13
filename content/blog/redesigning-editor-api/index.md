@@ -142,3 +142,7 @@ In `mobile` during collaboration we render the user `avatars` in the dropdown an
 # `<WelcomeScreen/>`
 
 TODO
+
+Lastly we are improving the developer docs and will be releasing it very soon! Stay tuned 💜
+
+https://twitter.com/aakansha1216/status/1613203563903356928
