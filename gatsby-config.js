@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
     title: "Excalidraw Blog",
-    description: "Virtual whiteboard for sketching hand-drawn like diagrams",
-    image: "/og-image.png",
+    description: "Get up to speed on the latest news and dive deep into inner workings of Excalidraw",
+    image: "/og-image-2.png",
     siteUrl: "https://blog.excalidraw.com",
     social: {
       twitter: "excalidraw",
