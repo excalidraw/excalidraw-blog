@@ -44,6 +44,8 @@ So lets do a quick div in to the new Component API :)
 
 # `<Footer/>`
 
+[Add an image for footer]
+
 This was the first [POC](https://github.com/excalidraw/excalidraw/pull/5970) to try out the component API. We earlier supported `renderFooter` prop and now that prop is removed. So host will have to import `Footer` component and pass it as `children` if they want to customize.
 
 ## Before
@@ -94,7 +96,28 @@ With the redesign the `footer` was moved inside the dropdown in mobile to save m
 
 # `<MainMenu/>`
 
-The top left menu was introduced the editor redesign so we want to allow users to customize the items the `MainMenu` and also reuse the default items present in Excalidraw menu if needed thus giving maximum flexibilty to the host.
+The top left menu was introduced in the editor redesign so we want to allow users to customize the items the `MainMenu`and also reuse the default items present in Excalidraw menu if needed thus giving maximum flexibilty to the host.
+
+![Main Menu](./main-menu.png)
+
+In the above diagram The `Live Collaboration` dialog is specific to host, so you will want to render if your app supports collaboration else not.
+
+Similarly under socials section you might want to render your own social account along with Excalidraw Socials.
+
+As per internationalization, if your app supports i18n you will have your app level support to change the language and hence the language dropdown was never the part of the package as its specific to excalidraw app and you can pass the `langCode` to decide which language to use in Excalidraw. Though we later might export the `LanguagePicker` component as well.
+
+In the excalidraw app as it was supported using `renderFooter` prop. Now since its part of `menu` so here also its one of the items which host would want to render.
+
+To summarize we have these cases to cover
+
+1. Render the dropdown with default items so if host don't want to customize they will get the menu with default items.
+2. Allow host to selectively render some of the default items, eg if you only want to render `Reset the canvas` item.
+3. Allow host to render their own custom items with excalidraw style eg "Excalidraw+".
+4. Allow host to render their own custom items with their own style eg "Language picker".
+5. Allow host to group items.
+6. Lastly also make sure `UIOptions.canvasActions` are taken into consideration when rendering the default menu items for backward compatibility.
+
+[ add a diagram explaining the API how the above was solved]
 
 # `<WelcomeScreen/>`
 
