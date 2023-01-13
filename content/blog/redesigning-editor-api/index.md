@@ -46,7 +46,7 @@ So lets do a quick div in to the new Component API :)
 
 # `<Footer/>`
 
-[footer-center](./footer-center.png)
+![footer-center](./footer-center.png)
 
 This was the first [POC](https://github.com/excalidraw/excalidraw/pull/5970) to try out the component API. Earlier with the help of `renderFooter` prop host could customize the center section of the footer as shown above.
 
