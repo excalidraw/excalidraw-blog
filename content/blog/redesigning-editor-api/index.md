@@ -28,53 +28,56 @@ The two new major things we've introduced as part of the redesign is the top-lef
 
 It was clear from that get go that you will want to customize these to your needs, and more importantly, remove the parts that would be non-functional in your own apps.
 
-Up to this point we've been using a combination of config objects (e.g. `props.UIOptions`), and render functions (e.g. `props.renderFooter`). While these are fine and you can get most things done this way, we've set out in search of API that would be more flexible and composable, and also a bit more intuitive to use.
+Up to this point we've been using a combination of config objects (e.g. `props.UIOptions`), and render props (e.g. `props.renderFooter`). While these are fine and you can get most things done this way, we've set out in search of API that would be more flexible and composable, and also a bit more intuitive to use.
 
-<!-- TODO -->
+# Getting rid of render props
 
-# Main idea and Implementation
-
-Our current api is heavily dependent on `render` props eg `renderTopRightUI`, `renderFooter` and its not easy to customize the UI apart from just specific parts where we provide the `render` props so host can update it as needed.
-
-Our intention is to make the API heavily customizable and in the `React` way. Hence we want to slowly move to `Component` API where host will be able to pass the individual parts of the UI as `React` Children and Excalidraw will take care of rendering it correctly and with this we will be removing the `render` prop as well.
-
-We also plan to decouple the editor from the UI so to achieve the same we will slowly make the API more powerful so the UI can be customized by the host to an extent where host will be able to have full control on what UI elements should be rendered in the editor.
-
-As mentioned earlier about the new editor redesign due to which we decided redesign the API as well, [these](https://github.com/excalidraw/excalidraw/issues/5960) were mainly the blockers for the release.
-
-So lets do a quick div in to the new Component API :)
-
-# `<Footer/>`
-
-![footer-center](./footer-center.png)
-
-This was the first [POC](https://github.com/excalidraw/excalidraw/pull/5970) to try out the component API. Earlier with the help of `renderFooter` prop host could customize the center section of the footer as shown above.
-
-We removed the `renderFooter` prop and implemented component API for the same. Currently we only allow customizing the center part with the help of `<Footer>` component but later we plan to make it more powerful so entire footer could be customized by the host.
-
-## Before
+We want you to be able not only to render custom components (e.g. custom footer), but also modify the default ones. Previously we were exposing extension points through render props. Render props work fine, but were envisioning an API where you could just render everything as children of the Excalidraw component, something like this:
 
 ```jsx
-import { Excalidraw } from '@excalidraw/excalidraw'
-const App = () => (
+import { Excalidraw, MainMenu, Footer } from '@excalidraw/excalidraw';
+import { MyCustomButton } from './MyCustomButton';
 
-  <Excalidraw renderFooter = {(isMobile, appState) => {
-		if (isMobile) {
-				return null;
-		}
-		return (
-		<button
-			className="custom-footer"
-			onClick={() => alert("This is dummy footer")}
-		>
-			{" "}
-			custom footer
-		</button>)
-	}}>
+export const App = () => (
+  <Excalidraw>
+    <MainMenu>
+      {/* menu items */}
+    </MainMenu>
+    <Footer>
+      <MyCustomButton>
+    </Footer>
+  </Excalidraw>
 )
 ```
 
-## Now
+In the future, we may even expose plugins as components, so you will end up doing this:
+
+```jsx
+import { Excalidraw, MinimapPlugin } from '@excalidraw/excalidraw';
+
+export const App = () => (
+  <Excalidraw>
+    <MainMenu>
+      {/* menu items */}
+    </MainMenu>
+    <MinimapPlugin/>
+  </Excalidraw>
+)
+```
+
+At the end of the day, it's more of an aesthetic decision rather than functional one, as we could achieve the same with render props as well. One benefit is that the API surface area is smaller. We won't export a component, and then also have a render prop for it — you just render it.
+
+Another goal is to start decoupling the UI from the editor. We want the core to be usable without React, and as such, delineating the UI more clearly and separating it from editor configuration and logic made sense.
+
+But, using `children` is not without tradeoffs, so let's go over some of the new API changes, explain how it works under the hood, and what are the implications for your apps.
+
+# `<Footer/>`
+
+Here's what the footer looks like in the editor:
+
+![footer area](./footer-area.png)
+
+We have the default footer UI, which you currently cannot change. And there's an area in the middle you can render into. Previously you'd do that using a `renderFooter` prop. Now, you'll import a `Footer` component from our package, and render it as a child of the `Excalidraw` component, alongside any UI you want.
 
 ```jsx
 import { Excalidraw, Footer } from "@excalidraw/excalidraw";
@@ -82,67 +85,148 @@ import { Excalidraw, Footer } from "@excalidraw/excalidraw";
 const App = () => (
   <Excalidraw>
     <Footer>
-      <button
-        className="custom-footer"
-        onClick={() => alert("This is dummy footer")}
-      >
-        {" "}
-        custom footer
+      <button onClick={() => console.log("Clicked!")}>
+        Click me
       </button>
     </Footer>
   </Excalidraw>
 );
 ```
 
-As you can see now you can customize the footer by passing it as a child in your Excalidraw component.
+So how does this work underneath? How do we know what is a `Footer` child component, and what is an unrelated component when it comes down to rendering it to an appropriate place in the UI?
 
-With the redesign the `footer` was moved inside the dropdown in mobile to save more space. So you will need to customize the [MainMenu](#MainMenu) which we will discuss next.
+For this, we've decided to reach for an older React API, now considered [legacy](https://beta.reactjs.org/reference/react/Children): `React.Children`. But it does its job well, so something like that will not stop us from using it :).
+
+![React.Children](./react-children.png)
+
+In short, we loop through the children you pass to Excalidraw and filter the components we are looking for using their `displayName`. Here's what the simplified code looks like:
+
+```tsx
+export const getReactChildren = <
+  ExpectedChildren extends {
+    [k in string]?: React.ReactNode;
+  },
+>(
+  children: React.ReactNode,
+) => {
+  return React.Children.toArray(children).reduce(
+    (acc: Partial<ExpectedChildren>, child) => {
+      if (React.isValidElement(child)) {
+        acc[child.type.displayName] = child;
+      }
+      return acc;
+    },
+    {},
+  );
+};
+```
+
+In practice we also validate against expected children names, and render the rest as is.
+
+This is great as it allows you to render all the UI components as children, irrespective of the order, and we can pick and choose where to render what.
+
+But it also has some downsides.
+
+For one, you have to render the components as top-level children of the `Excalidraw` component. This is not a big deal, but it does mean that you can't render the `Footer` component as a child of another component, or we wouldn't be able to find it:
+
+```jsx
+const MyFooter = () => {
+  return <Footer/>
+}
+
+const App = () => (
+  <Excalidraw>
+    {/* nope :( */}
+    <MyFooter/>
+  </Excalidraw>
+);
+```
+
+Let's move on to the next component.
 
 # `<MainMenu/>`
 
-The top left menu was introduced in the editor redesign so we want to allow users to customize the items the `MainMenu`and also reuse the default items present in Excalidraw menu if needed thus giving maximum flexibilty to the host.
+The top-left dropdown menu was introduced in the new editor design, and we wanted you to be able to customize it to your needs.
 
-![Main Menu](./main-menu.png)
+Below is what the menu looks like on excalidraw.com (left), vs what we render by default in the package (right).
 
-In the above diagram The `Live Collaboration` dialog is specific to host, so you will want to render if your app supports collaboration else not.
+![main menu differences](./main-menu-differences.png)
 
-Similarly under socials section you might want to render your own social account along with Excalidraw Socials.
-
-As per internationalization, if your app supports i18n you will have your app level support to change the language and hence the language dropdown was never the part of the package as its specific to excalidraw app and you can pass the `langCode` to decide which language to use in Excalidraw. Though we later might export the `LanguagePicker` component as well.
-
-In the excalidraw app as it was supported using `renderFooter` prop. Now since its part of `menu` so here also its one of the items which host would want to render.
-
-To summarize we have these cases to cover
-
-1. Render the dropdown with default items so if host don't want to customize they will get the menu with default items.
-2. Allow host to selectively render some of the default items, eg if you only want to render `Reset the canvas` item.
-3. Allow host to render their own custom items with excalidraw style eg "Excalidraw+".
-4. Allow host to render their own custom items with their own style eg "Language picker".
-5. Allow host to group items.
-6. Lastly also make sure `UIOptions.canvasActions` are taken into consideration when rendering the default menu items for backward compatibility.
-
-Rendering the `dropdown` with default items was the easiest so if the host doesn't pass its own `MainMenu` we render the menu with default items.
-
-And the rest all customization can be achieved if we give full control to host what they want to render inside the `MainMenu`
+But, we've opted for maximum flexibility. If the default items do not suit you, you can render the `MainMenu` component yourself, and we'll let you build it up from scratch — using the default menu item components, or your own.
 
 ```jsx
-<Excalidraw>
-  <MainMenu></MainMenu>
-</Excalidraw>
+import { Excalidraw, MainMenu } from "@excalidraw/excalidraw";
+
+const App = () => (
+  return (
+    <Excalidraw>
+      <MainMenu>
+        <MainMenu.DefaultItems.LoadScene />
+        <MainMenu.DefaultItems.Export />
+        <MainMenu.DefaultItems.SaveAsImage />
+        <MainMenu.Separator />
+        <MainMenu.Item onSelect={() => alert("Hello to you too!")}>
+          Hello!
+        </MainMenu.Item>
+      </MainMenu>
+    </Excalidraw>
+  );
+);
 ```
 
-As per rendering the default items selectively, for that host can use `MainMenu.DefaultItems.{{componentName}}`.And similarly for rendering item with excalidraw style, grouping and fully host style we have exported different components.
-
-With this all the `MainMenu` we are able to cover all the cases of `MainMenu`.
-
-In `mobile` during collaboration we render the user `avatars` in the dropdown and since currently its the responsiblity of Excalidraw to render the avatars hence we inject the avatars in the dropdown if present on mobile. We will soon have a component for the avatars so that host can render it when needed.
-
-![Mobile Collaborators](./mobile-collab.png)
+As with `Footer`, you'll need to make sure it's the top-level child of the `Excalidraw` component.
 
 # `<WelcomeScreen/>`
 
-TODO
+Another thing we've introduced in the redesign is the welcome screen. This one is a slightly more complicated beast, as it is composed of several separate elements, each rendered in different parts of the UI.
 
-Lastly we are improving the developer docs and will be releasing it very soon! Stay tuned 💜
+The two main components is the center part containing the logo and quick actions, and the hints pointing out what users can find in the UI.
 
-https://twitter.com/aakansha1216/status/1613203563903356928
+![welcome screen](./welcome-screen-overview.png)
+
+You can again customize most of everything. If you want to render just the center, be our guest! If you want to change the hints a bit, you can do so as well.
+
+One caveat is that we require not just the `<WelcomeScreen>` to be a top-level child, but also the `<WelcomeScreen.Center/>` and `<WelcomeScreen.Hints/>` to be the direct children of the `<WelcomeScreen>`.
+
+```jsx
+import { Excalidraw, WelcomeScreen } from "@excalidraw/excalidraw";
+
+const App = () => (
+  return (
+    <Excalidraw>
+      <WelcomeScreen>
+        <WelcomeScreen.Hints.ToolbarHint />
+        <WelcomeScreen.Center>
+          <WelcomeScreen.Center.Logo />
+          <WelcomeScreen.Center.Heading>
+            You can draw anything you want!
+          </WelcomeScreen.Center.Heading>
+          <WelcomeScreen.Center.Menu>
+            <WelcomeScreen.Center.MenuItemHelp />
+            <WelcomeScreen.Center.MenuItemLiveCollaborationTrigger
+              onSelect={() => setCollabDialogShown(true)}
+            />
+            {!isExcalidrawPlusSignedUser && (
+              <WelcomeScreen.Center.MenuItem
+                onSelect={() => console.log("doing something!")}
+              >
+                Do something
+              </WelcomeScreen.Center.MenuItem>
+            )}
+          </WelcomeScreen.Center.Menu>
+        </WelcomeScreen.Center>
+      </WelcomeScreen>
+    </Excalidraw>
+  );
+);
+```
+
+# Docs
+
+For now, you can read more on the newly introduced API in our [readme docs](https://github.com/excalidraw/excalidraw/blob/master/src/packages/excalidraw/README.md#component-api).
+
+But, we are working on much improved docs as we speak, and will be releasing them soon, alongside more detailed examples on the above API, and how to handle specific cases. Stay tuned! 💜
+
+In the meantime, you can let us know what you'd like us to cover!
+
+https://twitter.com/excalidraw/status/1613207731799834625
