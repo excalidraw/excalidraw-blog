@@ -32,11 +32,13 @@ Up to this point we've been using a combination of config objects (e.g. `props.U
 
 <!-- TODO -->
 
-# Main idea and implementation
+# Main idea and Implementation
 
-Our current api is heavily dependent on `render` props and its not easy to customize the UI apart from just specific parts eg `renderTopRightUI`, `renderFooter` where we provide the `render` props so host can update it as needed.
+Our current api is heavily dependent on `render` props eg `renderTopRightUI`, `renderFooter` and its not easy to customize the UI apart from just specific parts where we provide the `render` props so host can update it as needed.
 
 Our intention is to make the API heavily customizable and in the `React` way. Hence we want to slowly move to `Component` API where host will be able to pass the individual parts of the UI as `React` Children and Excalidraw will take care of rendering it correctly and with this we will be removing the `render` prop as well.
+
+We also plan to decouple the editor from the UI so to achieve the same we will slowly make the API more powerful so the UI can be customized by the host to an extent where host will be able to have full control on what UI elements should be rendered in the editor.
 
 As mentioned earlier about the new editor redesign due to which we decided redesign the API as well, [these](https://github.com/excalidraw/excalidraw/issues/5960) were mainly the blockers for the release.
 
@@ -44,9 +46,11 @@ So lets do a quick div in to the new Component API :)
 
 # `<Footer/>`
 
-[Add an image for footer]
+[footer-center](./footer-center.png)
 
-This was the first [POC](https://github.com/excalidraw/excalidraw/pull/5970) to try out the component API. We earlier supported `renderFooter` prop and now that prop is removed. So host will have to import `Footer` component and pass it as `children` if they want to customize.
+This was the first [POC](https://github.com/excalidraw/excalidraw/pull/5970) to try out the component API. Earlier with the help of `renderFooter` prop host could customize the center section of the footer as shown above.
+
+We removed the `renderFooter` prop and implemented component API for the same. Currently we only allow customizing the center part with the help of `<Footer>` component but later we plan to make it more powerful so entire footer could be customized by the host.
 
 ## Before
 
@@ -116,6 +120,24 @@ To summarize we have these cases to cover
 4. Allow host to render their own custom items with their own style eg "Language picker".
 5. Allow host to group items.
 6. Lastly also make sure `UIOptions.canvasActions` are taken into consideration when rendering the default menu items for backward compatibility.
+
+Rendering the `dropdown` with default items was the easiest so if the host doesn't pass its own `MainMenu` we render the menu with default items.
+
+And the rest all customization can be achieved if we give full control to host what they want to render inside the `MainMenu`
+
+```jsx
+<Excalidraw>
+  <MainMenu></MainMenu>
+</Excalidraw>
+```
+
+As per rendering the default items selectively, for that host can use `MainMenu.DefaultItems.{{componentName}}`.And similarly for rendering item with excalidraw style, grouping and fully host style we have exported different components.
+
+With this all the `MainMenu` we are able to cover all the cases of `MainMenu`.
+
+In `mobile` during collaboration we render the user `avatars` in the dropdown and since currently its the responsiblity of Excalidraw to render the avatars hence we inject the avatars in the dropdown if present on mobile. We will soon have a component for the avatars so that host can render it when needed.
+
+![Mobile Collaborators](./mobile-collab.png)
 
 [ add a diagram explaining the API how the above was solved]
 
