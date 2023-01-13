@@ -53,16 +53,14 @@ export const App = () => (
 In the future, we may even expose plugins as components, so you will end up doing this:
 
 ```jsx
-import { Excalidraw, MinimapPlugin } from '@excalidraw/excalidraw';
+import { Excalidraw, MinimapPlugin } from "@excalidraw/excalidraw";
 
 export const App = () => (
   <Excalidraw>
-    <MainMenu>
-      {/* menu items */}
-    </MainMenu>
-    <MinimapPlugin/>
+    <MainMenu>{/* menu items */}</MainMenu>
+    <MinimapPlugin />
   </Excalidraw>
-)
+);
 ```
 
 At the end of the day, it's more of an aesthetic decision rather than functional one, as we could achieve the same with render props as well. One benefit is that the API surface area is smaller. We won't export a component, and then also have a render prop for it — you just render it.
@@ -85,9 +83,7 @@ import { Excalidraw, Footer } from "@excalidraw/excalidraw";
 const App = () => (
   <Excalidraw>
     <Footer>
-      <button onClick={() => console.log("Clicked!")}>
-        Click me
-      </button>
+      <button onClick={() => console.log("Clicked!")}>Click me</button>
     </Footer>
   </Excalidraw>
 );
@@ -105,7 +101,7 @@ In short, we loop through the children you pass to Excalidraw and filter the com
 export const getReactChildren = <
   ExpectedChildren extends {
     [k in string]?: React.ReactNode;
-  },
+  }
 >(
   children: React.ReactNode,
 ) => {
@@ -131,13 +127,13 @@ For one, you have to render the components as top-level children of the `Excalid
 
 ```jsx
 const MyFooter = () => {
-  return <Footer/>
-}
+  return <Footer />;
+};
 
 const App = () => (
   <Excalidraw>
     {/* nope :( */}
-    <MyFooter/>
+    <MyFooter />
   </Excalidraw>
 );
 ```
