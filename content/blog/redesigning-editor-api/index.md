@@ -1,5 +1,5 @@
 ---
-title: Rethinking the component API
+title: Rethinking the Component API
 date: 2023-01-13
 author: Excalidraw Team
 link: https://github.com/orgs/excalidraw/people
@@ -138,8 +138,6 @@ With this all the `MainMenu` we are able to cover all the cases of `MainMenu`.
 In `mobile` during collaboration we render the user `avatars` in the dropdown and since currently its the responsiblity of Excalidraw to render the avatars hence we inject the avatars in the dropdown if present on mobile. We will soon have a component for the avatars so that host can render it when needed.
 
 ![Mobile Collaborators](./mobile-collab.png)
-
-[ add a diagram explaining the API how the above was solved]
 
 # `<WelcomeScreen/>`
 
