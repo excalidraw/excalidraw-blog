@@ -221,12 +221,12 @@ const App = () => (
 );
 ```
 
-# Docs
+# Wrapping up
 
-For now, you can read more on the newly introduced API in our [readme docs](https://github.com/excalidraw/excalidraw/blob/master/src/packages/excalidraw/README.md#component-api).
+So that's it. Let us know how you like the new API, and what you think about the direction we're taking it in. While there are still some rough edges about the way we do it now, and there are some implications we will cover later, we're excited to see what you'll be able to build with it. We'll be closely listening to your feedback, so let us know in the [Discord](http://discord.gg/UexuTaE) or on [GitHub](https://github.com/excalidraw/excalidraw/discussions)!
 
-But, we are working on much improved docs as we speak, and will be releasing them soon, alongside more detailed examples on the above API, and how to handle specific cases. Stay tuned! 💜
+For now, you can read more on the newly introduced API in our [readme docs](https://github.com/excalidraw/excalidraw/blob/master/src/packages/excalidraw/README.md#component-api). But, we are working on much improved docs as we speak which we'll be releasing soon, alongside more detailed examples on the above API and how to handle specific cases. Stay tuned! 💜
 
-In the meantime, you can let us know what you'd like us to cover!
+In the meantime, you can also let us know what you'd like us to cover!
 
 https://twitter.com/excalidraw/status/1613207731799834625
