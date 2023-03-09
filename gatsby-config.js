@@ -3,7 +3,7 @@ module.exports = {
     title: "Excalidraw Blog",
     description:
       "Get up to speed on the latest news and dive deep into inner workings of Excalidraw",
-    image: "/og-image-2.png",
+    image: "/og-image-3.png",
     siteUrl: "https://blog.excalidraw.com",
     social: {
       twitter: "excalidraw",
