@@ -2,7 +2,7 @@
 title: Introducing Excalidraw+
 date: 2021-05-03
 author: Excalidraw Team
-link: https://twitter.com/excalidraw
+link: https://github.com/orgs/excalidraw/people
 image: excalidraw-plus.png
 ---
 
