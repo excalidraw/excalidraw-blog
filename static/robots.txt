@@ -1,2 +1,3 @@
 User-agent: *
 Disallow:
+Sitemap: https://blog.excalidraw.com/sitemap.xml
