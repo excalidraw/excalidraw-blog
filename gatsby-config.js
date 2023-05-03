@@ -1,10 +1,14 @@
+const dayjs = require("dayjs");
+
+const siteUrl = process.env.URL || "https://blog.excalidraw.com";
+
 module.exports = {
   siteMetadata: {
     title: "Excalidraw Blog",
     description:
       "Get up to speed on the latest news and dive deep into inner workings of Excalidraw",
     image: "/og-image-3.png",
-    siteUrl: "https://blog.excalidraw.com",
+    siteUrl,
     social: {
       twitter: "excalidraw",
       github: "excalidraw",
@@ -73,7 +77,60 @@ module.exports = {
     },
     "gatsby-plugin-dark-mode",
     "gatsby-transformer-sharp",
-    "gatsby-plugin-sitemap",
+    {
+      resolve: "gatsby-plugin-sitemap",
+      options: {
+        query: `
+        {
+          site {
+            siteMetadata {
+              siteUrl
+            }
+          }
+          allSitePage {
+            nodes {
+              path
+            }
+          }
+          allMarkdownRemark {
+            nodes {
+              fields {
+                slug
+              }
+              frontmatter {
+                date(formatString: "YYYY-MM-DD")
+              }
+            }
+          }
+        }
+      `,
+        resolveSiteUrl: () => siteUrl,
+        serialize: ({ site, allMarkdownRemark }) => {
+          // nodes looks like array but its acutally an object
+          const pages = allMarkdownRemark.nodes.reduce((acc, node) => {
+            acc.push({
+              url: `${site.siteMetadata.siteUrl}${node.fields.slug}`,
+              changefreq: `yearly`,
+              priority: 0.4,
+              lastmod: node.frontmatter.date,
+            });
+
+            return acc;
+          }, []);
+
+          return [
+            ...pages,
+            // manually add root
+            {
+              url: `${site.siteMetadata.siteUrl}`,
+              changefreq: `weekly`,
+              priority: 1,
+              lastmod: dayjs(new Date()).format("YYYY-MM-DD"),
+            },
+          ];
+        },
+      },
+    },
     "gatsby-plugin-sharp",
     {
       resolve: "gatsby-plugin-google-analytics",

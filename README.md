@@ -13,6 +13,8 @@ yarn start
 
 Visit [`localhost:8000`](http://localhost:8000) to test it.
 
+If you need to query something use ['http://localhost:8000/\_\_\_graphql'](http://localhost:8000/___graphql)
+
 ## Writing a Blog Post
 
 - Create a new folder inside the `content/blog/`
