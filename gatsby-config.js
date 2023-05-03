@@ -109,7 +109,7 @@ module.exports = {
           // nodes looks like array but its acutally an object
           const pages = allMarkdownRemark.nodes.reduce((acc, node) => {
             acc.push({
-              url: `${site.siteMetadata.siteUrl}/${node.fields.slug}`,
+              url: `${site.siteMetadata.siteUrl}${node.fields.slug}`,
               changefreq: `yearly`,
               priority: 0.4,
               lastmod: node.frontmatter.date,
@@ -122,7 +122,7 @@ module.exports = {
             ...pages,
             // manually add root
             {
-              url: `${site.siteMetadata.siteUrl}/`,
+              url: `${site.siteMetadata.siteUrl}`,
               changefreq: `weekly`,
               priority: 1,
               lastmod: dayjs(new Date()).format("YYYY/MM/DD"),
