@@ -98,7 +98,7 @@ module.exports = {
                 slug
               }
               frontmatter {
-                date(formatString: "YYYY/MM/DD")
+                date(formatString: "YYYY-MM-DD")
               }
             }
           }
@@ -125,7 +125,7 @@ module.exports = {
               url: `${site.siteMetadata.siteUrl}`,
               changefreq: `weekly`,
               priority: 1,
-              lastmod: dayjs(new Date()).format("YYYY/MM/DD"),
+              lastmod: dayjs(new Date()).format("YYYY-MM-DD"),
             },
           ];
         },
