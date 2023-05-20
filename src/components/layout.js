@@ -28,6 +28,7 @@ const Layout = ({ location, title, children, parentClassName }) => {
       >
         <ThemeToggler>
           {({ theme, toggleTheme }) => {
+            if (theme == null) return null;
             return (
               <Toggle
                 icons={{
