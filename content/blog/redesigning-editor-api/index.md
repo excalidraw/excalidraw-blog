@@ -32,7 +32,7 @@ Up to this point we've been using a combination of config objects (e.g. `props.U
 
 # Getting rid of render props
 
-We want you to be able not only to render custom components (e.g. custom footer), but also modify the default ones. Previously we were exposing extension points through render props. Render props work fine, but were envisioning an API where you could just render everything as children of the Excalidraw component, something like this:
+We want you to be able not only to render custom components (e.g. custom footer), but also modify the default ones. Previously we were exposing extension points through render props. Render props work fine, but we're envisioning an API where you could just render everything as children of the Excalidraw component, something like this:
 
 ```jsx
 import { Excalidraw, MainMenu, Footer } from '@excalidraw/excalidraw';
