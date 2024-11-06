@@ -59,7 +59,7 @@
   "prettier": "@excalidraw/prettier-config",
   "private": true,
   "scripts": {
-    "build": "gatsby build",
+    "build": "export SET NODE_OPTIONS=--openssl-legacy-provider && gatsby build",
     "develop": "gatsby develop",
     "fix": "yarn prettier --write",
     "prettier": "prettier \"**/*.{js,jsx,json,md,yml}\"",
