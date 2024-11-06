@@ -1,8 +1,8 @@
 {
   "redirects": [
     {
-      "source": "/:slug",
-      "destination": "https://plus.excalidraw.com/blog/:slug",
+      "source": "/:slug*",
+      "destination": "https://plus.excalidraw.com/blog/:slug*",
       "permanent": true
     }
   ]
