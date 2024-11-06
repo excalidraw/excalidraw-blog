@@ -1,8 +1,13 @@
 {
   "redirects": [
     {
-      "source": "/(.*)",
+      "source": "/(.*)/?",
       "destination": "https://plus.excalidraw.com/blog/$1",
+      "permanent": true
+    },
+    {
+      "source": "/",
+      "destination": "https://plus.excalidraw.com/blog",
       "permanent": true
     }
   ]
