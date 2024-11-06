@@ -1,6 +1,9 @@
 {
   "redirects": [
-    { "source": "/browser-nativefs", "destination": "/browser-fs-access/" },
-    { "source": "/browser-nativefs/", "destination": "/browser-fs-access/" }
+    {
+      "source": "/(.*)",
+      "destination": "https://plus.excalidraw.com/blog",
+      "permanent": true
+    }
   ]
 }
