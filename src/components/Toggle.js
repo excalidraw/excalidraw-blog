@@ -1,6 +1,6 @@
 /*
  * Copyright (c) 2015 instructure-react
- * Copied From Dan Abramov's bloghttps://raw.githubusercontent.com/gaearon/overreacted.io/f08afa0bbdf7612e855e7ac6aabf47f7f7ab8a04/src/components/Toggle.css
+ * Copied From Dan Abramov's blog https://raw.githubusercontent.com/gaearon/overreacted.io/f08afa0bbdf7612e855e7ac6aabf47f7f7ab8a04/src/components/Toggle.css
  **/
 
 import React, { PureComponent } from "react";

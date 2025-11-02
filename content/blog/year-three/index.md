@@ -236,7 +236,7 @@ And we're not forgetting [libraries](https://libraries.excalidraw.com). More on 
 
 ## Package
 
-Next year, we will taking the [Excalidraw package](https://www.npmjs.com/package/@excalidraw/excalidraw) to the next level, beginning with the upcoming npm release bringing the redesigned editor to your apps, and featuring an improved API to customize some parts of the editor UI. We'll use this as a test bed on whether this type of new API works well, and we'll be making changes to the rest of the editor to allow for much greater customization.
+Next year, we will take the [Excalidraw package](https://www.npmjs.com/package/@excalidraw/excalidraw) to the next level, beginning with the upcoming npm release bringing the redesigned editor to your apps, and featuring an improved API to customize some parts of the editor UI. We'll use this as a test bed on whether this type of new API works well, and we'll be making changes to the rest of the editor to allow for much greater customization.
 
 There are lots of places in need of much smoother experience, such as the images API, listening on changes, and programmatic API in general, so we'll be working on that, too.
 

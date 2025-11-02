@@ -252,7 +252,7 @@ One could say Excalidraw for Electron was not deprecated because Electron is bad
 
 When I say "the web has become good enough", it's because of features like the upcoming File Handling.
 
-This is a regular macOS Big Sur installation. Now check out what happens when I right-click an Excalidraw file. I can choose to open it with Excalidraw, the installed PWA. Of course double-clicking would work, too, it's just less dramatic to demonstrate in a screencast.
+This is a regular macOS Big Sur installation. Now check out what happens when I right-click an Excalidraw file. I can choose to open it with Excalidraw, the installed PWA. Of course, double-clicking would work, too, it's just less dramatic to demonstrate in a screencast.
 
 <video autoplay loop muted playsinline src="Gz1w0Gey1XerN86sIF01.mp4"></video>
 

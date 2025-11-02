@@ -1,15 +1,15 @@
 import Typography from "typography";
-import Wordpress2016 from "typography-theme-wordpress-2016";
+import WordPress2016 from "typography-theme-wordpress-2016";
 
-Wordpress2016.headerFontFamily = "BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif".split(
+WordPress2016.headerFontFamily = "BlinkMacSystemFont, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif".split(
   ", ",
 );
-Wordpress2016.headerWeight = 700;
+WordPress2016.headerWeight = 700;
 
-Wordpress2016.overrideThemeStyles = () => {
+WordPress2016.overrideThemeStyles = () => {
   return {
     ":root": {
-      "--ui-font": Wordpress2016.headerFontFamily.join(","),
+      "--ui-font": WordPress2016.headerFontFamily.join(","),
     },
     h1: {
       fontFamily: "var(--ui-font)",
@@ -25,9 +25,9 @@ Wordpress2016.overrideThemeStyles = () => {
   };
 };
 
-delete Wordpress2016.googleFonts;
+delete WordPress2016.googleFonts;
 
-const typography = new Typography(Wordpress2016);
+const typography = new Typography(WordPress2016);
 
 // Hot reload typography in development.
 if (process.env.NODE_ENV !== "production") {

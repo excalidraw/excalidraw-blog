@@ -85,7 +85,7 @@ I've also made sure that some core values were being maintained. I want minimal 
 
 ## Celebrate Success
 
-Posting about all the good things that happen, be it a new cool feature, or interesting usage or thoughts in the topic will increase the size of that channel as those posts will attracts an audience.
+Posting about all the good things that happen, be it a new cool feature, or interesting usage or thoughts in the topic will increase the size of that channel as those posts will attract an audience.
 
 The other interesting thing that will happen is that you will provide an audience to a lot of the people that are contributing. As I mentioned earlier, they're unlikely going to have a big one of their own that cares about this topic.
 
